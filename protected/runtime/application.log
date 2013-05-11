@@ -1,0 +1,873 @@
+2013/05/04 16:51:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dosen".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('dosen')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('dosen')
+#2 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('site/dosen')
+#3 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/penjadwalan/index.php?r=site/dosen
+---
+2013/05/04 16:51:58 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#6 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('dosen/admin')
+#9 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/penjadwalan/index.php?r=dosen/admin
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=dosen
+---
+2013/05/04 17:23:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#6 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('dosen/admin')
+#9 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/penjadwalan/index.php?r=dosen/admin
+HTTP_REFERER=http://localhost/penjadwalan/
+---
+2013/05/04 17:26:16 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#6 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('dosen/admin')
+#9 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/penjadwalan/index.php?r=dosen/admin
+HTTP_REFERER=http://localhost/penjadwalan/
+---
+2013/05/04 20:58:34 [error] [php] Missing argument 2 for YiiBase::t(), called in /opt/lampp/htdocs/penjadwalan/protected/views/layouts/main.php on line 34 and defined (/opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/YiiBase.php:571)
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(206): CContentDecorator->run()
+#5 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(300): SiteController->endWidget()
+#6 /opt/lampp/htdocs/penjadwalan/protected/views/layouts/column1.php(6): SiteController->endContent()
+#7 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require()
+#8 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(784): SiteController->renderFile()
+#10 /opt/lampp/htdocs/penjadwalan/protected/controllers/SiteController.php(33): SiteController->render()
+#11 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): SiteController->runAction()
+#14 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /opt/lampp/htdocs/penjadwalan/index.php(13): CWebApplication->run()
+REQUEST_URI=/penjadwalan/index.php
+in /opt/lampp/htdocs/penjadwalan/protected/views/layouts/main.php (34)
+in /opt/lampp/htdocs/penjadwalan/protected/views/layouts/column1.php (6)
+in /opt/lampp/htdocs/penjadwalan/protected/controllers/SiteController.php (33)
+2013/05/04 21:03:20 [error] [php] Missing argument 2 for YiiBase::t(), called in /opt/lampp/htdocs/penjadwalan/protected/views/layouts/main.php on line 34 and defined (/opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/YiiBase.php:571)
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(206): CContentDecorator->run()
+#5 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(300): SiteController->endWidget()
+#6 /opt/lampp/htdocs/penjadwalan/protected/views/layouts/column1.php(6): SiteController->endContent()
+#7 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require()
+#8 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(784): SiteController->renderFile()
+#10 /opt/lampp/htdocs/penjadwalan/protected/controllers/SiteController.php(33): SiteController->render()
+#11 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): SiteController->runAction()
+#14 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /opt/lampp/htdocs/penjadwalan/index.php(13): CWebApplication->run()
+REQUEST_URI=/penjadwalan/index.php
+in /opt/lampp/htdocs/penjadwalan/protected/views/layouts/main.php (34)
+in /opt/lampp/htdocs/penjadwalan/protected/views/layouts/column1.php (6)
+in /opt/lampp/htdocs/penjadwalan/protected/controllers/SiteController.php (33)
+2013/05/04 21:09:58 [error] [php] Missing argument 2 for YiiBase::t(), called in /opt/lampp/htdocs/penjadwalan/protected/views/layouts/main.php on line 34 and defined (/opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/YiiBase.php:571)
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(206): CContentDecorator->run()
+#5 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(300): SiteController->endWidget()
+#6 /opt/lampp/htdocs/penjadwalan/protected/views/layouts/column1.php(6): SiteController->endContent()
+#7 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require()
+#8 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(784): SiteController->renderFile()
+#10 /opt/lampp/htdocs/penjadwalan/protected/controllers/SiteController.php(36): SiteController->render()
+#11 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): SiteController->runAction()
+#14 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /opt/lampp/htdocs/penjadwalan/index.php(13): CWebApplication->run()
+REQUEST_URI=/penjadwalan/index.php
+in /opt/lampp/htdocs/penjadwalan/protected/views/layouts/main.php (34)
+in /opt/lampp/htdocs/penjadwalan/protected/views/layouts/column1.php (6)
+in /opt/lampp/htdocs/penjadwalan/protected/controllers/SiteController.php (36)
+2013/05/04 21:12:25 [error] [exception.CException] exception 'CException' with message 'The asset "/opt/lampp/htdocs/penjadwalan/protected/extensions/CDropDownMenu/assets" to be published does not exist.' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CAssetManager.php:257
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/protected/extensions/CDropDownMenu/CDropDownMenu.php(77): CAssetManager->publish('/opt/lampp/htdo...')
+#1 /opt/lampp/htdocs/penjadwalan/protected/extensions/CDropDownMenu/CDropDownMenu.php(53): CDropDownMenu->registerClientScript()
+#2 /opt/lampp/htdocs/penjadwalan/protected/extensions/CDropDownMenu/CDropDownMenu.php(33): CDropDownMenu->renderDropDownMenu(Array)
+#3 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(173): CDropDownMenu->run()
+#4 /opt/lampp/htdocs/penjadwalan/protected/views/layouts/main.php(71): CBaseController->widget('ext.CDropDownMe...', Array)
+#5 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#6 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#7 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#8 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /opt/lampp/htdocs/penjadwalan/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#14 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#15 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(784): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#16 /opt/lampp/htdocs/penjadwalan/protected/controllers/SiteController.php(36): CController->render('index')
+#17 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('')
+#22 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#24 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/penjadwalan/index.php
+HTTP_REFERER=http://localhost/penjadwalan/index.php
+---
+2013/05/04 21:13:03 [error] [exception.CException] exception 'CException' with message 'The asset "/opt/lampp/htdocs/penjadwalan/protected/extensions/CDropDownMenu/assets" to be published does not exist.' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CAssetManager.php:257
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/protected/extensions/CDropDownMenu/CDropDownMenu.php(77): CAssetManager->publish('/opt/lampp/htdo...')
+#1 /opt/lampp/htdocs/penjadwalan/protected/extensions/CDropDownMenu/CDropDownMenu.php(53): CDropDownMenu->registerClientScript()
+#2 /opt/lampp/htdocs/penjadwalan/protected/extensions/CDropDownMenu/CDropDownMenu.php(33): CDropDownMenu->renderDropDownMenu(Array)
+#3 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(173): CDropDownMenu->run()
+#4 /opt/lampp/htdocs/penjadwalan/protected/views/layouts/main.php(71): CBaseController->widget('ext.CDropDownMe...', Array)
+#5 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#6 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#7 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#8 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /opt/lampp/htdocs/penjadwalan/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#14 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#15 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(784): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#16 /opt/lampp/htdocs/penjadwalan/protected/controllers/SiteController.php(36): CController->render('index')
+#17 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('')
+#22 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#24 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/penjadwalan/index.php
+HTTP_REFERER=http://localhost/penjadwalan/index.php
+---
+2013/05/04 21:13:52 [error] [exception.CException] exception 'CException' with message 'Property "CDropDownMenu.options" is not defined.' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CComponent.php:130
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/protected/extensions/CDropDownMenu/CDropDownMenu.php(90): CComponent->__get('options')
+#1 /opt/lampp/htdocs/penjadwalan/protected/extensions/CDropDownMenu/CDropDownMenu.php(53): CDropDownMenu->registerClientScript()
+#2 /opt/lampp/htdocs/penjadwalan/protected/extensions/CDropDownMenu/CDropDownMenu.php(33): CDropDownMenu->renderDropDownMenu(Array)
+#3 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(173): CDropDownMenu->run()
+#4 /opt/lampp/htdocs/penjadwalan/protected/views/layouts/main.php(71): CBaseController->widget('ext.CDropDownMe...', Array)
+#5 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#6 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#7 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#8 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /opt/lampp/htdocs/penjadwalan/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require('/opt/lampp/htdo...')
+#14 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#15 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(784): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#16 /opt/lampp/htdocs/penjadwalan/protected/controllers/SiteController.php(36): CController->render('index')
+#17 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('')
+#22 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#24 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/penjadwalan/index.php
+HTTP_REFERER=http://localhost/penjadwalan/index.php
+---
+2013/05/04 21:21:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/index".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('demo/index')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=demo/index
+HTTP_REFERER=http://localhost/penjadwalan/index.php
+---
+2013/05/04 21:22:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/index".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('demo/index')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=demo/index
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=demo/index
+---
+2013/05/04 21:22:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/index".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('demo/index')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=demo/index
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=demo/index
+---
+2013/05/04 21:22:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/index".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('demo/index')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=demo/index
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=demo/index
+---
+2013/05/04 21:23:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/index".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('demo/index')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=demo/index
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=demo/index
+---
+2013/05/04 21:23:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/index".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('demo/index')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=demo/index
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=demo/index
+---
+2013/05/04 21:23:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/index".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('demo/index')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=demo/index
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=demo/index
+---
+2013/05/04 21:24:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/index".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('demo/index')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=demo/index
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=demo/index
+---
+2013/05/04 21:25:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/index".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('demo/index')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=demo/index
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=demo/index
+---
+2013/05/04 21:28:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "registration/registration/registration".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('registration/re...')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=registration/registration/registration
+HTTP_REFERER=http://localhost/penjadwalan/index.php
+---
+2013/05/04 21:31:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "javascript:return false;".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('javascript:retu...')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('javascript:retu...')
+#2 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('site/javascript...')
+#3 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/penjadwalan/index.php?r=site/javascript:return%20false;
+HTTP_REFERER=http://localhost/penjadwalan/index.php
+---
+2013/05/04 21:31:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "javascript:return false;".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('javascript:retu...')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('javascript:retu...')
+#2 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('site/javascript...')
+#3 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/penjadwalan/index.php?r=site/javascript:return%20false;
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=site/javascript:return%20false;
+---
+2013/05/04 21:31:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "javascript:return false;".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('javascript:retu...')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('javascript:retu...')
+#2 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('site/javascript...')
+#3 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/penjadwalan/index.php?r=site/javascript:return%20false;
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=site/javascript:return%20false;
+---
+2013/05/04 21:31:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "javascript:return false;".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('javascript:retu...')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('javascript:retu...')
+#2 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('site/javascript...')
+#3 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/penjadwalan/index.php?r=site/javascript:return%20false;
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=site/javascript:return%20false;
+---
+2013/05/04 21:31:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "javascript:return false;".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('javascript:retu...')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('javascript:retu...')
+#2 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('site/javascript...')
+#3 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/penjadwalan/index.php?r=site/javascript:return%20false;
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=site/javascript:return%20false;
+---
+2013/05/04 21:31:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "javascript:return false;".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('javascript:retu...')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('javascript:retu...')
+#2 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('site/javascript...')
+#3 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/penjadwalan/index.php?r=site/javascript:return%20false;
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=site/javascript:return%20false;
+---
+2013/05/04 21:32:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "javascript:void(0);".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('javascript:void...')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('javascript:void...')
+#2 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('site/javascript...')
+#3 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/penjadwalan/index.php?r=site/javascript:void(0);
+HTTP_REFERER=http://localhost/penjadwalan/index.php
+---
+2013/05/04 21:32:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "javascript:void(0);".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('javascript:void...')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('javascript:void...')
+#2 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('site/javascript...')
+#3 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/penjadwalan/index.php?r=site/javascript:void(0);
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=site/javascript:void(0);
+---
+2013/05/04 21:34:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "javascript:void(0);".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('javascript:void...')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('javascript:void...')
+#2 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('site/javascript...')
+#3 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/penjadwalan/index.php?r=site/javascript:void(0);
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=site/javascript:void(0);
+---
+2013/05/04 21:34:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "registration/registration/registration".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('registration/re...')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=registration/registration/registration
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=site/
+---
+2013/05/04 21:35:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "javascript:void(0);".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('javascript:void...')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('javascript:void...')
+#2 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('site/javascript...')
+#3 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/penjadwalan/index.php?r=site/javascript:void(0);
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=site/
+---
+2013/05/04 21:36:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "javascript:;".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('javascript:;')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('javascript:;')
+#2 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('site/javascript...')
+#3 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/penjadwalan/index.php?r=site/javascript:;
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=site/
+---
+2013/05/04 21:36:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "javascript:;".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('javascript:;')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('javascript:;')
+#2 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('site/javascript...')
+#3 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/penjadwalan/index.php?r=site/javascript:;
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=site/javascript:;
+---
+2013/05/04 21:36:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "javascript:;".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('javascript:;')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('javascript:;')
+#2 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('site/javascript...')
+#3 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/penjadwalan/index.php?r=site/javascript:;
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=site/javascript:;
+---
+2013/05/04 21:37:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "javascript:;".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('javascript:;')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('javascript:;')
+#2 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('site/javascript...')
+#3 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/penjadwalan/index.php?r=site/javascript:;
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=site/javascript:;
+---
+2013/05/04 21:38:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "javascript:;".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('javascript:;')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('javascript:;')
+#2 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('site/javascript...')
+#3 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/penjadwalan/index.php?r=site/javascript:;
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=site/javascript:;
+---
+2013/05/04 21:40:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "javascript:;".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('javascript:;')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('javascript:;')
+#2 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('site/javascript...')
+#3 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/penjadwalan/index.php?r=site/javascript:;
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=site/javascript:;
+---
+2013/05/04 21:41:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "javascript:;".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('javascript:;')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('javascript:;')
+#2 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('site/javascript...')
+#3 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/penjadwalan/index.php?r=site/javascript:;
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=site/javascript:;
+---
+2013/05/04 21:41:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "javascript:;".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('javascript:;')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('javascript:;')
+#2 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('site/javascript...')
+#3 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/penjadwalan/index.php?r=site/javascript:;
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=site/javascript:;
+---
+2013/05/04 21:41:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/user/login".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('user/user/login')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=user/user/login
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=site/javascript:;
+---
+2013/05/04 21:42:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "registration/registration/registration".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('registration/re...')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=registration/registration/registration
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=user/user/login
+---
+2013/05/04 21:43:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "registration/registration/registration".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('registration/re...')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=registration/registration/registration
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=user/user/login
+---
+2013/05/04 21:43:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "registration/registration/registration".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('registration/re...')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=registration/registration/registration
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=user/user/login
+---
+2013/05/04 21:45:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "registration/registration/registration".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('registration/re...')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=registration/registration/registration
+HTTP_REFERER=http://localhost/penjadwalan/index.php
+---
+2013/05/04 21:45:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "registration/registration/registration".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('registration/re...')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=registration/registration/registration
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=registration/registration/registration
+---
+2013/05/04 21:45:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "registration/registration/registration".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('registration/re...')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=registration/registration/registration
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=registration/registration/registration
+---
+2013/05/04 21:45:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "registration/registration/registration".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('registration/re...')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=registration/registration/registration
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=registration/registration/registration
+---
+2013/05/04 21:45:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "registration/registration/registration".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('registration/re...')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=registration/registration/registration
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=registration/registration/registration
+---
+2013/05/04 21:45:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "registration/registration/registration".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('registration/re...')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=registration/registration/registration
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=registration/registration/registration
+---
+2013/05/04 21:48:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "registration/registration/registration".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('registration/re...')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=registration/registration/registration
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=registration/registration/registration
+---
+2013/05/04 21:48:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/index".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('demo/index')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=demo/index
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=registration/registration/registration
+---
+2013/05/04 21:48:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/index".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('demo/index')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=demo/index
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=registration/registration/registration
+---
+2013/05/04 21:48:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/index".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('demo/index')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=demo/index
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=registration/registration/registration
+---
+2013/05/04 21:49:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/index".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('demo/index')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=demo/index
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=registration/registration/registration
+---
+2013/05/04 21:54:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/user/login".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('user/user/login')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=user/user/login
+HTTP_REFERER=http://localhost/penjadwalan/index.php
+---
+2013/05/04 21:54:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/user/login".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('user/user/login')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=user/user/login
+HTTP_REFERER=http://localhost/penjadwalan/index.php
+---
+2013/05/04 21:55:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('index')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=index
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=user/user/login
+---
+2013/05/04 21:55:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index.php".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('index.php')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=index.php
+HTTP_REFERER=http://localhost/penjadwalan/index.php
+---
+2013/05/04 21:55:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/index".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('demo/index')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=demo/index
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=index.php
+---
+2013/05/04 21:56:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/index".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('demo/index')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=demo/index
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=index.php
+---
+2013/05/04 21:56:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/index".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('demo/index')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=demo/index
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=index.php
+---
+2013/05/04 21:56:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/index".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('demo/index')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=demo/index
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=index.php
+---
+2013/05/04 21:57:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/index".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('demo/index')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=demo/index
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=index.php
+---
+2013/05/04 21:57:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/index".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('demo/index')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=demo/index
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=index.php
+---
+2013/05/04 21:57:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/index".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('demo/index')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=demo/index
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=index.php
+---
+2013/05/04 21:57:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/create".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('demo/create')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=demo/create
+HTTP_REFERER=http://localhost/penjadwalan/index.php
+---
+2013/05/04 22:00:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "trxMakul".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('trxMakul')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=trxMakul
+---
+2013/05/04 22:01:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "period".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('period')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=period
+---
+2013/05/04 22:01:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "periodes".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('periodes')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=periodes
+---
+2013/05/04 22:05:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/index".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('demo/index')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=demo/index
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=periode
+---
+2013/05/04 23:32:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/index".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('demo/index')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=demo/index
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=periode
+---
+2013/05/04 23:32:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/create".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('demo/create')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=demo/create
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=demo/index
+---
+2013/05/04 23:32:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/index".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('demo/index')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=demo/index
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=demo/create
+---
+2013/05/05 18:25:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "period".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('period')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=period
+---
+2013/05/06 02:04:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/create".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('demo/create')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=demo/create
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=ruangKelas
+---
+2013/05/06 02:09:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/create".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('demo/create')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=demo/create
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=ruangKelas
+---
+2013/05/06 02:10:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/create".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('demo/create')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=demo/create
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=ruangKelas
+---
+2013/05/06 02:10:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assignDosen".' in /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('assignDosen')
+#1 /opt/lampp/htdocs/penjadwalan/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/penjadwalan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/penjadwalan/index.php?r=assignDosen
+HTTP_REFERER=http://localhost/penjadwalan/index.php?r=demo/create
+---
