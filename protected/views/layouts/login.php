@@ -23,14 +23,16 @@
             <div class="row-fluid">
                 <div class="span-20">
                     <div class="span-20 row" style="margin-top: 100px;">
-                        <div class="well pagination-centered" style="margin-left: 300px; margin-right: 300px;">
+                        <div class="well pagination-centered" style="margin-left: 400px; margin-right: 400px;">
                             <?php echo $content; ?>
                         </div>
 
                     </div>
                     <div id="footer" class="span-20">
+                        <p class="lead text-info">
                         Copyright &copy; <?php echo date('Y'); ?> by Universitas Multimedia Nusantara.<br/>
                         All Rights Reserved.<br/>
+                        </p>
                         <?php echo Yii::powered(); ?>
                     </div><!-- footer -->
                 </div>
