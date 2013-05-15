@@ -5,10 +5,12 @@
  *
  * The followings are the available columns in table 'prodi':
  * @property integer $id
+ * @property integer $fakultas_id
  * @property string $prodi_name
  * @property string $prodi_code
  *
  * The followings are the available model relations:
+ * @property Fakultas $fakultas
  * @property TrxDosenProdi[] $trxDosenProdis
  */
 class Prodi extends CActiveRecord
@@ -39,11 +41,12 @@ class Prodi extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('prodi_name, prodi_code', 'required'),
+			array('fakultas_id, prodi_name, prodi_code', 'required'),
+			array('fakultas_id', 'numerical', 'integerOnly'=>true),
 			array('prodi_name, prodi_code', 'length', 'max'=>50),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, prodi_name, prodi_code', 'safe', 'on'=>'search'),
+			array('id, fakultas_id, prodi_name, prodi_code', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -55,6 +58,7 @@ class Prodi extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'fakultas' => array(self::BELONGS_TO, 'Fakultas', 'fakultas_id'),
 			'trxDosenProdis' => array(self::HAS_MANY, 'TrxDosenProdi', 'prodi'),
 		);
 	}
@@ -66,6 +70,7 @@ class Prodi extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
+			'fakultas_id' => 'Fakultas',
 			'prodi_name' => 'Prodi Name',
 			'prodi_code' => 'Prodi Code',
 		);
@@ -83,6 +88,7 @@ class Prodi extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
+		$criteria->compare('fakultas_id',$this->fakultas_id);
 		$criteria->compare('prodi_name',$this->prodi_name,true);
 		$criteria->compare('prodi_code',$this->prodi_code,true);
 

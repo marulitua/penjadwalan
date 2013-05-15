@@ -11,7 +11,9 @@
 
 	<?php echo $form->textFieldRow($model,'mata_kuliah_code',array('class'=>'span5','maxlength'=>50)); ?>
 
-	<?php echo $form->textFieldRow($model,'praktek',array('class'=>'span5')); ?>
+        <?php echo $form->labelEx($model, 'praktek'); ?>
+        <?php echo $form->checkBox($model, 'praktek',array('class'=>'span5')); ?>
+        <?php echo $form->error($model, 'praktek'); ?>
 
 	<?php echo $form->textFieldRow($model,'sks',array('class'=>'span5')); ?>
 

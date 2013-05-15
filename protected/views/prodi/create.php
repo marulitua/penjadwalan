@@ -1,12 +1,15 @@
 <?php
+/* @var $this ProdiController */
+/* @var $model Prodi */
+
 $this->breadcrumbs=array(
 	'Prodis'=>array('index'),
 	'Create',
 );
 
 $this->menu=array(
-	array('label'=>'List Prodi','url'=>array('index')),
-	array('label'=>'Manage Prodi','url'=>array('admin')),
+	array('label'=>'List Prodi', 'url'=>array('index')),
+	array('label'=>'Manage Prodi', 'url'=>array('admin')),
 );
 ?>
 

@@ -78,7 +78,6 @@
                             ),
                             array(
                                 'label' => 'Resources',
-                                'id' => 'ckckc',
                                 'url' => 'JavaScript:void(0);',
                                 'visible' => !Yii::app()->user->isGuest,
                                 'items' => array(
@@ -93,6 +92,21 @@
                                     array(
                                         'label' => '3. Ruang Kelas',
                                         'url' => array('//ruangKelas', 'owner' => true),
+                                    ),
+                                ),
+                            ),
+                             array(
+                                'label' => 'Fakultas & Program Studi',
+                                'url' => 'JavaScript:void(0);',
+                                'visible' => !Yii::app()->user->isGuest,
+                                'items' => array(
+                                    array(
+                                        'label' => 'Fakultas',
+                                        'url' => array('//fakultas'),
+                                    ),
+                                    array(
+                                        'label' => 'Program Studi',
+                                        'url' => array('//prodi'),
                                     ),
                                 ),
                             ),
