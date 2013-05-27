@@ -1,22 +1,40 @@
-<?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm',array(
+<?php
+/* @var $this PeriodeController */
+/* @var $model Periode */
+/* @var $form CActiveForm */
+?>
+
+<div class="wide form">
+
+<?php $form=$this->beginWidget('CActiveForm', array(
 	'action'=>Yii::app()->createUrl($this->route),
 	'method'=>'get',
 )); ?>
 
-	<?php echo $form->textFieldRow($model,'id',array('class'=>'span5')); ?>
+	<div class="row">
+		<?php echo $form->label($model,'id'); ?>
+		<?php echo $form->textField($model,'id'); ?>
+	</div>
 
-	<?php echo $form->textFieldRow($model,'tahun_ajar',array('class'=>'span5','maxlength'=>50)); ?>
+	<div class="row">
+		<?php echo $form->label($model,'tahun_ajar'); ?>
+		<?php echo $form->textField($model,'tahun_ajar',array('size'=>50,'maxlength'=>50)); ?>
+	</div>
 
-	<?php echo $form->textFieldRow($model,'semester',array('class'=>'span5')); ?>
+	<div class="row">
+		<?php echo $form->label($model,'semester_id'); ?>
+		<?php echo $form->textField($model,'semester_id'); ?>
+	</div>
 
-	<?php echo $form->textFieldRow($model,'flag',array('class'=>'span5')); ?>
+	<div class="row">
+		<?php echo $form->label($model,'flag'); ?>
+		<?php echo $form->textField($model,'flag'); ?>
+	</div>
 
-	<div class="form-actions">
-		<?php $this->widget('bootstrap.widgets.TbButton', array(
-			'buttonType' => 'submit',
-			'type'=>'primary',
-			'label'=>'Search',
-		)); ?>
+	<div class="row buttons">
+		<?php echo CHtml::submitButton('Search'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
+
+</div><!-- search-form -->

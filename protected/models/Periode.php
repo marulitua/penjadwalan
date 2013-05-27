@@ -6,10 +6,11 @@
  * The followings are the available columns in table 'periode':
  * @property integer $id
  * @property string $tahun_ajar
- * @property integer $semester
+ * @property integer $semester_id
  * @property integer $flag
  *
  * The followings are the available model relations:
+ * @property Semester $semester
  * @property TrxDosenMakul[] $trxDosenMakuls
  * @property TrxDosenProdi[] $trxDosenProdis
  * @property TrxJadwal[] $trxJadwals
@@ -43,12 +44,12 @@ class Periode extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('tahun_ajar, semester, flag', 'required'),
-			array('semester, flag', 'numerical', 'integerOnly'=>true),
+			array('tahun_ajar, semester_id, flag', 'required'),
+			array('semester_id, flag', 'numerical', 'integerOnly'=>true),
 			array('tahun_ajar', 'length', 'max'=>50),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, tahun_ajar, semester, flag', 'safe', 'on'=>'search'),
+			array('id, tahun_ajar, semester_id, flag', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -60,6 +61,7 @@ class Periode extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'semester' => array(self::BELONGS_TO, 'Semester', 'semester_id'),
 			'trxDosenMakuls' => array(self::HAS_MANY, 'TrxDosenMakul', 'periode'),
 			'trxDosenProdis' => array(self::HAS_MANY, 'TrxDosenProdi', 'periode'),
 			'trxJadwals' => array(self::HAS_MANY, 'TrxJadwal', 'periode'),
@@ -75,7 +77,7 @@ class Periode extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'tahun_ajar' => 'Tahun Ajar',
-			'semester' => 'Semester',
+			'semester_id' => 'Semester',
 			'flag' => 'Flag',
 		);
 	}
@@ -93,11 +95,16 @@ class Periode extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('tahun_ajar',$this->tahun_ajar,true);
-		$criteria->compare('semester',$this->semester);
+		$criteria->compare('semester_id',$this->semester_id);
 		$criteria->compare('flag',$this->flag);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
 	}
+        
+        
+        public function active(){
+            return $this->find('flag = 1');
+        }
 }

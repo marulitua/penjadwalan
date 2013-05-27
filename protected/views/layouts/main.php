@@ -16,10 +16,10 @@
             <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 
             <title><?php echo CHtml::encode($this->pageTitle); ?></title>
-                        
+
             <link rel="stylesheet" type="text/css">
 
-               
+
 
             </link>
 
@@ -30,7 +30,7 @@
         <div class="container" id="page" style="height:auto;height:100%;min-height:100%;position:relative;border:1px solid;width: 996px;top: 0px;">
 
             <div id="header">
-                <div id="logo"><?php //echo CHtml::encode(Yii::app()->name);  ?></div>
+                <div id="logo"><?php //echo CHtml::encode(Yii::app()->name);     ?></div>
             </div><!-- header -->
 
 
@@ -52,16 +52,6 @@
                                 'visible' => !Yii::app()->user->isGuest,
                             ),
                             array(
-                                'label' => 'Periode Perkuliahan',
-                                'url' => Yii::app()->createUrl('periode/admin'),
-                                'visible' => !Yii::app()->user->isGuest,
-                            ),
-                            array(
-                                'label' => 'Kurikulum',
-                                'url' => Yii::app()->createUrl('site/assignKurikulum'),
-                                'visible' => !Yii::app()->user->isGuest,
-                            ),
-                            array(
                                 'label' => 'Constraints',
                                 'url' => 'JavaScript:void(0);',
                                 'visible' => !Yii::app()->user->isGuest,
@@ -74,28 +64,36 @@
                                         'label' => '2. Dosen',
                                         'url' => Yii::app()->createUrl('site/assignDosen'),
                                     ),
+                                    array(
+                                        'label' => '3. Kurikulum',
+                                        'url' => array('//kurikulum'),
+                                    ),
                                 ),
                             ),
                             array(
-                                'label' => 'Resources',
+                                'label' => 'Pengaturan',
                                 'url' => 'JavaScript:void(0);',
                                 'visible' => !Yii::app()->user->isGuest,
                                 'items' => array(
                                     array(
-                                        'label' => '1. Mata Kuliah',
+                                        'label' => '1. Periode Perkuliahan',
+                                        'url' => Yii::app()->createUrl('periode/admin'),
+                                    ),
+                                    array(
+                                        'label' => '2. Mata Kuliah',
                                         'url' => array('//mataKuliah'),
                                     ),
                                     array(
-                                        'label' => '2. Dosen',
+                                        'label' => '3. Dosen',
                                         'url' => array('//dosen'),
                                     ),
                                     array(
-                                        'label' => '3. Ruang Kelas',
+                                        'label' => '4. Ruang Kelas',
                                         'url' => array('//ruangKelas', 'owner' => true),
                                     ),
                                 ),
                             ),
-                             array(
+                            array(
                                 'label' => 'Fakultas & Program Studi',
                                 'url' => 'JavaScript:void(0);',
                                 'visible' => !Yii::app()->user->isGuest,
@@ -111,11 +109,11 @@
                                 ),
                             ),
                             array('label' => 'About',
-                                'url'=>array('/site/page', 'view'=>'about'),
+                                'url' => array('/site/page', 'view' => 'about'),
                                 'visible' => !Yii::app()->user->isGuest
                             ),
                             array('label' => 'Help',
-                                'url'=> Yii::app()->createUrl('site/help'),
+                                'url' => Yii::app()->createUrl('site/help'),
                                 'visible' => !Yii::app()->user->isGuest
                             ),
                             array('label' => 'Logout (' . Yii::app()->user->name . ')',
@@ -152,7 +150,19 @@
                 ?><!-- breadcrumbs -->
             <?php endif ?>
 
-            <?php echo $content; ?>
+            <div class="well">
+
+                <p class="lead">
+                    <?php
+                    echo '<br>Tahun Ajar :  ' . Periode::model()->active()->tahun_ajar;
+                    echo '<br>Semester : ' . Periode::model()->active()->semester_id;
+                    ?>
+                </p>
+            </div>
+
+            <?php
+            echo $content;
+            ?>
 
             <div class="clear"></div>
 

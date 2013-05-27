@@ -9,7 +9,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('semester')); ?>:</b>
-	<?php echo CHtml::encode($data->semester); ?>
+	<?php echo CHtml::encode($data->semester_id); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('flag')); ?>:</b>

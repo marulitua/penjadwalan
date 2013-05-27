@@ -1,12 +1,15 @@
 <?php
+/* @var $this PeriodeController */
+/* @var $model Periode */
+
 $this->breadcrumbs=array(
 	'Periodes'=>array('index'),
 	'Create',
 );
 
 $this->menu=array(
-	array('label'=>'List Periode','url'=>array('index')),
-	array('label'=>'Manage Periode','url'=>array('admin')),
+	array('label'=>'List Periode', 'url'=>array('index')),
+	array('label'=>'Manage Periode', 'url'=>array('admin')),
 );
 ?>
 

@@ -15,6 +15,7 @@ class PeriodeController extends Controller
 	{
 		return array(
 			'accessControl', // perform access control for CRUD operations
+			'postOnly + delete', // we only allow deletion via POST request
 		);
 	}
 
@@ -69,8 +70,12 @@ class PeriodeController extends Controller
 		if(isset($_POST['Periode']))
 		{
 			$model->attributes=$_POST['Periode'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+			if($model->save()){
+                                if($model->flag == 1)
+                                    $this->deactive($model->id);
+				
+                                $this->redirect(array('view','id'=>$model->id));
+                        }
 		}
 
 		$this->render('create',array(
@@ -94,7 +99,9 @@ class PeriodeController extends Controller
 		{
 			$model->attributes=$_POST['Periode'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+                            $this->redirect(array('view','id'=>$model->id));
+                        if($model->flag == 1)
+                            $this->deactive($model->id);
 		}
 
 		$this->render('update',array(
@@ -109,17 +116,11 @@ class PeriodeController extends Controller
 	 */
 	public function actionDelete($id)
 	{
-		if(Yii::app()->request->isPostRequest)
-		{
-			// we only allow deletion via POST request
-			$this->loadModel($id)->delete();
+		$this->loadModel($id)->delete();
 
-			// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-			if(!isset($_GET['ajax']))
-				$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
-		}
-		else
-			throw new CHttpException(400,'Invalid request. Please do not repeat this request again.');
+		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
+		if(!isset($_GET['ajax']))
+			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
 	}
 
 	/**
@@ -151,7 +152,9 @@ class PeriodeController extends Controller
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
-	 * @param integer the ID of the model to be loaded
+	 * @param integer $id the ID of the model to be loaded
+	 * @return Periode the loaded model
+	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
@@ -163,7 +166,7 @@ class PeriodeController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param CModel the model to be validated
+	 * @param Periode $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
@@ -173,4 +176,8 @@ class PeriodeController extends Controller
 			Yii::app()->end();
 		}
 	}
+        
+        protected function deactive($param){
+            Periode::model()->updateAll(array('flag' => 0), "id != $param");
+        }
 }
