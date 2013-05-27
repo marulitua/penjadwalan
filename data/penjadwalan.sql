@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 20, 2013 at 10:44 PM
+-- Generation Time: May 27, 2013 at 07:41 PM
 -- Server version: 5.5.27
 -- PHP Version: 5.4.7
 
@@ -273,6 +273,19 @@ INSERT INTO `fakultas` (`id`, `fakultas`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `kurikulum`
+--
+
+CREATE TABLE IF NOT EXISTS `kurikulum` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `mata_kuliah_id` int(10) NOT NULL DEFAULT '0',
+  `jumlah_kelas` int(10) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `mata_kuliah`
 --
 
@@ -395,18 +408,21 @@ INSERT INTO `mata_kuliah` (`id`, `mata_kuliah`, `mata_kuliah_code`, `praktek`, `
 CREATE TABLE IF NOT EXISTS `periode` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `tahun_ajar` varchar(50) NOT NULL,
-  `semester` int(11) NOT NULL,
-  `flag` int(11) NOT NULL,
+  `semester_id` int(10) NOT NULL,
+  `flag` int(1) NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `tahun_ajar_semester` (`tahun_ajar`,`semester`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+  KEY `FK_periode_semester` (`semester_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
 
 --
 -- Dumping data for table `periode`
 --
 
-INSERT INTO `periode` (`id`, `tahun_ajar`, `semester`, `flag`) VALUES
-(1, '2013-2014', 1, 0);
+INSERT INTO `periode` (`id`, `tahun_ajar`, `semester_id`, `flag`) VALUES
+(2, '2013-2014', 1, 1),
+(6, '2014-2015', 1, 0),
+(7, '2014-2015', 2, 0),
+(9, '2015-2016', 1, 0);
 
 -- --------------------------------------------------------
 
@@ -440,32 +456,230 @@ INSERT INTO `prodi` (`id`, `fakultas_id`, `prodi_name`, `prodi_code`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `room_type`
---
-
-CREATE TABLE IF NOT EXISTS `room_type` (
-  `id` int(10) NOT NULL AUTO_INCREMENT,
-  `room_type` int(1) NOT NULL,
-  `room_name` varchar(50) NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `room_type_room_name` (`room_type`,`room_name`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `ruang_kelas`
 --
 
 CREATE TABLE IF NOT EXISTS `ruang_kelas` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
-  `room_rype` int(10) NOT NULL,
+  `praktek` int(10) NOT NULL,
   `number` varchar(50) NOT NULL,
-  `floor` int(11) NOT NULL,
+  `keterangan` text,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `number_floor` (`number`,`floor`),
-  KEY `FK_ruang_kelas_room_type` (`room_rype`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+  UNIQUE KEY `number_floor` (`number`),
+  KEY `FK_ruang_kelas_room_type` (`praktek`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=272 ;
+
+--
+-- Dumping data for table `ruang_kelas`
+--
+
+INSERT INTO `ruang_kelas` (`id`, `praktek`, `number`, `keterangan`) VALUES
+(3, 0, 'B202', ''),
+(4, 0, 'B203', NULL),
+(5, 0, 'B201', ''),
+(6, 0, 'B204', ''),
+(7, 0, 'B205', ''),
+(8, 0, 'B206', ''),
+(9, 0, 'B207', ''),
+(10, 0, 'B208', ''),
+(11, 0, 'B301', ''),
+(12, 0, 'B302', ''),
+(13, 0, 'B303', ''),
+(14, 0, 'B304', ''),
+(15, 0, 'B305', ''),
+(16, 0, 'B306', ''),
+(17, 0, 'B307', ''),
+(18, 0, 'B308', ''),
+(19, 0, 'B309', ''),
+(20, 0, 'B310', ''),
+(21, 0, 'B311', ''),
+(23, 0, 'B312', ''),
+(24, 0, 'B313', ''),
+(25, 0, 'B314', ''),
+(26, 0, 'B315', ''),
+(27, 0, 'B316', ''),
+(29, 0, 'B317', ''),
+(30, 0, 'B318', ''),
+(31, 0, 'B319', ''),
+(32, 0, 'B320', ''),
+(33, 1, 'B501', 'SISMUL'),
+(34, 1, 'B502', 'SISMUL'),
+(35, 1, 'B503', 'GKA'),
+(36, 1, 'B504', 'GKA'),
+(37, 1, 'B505', 'GKA'),
+(38, 1, 'B506', 'SISMUL, GKA'),
+(39, 1, 'B507', 'ORACLE, SAP'),
+(40, 1, 'B508', 'ORACLE, SAP'),
+(41, 1, 'B509', 'ORACLE, SAP'),
+(42, 1, 'B510', 'ORACLE, SAP'),
+(43, 1, 'B511', 'ORACLE, SAP'),
+(44, 1, 'B512', 'CISCO'),
+(46, 1, 'B513', 'CISCO'),
+(47, 1, 'B514', 'CISCO'),
+(48, 1, 'B515', ''),
+(49, 1, 'B516', ''),
+(50, 1, 'B517', ''),
+(51, 1, 'B518', ''),
+(52, 1, 'B519', ''),
+(53, 1, 'B520', ''),
+(54, 0, 'B601', ''),
+(55, 0, 'B602', ''),
+(56, 0, 'B603', ''),
+(57, 0, 'B604', ''),
+(58, 0, 'B605', ''),
+(59, 0, 'B606', ''),
+(60, 0, 'B607', ''),
+(61, 0, 'B608', ''),
+(63, 0, 'B609', ''),
+(64, 0, 'B610', ''),
+(65, 0, 'B611', ''),
+(66, 0, 'B612', ''),
+(67, 0, 'B613', ''),
+(68, 0, 'B614', ''),
+(69, 0, 'B615', ''),
+(70, 0, 'B616', ''),
+(71, 0, 'B617', ''),
+(72, 0, 'B618', ''),
+(73, 0, 'B619', ''),
+(74, 0, 'B620', ''),
+(75, 0, 'C201', ''),
+(76, 0, 'C202', ''),
+(77, 0, 'C203', ''),
+(78, 0, 'C204', ''),
+(81, 0, 'C205', NULL),
+(82, 0, 'C206', NULL),
+(83, 0, 'C207', NULL),
+(84, 0, 'C208', NULL),
+(85, 0, 'C209', NULL),
+(86, 0, 'C210', NULL),
+(87, 0, 'C211', NULL),
+(88, 0, 'C212', NULL),
+(89, 0, 'C213', NULL),
+(90, 0, 'C214', NULL),
+(91, 0, 'C215', NULL),
+(92, 0, 'C216', NULL),
+(93, 0, 'C217', NULL),
+(94, 0, 'C218', NULL),
+(95, 0, 'C219', NULL),
+(96, 0, 'C220', NULL),
+(97, 0, 'C301', NULL),
+(98, 0, 'C302', NULL),
+(99, 0, 'C303', NULL),
+(100, 0, 'C304', NULL),
+(101, 0, 'C305', NULL),
+(102, 0, 'C306', NULL),
+(103, 0, 'C307', NULL),
+(104, 0, 'C308', NULL),
+(105, 0, 'C309', NULL),
+(106, 0, 'C310', NULL),
+(107, 0, 'C311', NULL),
+(108, 0, 'C312', NULL),
+(109, 0, 'C313', NULL),
+(110, 0, 'C314', NULL),
+(111, 0, 'C315', NULL),
+(112, 0, 'C316', NULL),
+(113, 0, 'C317', NULL),
+(114, 0, 'C318', NULL),
+(115, 0, 'C319', NULL),
+(116, 0, 'C320', NULL),
+(157, 0, 'C403', NULL),
+(175, 0, 'C404', NULL),
+(176, 0, 'C405', NULL),
+(177, 0, 'C406', NULL),
+(178, 0, 'C407', NULL),
+(179, 0, 'C408', NULL),
+(180, 0, 'C409', NULL),
+(181, 0, 'C410', NULL),
+(182, 0, 'C411', NULL),
+(183, 0, 'C412', NULL),
+(184, 0, 'C413', NULL),
+(185, 0, 'C414', NULL),
+(186, 0, 'C415', NULL),
+(187, 0, 'C416', NULL),
+(188, 0, 'C417', NULL),
+(189, 0, 'C418', NULL),
+(190, 0, 'C419', NULL),
+(191, 0, 'C420', NULL),
+(192, 0, 'C501', NULL),
+(193, 0, 'C502', NULL),
+(194, 0, 'C503', NULL),
+(195, 0, 'C504', NULL),
+(196, 0, 'C505', NULL),
+(197, 0, 'C506', NULL),
+(198, 0, 'C507', NULL),
+(199, 0, 'C508', NULL),
+(200, 0, 'C509', NULL),
+(201, 0, 'C510', NULL),
+(202, 0, 'C511', NULL),
+(203, 0, 'C512', NULL),
+(204, 0, 'C513', NULL),
+(205, 0, 'C514', NULL),
+(206, 0, 'C515', NULL),
+(207, 0, 'C516', NULL),
+(208, 0, 'C517', NULL),
+(209, 0, 'C518', NULL),
+(210, 0, 'C519', NULL),
+(211, 0, 'C520', NULL),
+(212, 0, 'C601', NULL),
+(213, 0, 'C602', NULL),
+(214, 0, 'C603', NULL),
+(215, 0, 'C604', NULL),
+(216, 0, 'C605', NULL),
+(217, 0, 'C606', NULL),
+(218, 0, 'C607', NULL),
+(219, 0, 'C608', NULL),
+(220, 0, 'C609', NULL),
+(221, 0, 'C610', NULL),
+(222, 0, 'C611', NULL),
+(223, 0, 'C612', NULL),
+(224, 0, 'C613', NULL),
+(225, 0, 'C614', NULL),
+(226, 0, 'C615', NULL),
+(227, 0, 'C616', NULL),
+(228, 0, 'C617', NULL),
+(229, 0, 'C618', NULL),
+(230, 0, 'C619', NULL),
+(231, 0, 'C620', NULL),
+(252, 0, 'C701', NULL),
+(253, 0, 'C702', NULL),
+(254, 0, 'C703', NULL),
+(255, 0, 'C704', NULL),
+(256, 0, 'C705', NULL),
+(257, 0, 'C706', NULL),
+(258, 0, 'C707', NULL),
+(259, 0, 'C708', NULL),
+(260, 0, 'C709', NULL),
+(261, 0, 'C710', NULL),
+(262, 0, 'C711', NULL),
+(263, 0, 'C712', NULL),
+(264, 0, 'C713', NULL),
+(265, 0, 'C714', NULL),
+(266, 0, 'C715', NULL),
+(267, 0, 'C716', NULL),
+(268, 0, 'C717', NULL),
+(269, 0, 'C718', NULL),
+(270, 0, 'C719', NULL),
+(271, 0, 'C720', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `semester`
+--
+
+CREATE TABLE IF NOT EXISTS `semester` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `semester`
+--
+
+INSERT INTO `semester` (`id`, `name`) VALUES
+(1, 'ganjil'),
+(2, 'genap');
 
 -- --------------------------------------------------------
 
@@ -558,16 +772,16 @@ CREATE TABLE IF NOT EXISTS `trx_jadwal_requirement` (
 --
 
 --
+-- Constraints for table `periode`
+--
+ALTER TABLE `periode`
+  ADD CONSTRAINT `FK_periode_semester` FOREIGN KEY (`semester_id`) REFERENCES `semester` (`id`);
+
+--
 -- Constraints for table `prodi`
 --
 ALTER TABLE `prodi`
   ADD CONSTRAINT `FK_prodi_fakultas2` FOREIGN KEY (`fakultas_id`) REFERENCES `fakultas` (`id`);
-
---
--- Constraints for table `ruang_kelas`
---
-ALTER TABLE `ruang_kelas`
-  ADD CONSTRAINT `FK_ruang_kelas_room_type` FOREIGN KEY (`room_rype`) REFERENCES `room_type` (`id`);
 
 --
 -- Constraints for table `trx_dosen_makul`
