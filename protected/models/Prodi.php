@@ -46,7 +46,7 @@ class Prodi extends CActiveRecord
 			array('prodi_name, prodi_code', 'length', 'max'=>50),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, fakultas_id, prodi_name, prodi_code', 'safe', 'on'=>'search'),
+			array('id, fakultas_id, prodi_name, prodi_code, fakultas.fakultas', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -88,10 +88,12 @@ class Prodi extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('fakultas_id',$this->fakultas_id);
 		$criteria->compare('prodi_name',$this->prodi_name,true);
 		$criteria->compare('prodi_code',$this->prodi_code,true);
-
+                
+                $criteria->compare('fakultas.fakultas',$this->fakultas_id, true);
+                $criteria->with=array('fakultas');
+                $criteria->together=true;
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
