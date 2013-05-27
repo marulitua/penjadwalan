@@ -98,10 +98,12 @@ class PeriodeController extends Controller
 		if(isset($_POST['Periode']))
 		{
 			$model->attributes=$_POST['Periode'];
-			if($model->save())
+			if($model->save()){
+                            if($model->flag == 1)
+                                $this->deactive($model->id);
+
                             $this->redirect(array('view','id'=>$model->id));
-                        if($model->flag == 1)
-                            $this->deactive($model->id);
+                        }
 		}
 
 		$this->render('update',array(
@@ -178,6 +180,7 @@ class PeriodeController extends Controller
 	}
         
         protected function deactive($param){
-            Periode::model()->updateAll(array('flag' => 0), "id != $param");
+            echo 'deactive';
+            var_dump(Periode::model()->updateAll(array('flag' => 0), "id != $param"));
         }
 }
