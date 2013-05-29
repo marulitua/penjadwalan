@@ -40,17 +40,25 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 )); ?>
 </div><!-- search-form -->
 
-<?php $this->widget('zii.widgets.grid.CGridView', array(
+<?php $this->widget('bootstrap.widgets.TbGridView', array(
 	'id'=>'periode-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
 		'id',
 		'tahun_ajar',
-		'semester_id',
-		'flag',
+                array(
+                    'name' => 'semester_id',
+                    'header' => 'Semester',
+                    'value' => '$data->semester->name'
+                ),
+                array(
+                    'name' => 'flag',
+                    'header' => 'Flag',
+                    'value' => '$data->flag == 1 ? \'Aktif\' : \'Non aktif\''
+                ),
 		array(
-			'class'=>'CButtonColumn',
+			'class'=>'bootstrap.widgets.TbButtonColumn',
 		),
 	),
 )); ?>

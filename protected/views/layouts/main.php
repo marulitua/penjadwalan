@@ -81,15 +81,15 @@
                                     ),
                                     array(
                                         'label' => '2. Mata Kuliah',
-                                        'url' => array('//mataKuliah'),
+                                        'url' => Yii::app()->createUrl('mataKuliah/admin'),
                                     ),
                                     array(
                                         'label' => '3. Dosen',
-                                        'url' => array('//dosen'),
+                                        'url' => Yii::app()->createUrl('dosen/admin'),
                                     ),
                                     array(
                                         'label' => '4. Ruang Kelas',
-                                        'url' => array('//ruangKelas', 'owner' => true),
+                                        'url' => Yii::app()->createUrl('ruangKelas/admin'),
                                     ),
                                 ),
                             ),
@@ -100,11 +100,12 @@
                                 'items' => array(
                                     array(
                                         'label' => 'Fakultas',
-                                        'url' => array('//fakultas'),
+                                        'url' => Yii::app()->createUrl('fakultas/admin'),
+                                        
                                     ),
                                     array(
                                         'label' => 'Program Studi',
-                                        'url' => array('//prodi'),
+                                        'url' => Yii::app()->createUrl('prodi/admin'),
                                     ),
                                 ),
                             ),

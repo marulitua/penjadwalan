@@ -45,7 +45,11 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'id',
 		'mata_kuliah',
 		'mata_kuliah_code',
-		'praktek',
+		array(
+                  'header' => 'Praktek/Teori',  
+                  'name' => 'praktek',  
+                  'value' => '$data->praktek == 1 ? \'Praktek\' : \'Teori\' '  
+                ),
 		'sks',
 		array(
 			'class'=>'bootstrap.widgets.TbButtonColumn',
