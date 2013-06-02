@@ -87,4 +87,15 @@ class Day extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+        
+        public function findId($param){
+            // transform day into string of id
+            $result = array();
+            $arrayDay = explode(',',$param) ;
+            foreach ($arrayDay as $a){
+                array_push($result, $this->find("day = '$a'")->id);
+            }
+            var_dump($result);
+            return $result;
+        }
 }

@@ -11,9 +11,43 @@
             <!--[if lt IE 8]>
             <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
             <![endif]-->
+            <?php
+//            Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/alertify.css');
+//            Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/alertify.default.css');
+//            Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/alertify.min.js');
+            ?>
 
+            <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/alertify.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/alertify.css" />
+            <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/alertify.default.css"/>
             <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
             <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
+
+
+
+            <script type="text/javascript">
+
+                document.createElement("nav");
+                document.createElement("header");
+                document.createElement("article");
+                document.createElement("section");
+                document.createElement("footer");
+
+                "use strict";
+                var
+                        d = Alertify.dialog,
+                        l = Alertify.log,
+                        $ = Alertify.get,
+                        reset = function() {
+                    $("toggleCSS").href = "css/alertify.default.css";
+
+                    d.labels.ok = "OK";
+                    d.labels.cancel = "Cancel";
+                    d.buttonReverse = false;
+                    d.buttonFocus = "ok";
+                    l.delay = 5000;
+                };
+            </script>
 
             <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 
@@ -23,6 +57,7 @@
 
             </link>
 
+
     </head>
 
     <body>
@@ -30,7 +65,7 @@
         <div class="container" id="page" style="height:auto;height:100%;min-height:100%;position:relative;border:1px solid;width: 996px;top: 0px;">
 
             <div id="header">
-                <div id="logo"><?php //echo CHtml::encode(Yii::app()->name);     ?></div>
+                <div id="logo"><?php //echo CHtml::encode(Yii::app()->name);            ?></div>
             </div><!-- header -->
 
 
@@ -57,16 +92,12 @@
                                 'visible' => !Yii::app()->user->isGuest,
                                 'items' => array(
                                     array(
-                                        'label' => '1. Mata Kuliah',
-                                        'url' => Yii::app()->createUrl('site/assignMatakuliah'),
+                                        'label' => '1. Kurikulum',
+                                        'url' => Yii::app()->createUrl('trxKurikulum/admin'),
                                     ),
                                     array(
                                         'label' => '2. Dosen',
-                                        'url' => Yii::app()->createUrl('site/assignDosen'),
-                                    ),
-                                    array(
-                                        'label' => '3. Kurikulum',
-                                        'url' => array('//kurikulum'),
+                                        'url' => array('trxDosen/admin'),
                                     ),
                                 ),
                             ),
@@ -101,7 +132,6 @@
                                     array(
                                         'label' => 'Fakultas',
                                         'url' => Yii::app()->createUrl('fakultas/admin'),
-                                        
                                     ),
                                     array(
                                         'label' => 'Program Studi',
