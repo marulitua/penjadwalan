@@ -65,9 +65,17 @@ class TrxKurikulumController extends Controller {
         if (isset($_POST['TrxKurikulum'])) {
             $model->attributes = $_POST['TrxKurikulum'];
             $model->periode_id = Periode::model()->active()->id;
-
+//            echo '<br><pre>';
+//            var_dump($_POST);
+//            echo '</pre>';
             if ($model->save()) {
-                $param = Day::model()->findId($_POST['TrxKurikulum']['day_id']);
+                
+                if($_POST['TrxKurikulum']['day_id'] == "")
+                    $_POST['TrxKurikulum']['day_id'] = '1,2,3,4,5';
+                
+                //$param = Day::model()->findId($_POST['TrxKurikulum']['day_id']);
+                
+                $param = explode(',', $_POST['TrxKurikulum']['day_id']);
                 foreach ($param as $a) {
                     $model2 = new TrxDay;
                     $model2->trx_kurikulum_id = $model->id;
@@ -98,8 +106,14 @@ class TrxKurikulumController extends Controller {
             $model->attributes = $_POST['TrxKurikulum'];
             if ($model->save()){
                 //delete all
+                
                 TrxDay::model()->deleteAll("trx_kurikulum_id = $model->id");
-                $param = Day::model()->findId($_POST['TrxKurikulum']['day_id']);
+                
+                
+                if($_POST['TrxKurikulum']['day_id'] == "")
+                    $_POST['TrxKurikulum']['day_id'] = '1,2,3,4,5';
+               
+                $param = $param = explode(',', $_POST['TrxKurikulum']['day_id']);
                 foreach ($param as $a) {
                     $model2 = new TrxDay;
                     $model2->trx_kurikulum_id = $model->id;
@@ -178,5 +192,4 @@ class TrxKurikulumController extends Controller {
             Yii::app()->end();
         }
     }
-
 }

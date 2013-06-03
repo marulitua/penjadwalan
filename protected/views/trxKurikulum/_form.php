@@ -10,18 +10,20 @@
 
         $("#trx-kurikulum-form").submit(function() {
             // DO STUFF
-            if ($('.select2-search-choice').length === 0) {
-                if ($(".alertify-logs").children().length === 0)
-                    l.error("Harap tentukan hari perkuliahan");
-                return false; // return false to cancel form action
-            }
-
             if ($("#TrxKurikulum_jumlah_kelas").val() === "") {
                 if ($(".alertify-logs").children().length === 0)
                     l.error("Harap tentukan jumlah kelas");
                 return false; // return false to cancel form action
             }
-        })
+
+            if($("#select2").val() != "")
+                $("#TrxKurikulum_day_id").val($("#select2").val().join());
+        });
+
+
+    });
+
+    $(document).ready(function() {
     });
 
 </script>
@@ -29,7 +31,6 @@
 <div class="form">
 
     <?php
-      
     $form = $this->beginWidget('CActiveForm', array(
         'id' => 'trx-kurikulum-form',
         'enableAjaxValidation' => false,
@@ -44,47 +45,56 @@
     <div class="row">
         <?php echo $form->labelEx($model, 'mata_kuliah_id'); ?>
         <?php
-            $data = null;
-            if(isset($update))
-                $data = MataKuliah::model()->findAll ();
-            else    
-                $data = MataKuliah::model()->mataKuliahToAdd();          
-            echo $form->dropDownList($model, 'mata_kuliah_id', CHtml::listData($data, 'id', 'mata_kuliah')); 
-            ?>		
+        $data = null;
+        if (isset($update))
+            $data = MataKuliah::model()->findAll();
+        else
+            $data = MataKuliah::model()->mataKuliahToAdd();
+        echo $form->dropDownList($model, 'mata_kuliah_id', CHtml::listData($data, 'id', 'text'));
+        ?>		
         <?php echo $form->error($model, 'mata_kuliah_id'); ?>
     </div>
 
     <div class="row">
         <?php echo CHtml::label('Day', 'TrxKurikulum[day_id]'); ?>
         <?php
-        
-        $this->widget('bootstrap.widgets.TbSelect2', array(
-            'asDropDownList' => false,
-            'name' => 'TrxKurikulum[day_id]',
-            'options' => array(
-                'tags' => array('senin', 'selasa', 'rabu', 'kamis', 'jumat', 'sabtu'),
-                'width' => '40%',
-        )));
-        
-        if(isset($update))
-        {
+//        $this->widget('bootstrap.widgets.TbSelect2', array(
+//            'asDropDownList' => false,
+//            'name' => 'asdas',
+//            'options' => array(
+//                'tags' => array('senin', 'selasa', 'rabu', 'kamis', 'jumat', 'sabtu'),
+//                'width' => '40%',
+//            ),
+//            'htmlOptions' => array(
+//                'class' => 'hide',
+//            )
+//        ));
+//
+        if (isset($update)) {
             //
-            $param = $model->findDay();
+//            $param = $model->findDay();
             //echo print_r($param);
-            $param = explode(',', $param);
-            
-            $value = null;
-            foreach ($param as $a){
-                if($value)
-                    $value .= ', \''.$a.'\'';
-                else
-                    $value = '\''.$a.'\'';
-            }
-            
-            Yii::app()->clientScript->registerScript('auto','$("#s2id_TrxKurikulum_day_id").select2("val", ['.$value.']);');
+//            //$param = explode(',', $param);
+//            echo '<br><pre>';
+//            var_dump($param);
+//            echo '</pre>';
+            echo penjadwalan::selected2(CHtml::listData(Day::model()->findAll('id < 7'), 'id', 'day'), 'select2', 'select2', $model->findDay2());
+//            $value = null;
+//            foreach ($param as $a) {
+//                if ($value)
+//                    $value .= ', \'' . $a . '\'';
+//                else
+//                    $value = '\'' . $a . '\'';
+//            }
+//            Yii::app()->clientScript->registerScript('auto', '$("#s2id_TrxKurikulum_day_id").select2("val", [' . $value . ']);');
         }
+        else
+            echo penjadwalan::selected2(CHtml::listData(Day::model()->findAll('id < 7'), 'id', 'day'), 'select2', 'select2');
         ?>
-        <?php // echo $form->error($model, 'day_id'); ?>
+        <?php // echo $form->error($model, 'day_id');  ?>
+        <div class="hide">
+            <input type="text" id="TrxKurikulum_day_id" name="TrxKurikulum[day_id]">
+        </div>
     </div>
 
     <div class="row">
@@ -93,17 +103,26 @@
         <?php echo $form->error($model, 'jumlah_kelas'); ?>
     </div>
 
-    <!--	<div class="row">
-    <?php //echo $form->labelEx($model,'periode_id');  ?>
-    <?php //echo $form->textField($model,'periode_id');  ?>
-    <?php //echo $form->error($model,'periode_id'); ?>
-            </div>-->
-
     <div class="row buttons">
         <?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
     </div>
 
-    <?php $this->endWidget(); ?>
+    <?php
+    $this->endWidget();
+    ?>
+
+    <div class="hide">
+        <?php
+        $this->widget('bootstrap.widgets.TbSelect2', array(
+            'asDropDownList' => false,
+            'name' => 'asdas',
+            'options' => array(
+                'tags' => array('senin', 'selasa', 'rabu', 'kamis', 'jumat', 'sabtu'),
+                'width' => '40%',
+            )
+        ));
+        ?>
+    </div>
 
 
 </div><!-- form -->

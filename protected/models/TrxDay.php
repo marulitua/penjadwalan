@@ -92,4 +92,8 @@ class TrxDay extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+        
+        public function getHari(){
+            return $this->day->id;
+        }
 }

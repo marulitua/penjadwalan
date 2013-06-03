@@ -23,7 +23,11 @@
             <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
             <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 
-
+            <?php
+                //$baseScriptUrl=Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('ext.bootstrap.assets'));
+//                Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl.'/js/select2.min.js',CClientScript::POS_END);  
+//                Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl.'/css/select2.css',CClientScript::POS_END);  
+            ?>
 
             <script type="text/javascript">
 

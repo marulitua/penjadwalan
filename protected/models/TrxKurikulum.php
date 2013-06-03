@@ -99,11 +99,28 @@ class TrxKurikulum extends CActiveRecord {
         $result = null;
         foreach ($param as $a) {
             if ($result)
-                $result .= ", ".$a->day->day;
+                $result .= ", " . $a->day->day;
             else
                 $result = $a->day->day;
         }
-        
+//        $result = array();
+//        foreach ($param as $a) {
+//            $result["\"".$a->day->id."\""] = $a->day->id;
+//            //echo '<br><pre>';
+//            var_dump($a->day->id);
+//            //echo '</pre>';
+//        }
+//        $result = CHtml::listData($param, 'id', 'hari');
         return $result;
     }
+
+    public function findDay2() {
+        $param = TrxDay::model()->findAll("trx_kurikulum_id = $this->id");
+        $result = array();
+        foreach ($param as $a) {
+            array_push($result, $a->day->id);
+        }
+        return $result;
+    }
+
 }

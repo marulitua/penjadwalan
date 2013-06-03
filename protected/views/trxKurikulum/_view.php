@@ -13,8 +13,8 @@
 	<?php echo CHtml::encode($data->mata_kuliah_id); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('day_id')); ?>:</b>
-	<?php echo CHtml::encode($data->day_id); ?>
+        <b><?php echo CHtml::encode('Days', ''); ?>:</b>
+	<?php echo $data->findDay(); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('jumlah_kelas')); ?>:</b>
