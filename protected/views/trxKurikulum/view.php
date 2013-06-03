@@ -34,7 +34,7 @@ $this->widget('zii.widgets.CDetailView', array(
             'value' => $model->findDay(),
         ),
         array(
-            'name' => 'Ruang Kelas',
+            'name' => 'ruang_kelas',
             'value' => $model->findRoom(),
         ),
         'jumlah_kelas',

@@ -116,4 +116,16 @@ class MataKuliah extends CActiveRecord {
             return $this->mata_kuliah;
     }
 
+    public function assignMatakuliah() {
+        $criteria = new CDbCriteria;
+
+        $sql = TrxKurikulum::model()->findAll();
+
+        $sql = CHtml::listData($sql, 'mata_kuliah_id', 'mata_kuliah_id');
+
+        $criteria->addInCondition('id', $sql);
+
+        return $this->findAll($criteria);
+    }
+
 }

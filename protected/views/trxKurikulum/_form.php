@@ -29,6 +29,7 @@
     });
 
     $(document).ready(function() {
+        $("#TrxKurikulum_mata_kuliah_id").select2();
     });
 
 </script>

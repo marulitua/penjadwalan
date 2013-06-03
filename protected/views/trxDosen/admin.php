@@ -46,14 +46,18 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'filter'=>$model,
 	'columns'=>array(
 		'id',
-		'dosen_id',
-		'mata_kuliah_id',
-		'periode_id',
-		'day_id',
-		'start_time',
-		/*
-		'end_time',
-		*/
+		//'dosen_id',
+                array(
+                    'name' => 'dosen_id',
+                    'header' => 'Dosen',
+                    'value' => '$data->dosen->full_name',
+                ),
+                array(
+                    'name' => 'mata_kuliah',
+                    'header' => 'Mata Kuliah',
+                    'value' => '$data->showMataKuliah()',
+                ),
+		//'periode_id',
 		array(
 			'class'=>'CButtonColumn',
 		),

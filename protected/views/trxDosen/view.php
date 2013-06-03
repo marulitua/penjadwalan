@@ -22,11 +22,15 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id',
-		'dosen_id',
-		'mata_kuliah_id',
-		'periode_id',
-		'day_id',
-		'start_time',
-		'end_time',
+		//'dosen_id',
+                array(
+                    'name' => 'dosen_id',
+                    'value' => $model->dosen->full_name,
+                ),
+                array(
+                    'name' => 'mata_kuliah',
+                    'value' => $model->showMataKuliah(),
+                ),
+		//'periode_id',
 	),
 )); ?>
