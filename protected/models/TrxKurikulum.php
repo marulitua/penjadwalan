@@ -18,6 +18,7 @@
 class TrxKurikulum extends CActiveRecord {
 
     public $day;
+    public $ruang_kelas;
 
     /**
      * Returns the static model of the specified AR class.
@@ -102,15 +103,7 @@ class TrxKurikulum extends CActiveRecord {
                 $result .= ", " . $a->day->day;
             else
                 $result = $a->day->day;
-        }
-//        $result = array();
-//        foreach ($param as $a) {
-//            $result["\"".$a->day->id."\""] = $a->day->id;
-//            //echo '<br><pre>';
-//            var_dump($a->day->id);
-//            //echo '</pre>';
-//        }
-//        $result = CHtml::listData($param, 'id', 'hari');
+        }   
         return $result;
     }
 
@@ -120,6 +113,29 @@ class TrxKurikulum extends CActiveRecord {
         foreach ($param as $a) {
             array_push($result, $a->day->id);
         }
+        
+        return $result;
+    }
+    
+    public function findRoom(){
+        $param = TrxRoom::model()->findAll("trx_kurikulum_id = $this->id");
+        $result = null;
+        foreach ($param as $a) {
+            if ($result)
+                $result .= ", " . $a->room->number;
+            else
+                $result = $a->room->number;
+        }   
+        return $result;
+    }
+    
+    public function findRoom2() {
+        $param = TrxRoom::model()->findAll("trx_kurikulum_id = $this->id");
+        $result = array();
+        foreach ($param as $a) {
+            array_push($result, $a->room->id);
+        }
+        
         return $result;
     }
 

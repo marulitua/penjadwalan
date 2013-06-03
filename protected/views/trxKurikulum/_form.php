@@ -16,8 +16,13 @@
                 return false; // return false to cancel form action
             }
 
-            if($("#select2").val() != "")
+            if ($("#select2").val() !== "")
                 $("#TrxKurikulum_day_id").val($("#select2").val().join());
+
+
+            if ($("#select3").val() !== "")
+                $("#TrxKurikulum_ruang_kelas").val($("#select3").val().join());
+
         });
 
 
@@ -58,35 +63,9 @@
     <div class="row">
         <?php echo CHtml::label('Day', 'TrxKurikulum[day_id]'); ?>
         <?php
-//        $this->widget('bootstrap.widgets.TbSelect2', array(
-//            'asDropDownList' => false,
-//            'name' => 'asdas',
-//            'options' => array(
-//                'tags' => array('senin', 'selasa', 'rabu', 'kamis', 'jumat', 'sabtu'),
-//                'width' => '40%',
-//            ),
-//            'htmlOptions' => array(
-//                'class' => 'hide',
-//            )
-//        ));
-//
         if (isset($update)) {
-            //
-//            $param = $model->findDay();
-            //echo print_r($param);
-//            //$param = explode(',', $param);
-//            echo '<br><pre>';
-//            var_dump($param);
-//            echo '</pre>';
+
             echo penjadwalan::selected2(CHtml::listData(Day::model()->findAll('id < 7'), 'id', 'day'), 'select2', 'select2', $model->findDay2());
-//            $value = null;
-//            foreach ($param as $a) {
-//                if ($value)
-//                    $value .= ', \'' . $a . '\'';
-//                else
-//                    $value = '\'' . $a . '\'';
-//            }
-//            Yii::app()->clientScript->registerScript('auto', '$("#s2id_TrxKurikulum_day_id").select2("val", [' . $value . ']);');
         }
         else
             echo penjadwalan::selected2(CHtml::listData(Day::model()->findAll('id < 7'), 'id', 'day'), 'select2', 'select2');
@@ -103,8 +82,24 @@
         <?php echo $form->error($model, 'jumlah_kelas'); ?>
     </div>
 
+    <div class="row">
+        <?php echo CHtml::label('Ruang Perkuliahan', 'TrxKurikulum[ruang_kelas]'); ?>
+        <?php
+        if (isset($update)) {
+            echo penjadwalan::selected2(CHtml::listData(RuangKelas::model()->findAll(), 'id', 'number'), 'select3', 'select3', $model->findRoom2());
+        }
+        else
+            echo penjadwalan::selected2(CHtml::listData(RuangKelas::model()->findAll(), 'id', 'number'), 'select3', 'select3');
+        ?>
+<?php // echo $form->error($model, 'day_id');   ?>
+        <div class="hide">
+            <input type="text" id="TrxKurikulum_ruang_kelas" name="TrxKurikulum[ruang_kelas]">
+        </div>
+    </div>
+
+
     <div class="row buttons">
-        <?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
     </div>
 
     <?php

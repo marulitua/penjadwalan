@@ -69,12 +69,12 @@ class TrxKurikulumController extends Controller {
 //            var_dump($_POST);
 //            echo '</pre>';
             if ($model->save()) {
-                
-                if($_POST['TrxKurikulum']['day_id'] == "")
+
+                if ($_POST['TrxKurikulum']['day_id'] == "")
                     $_POST['TrxKurikulum']['day_id'] = '1,2,3,4,5';
-                
+
                 //$param = Day::model()->findId($_POST['TrxKurikulum']['day_id']);
-                
+
                 $param = explode(',', $_POST['TrxKurikulum']['day_id']);
                 foreach ($param as $a) {
                     $model2 = new TrxDay;
@@ -82,6 +82,17 @@ class TrxKurikulumController extends Controller {
                     $model2->day_id = $a;
                     $model2->save();
                 }
+
+                if ($_POST['TrxKurikulum']['ruang_kelas'] != "") {
+                    $param = explode(',', $_POST['TrxKurikulum']['ruang_kelas']);
+                    foreach ($param as $a) {
+                        $model2 = new TrxRoom();
+                        $model2->trx_kurikulum_id = $model->id;
+                        $model2->room_id = $a;
+                        $model2->save();
+                    }
+                }
+
                 $this->redirect(array('trxKurikulum/admin'));
             }
         }
@@ -104,15 +115,15 @@ class TrxKurikulumController extends Controller {
 
         if (isset($_POST['TrxKurikulum'])) {
             $model->attributes = $_POST['TrxKurikulum'];
-            if ($model->save()){
+            if ($model->save()) {
                 //delete all
-                
+
                 TrxDay::model()->deleteAll("trx_kurikulum_id = $model->id");
-                
-                
-                if($_POST['TrxKurikulum']['day_id'] == "")
+
+
+                if ($_POST['TrxKurikulum']['day_id'] == "")
                     $_POST['TrxKurikulum']['day_id'] = '1,2,3,4,5';
-               
+
                 $param = $param = explode(',', $_POST['TrxKurikulum']['day_id']);
                 foreach ($param as $a) {
                     $model2 = new TrxDay;
@@ -120,6 +131,19 @@ class TrxKurikulumController extends Controller {
                     $model2->day_id = $a;
                     $model2->save();
                 }
+                
+                TrxRoom::model()->deleteAll("trx_kurikulum_id = $model->id");
+                
+                if ($_POST['TrxKurikulum']['ruang_kelas'] != "") {
+                    $param = explode(',', $_POST['TrxKurikulum']['ruang_kelas']);
+                    foreach ($param as $a) {
+                        $model2 = new TrxRoom();
+                        $model2->trx_kurikulum_id = $model->id;
+                        $model2->room_id = $a;
+                        $model2->save();
+                    }
+                }
+                
                 $this->redirect(array('view', 'id' => $model->id));
             }
         }
@@ -135,8 +159,9 @@ class TrxKurikulumController extends Controller {
      * @param integer $id the ID of the model to be deleted
      */
     public function actionDelete($id) {
-        
+
         TrxDay::model()->deleteAll("trx_kurikulum_id = $id");
+        TrxRoom::model()->deleteAll("trx_kurikulum_id = $id");
         $this->loadModel($id)->delete();
 
         // if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
@@ -192,4 +217,5 @@ class TrxKurikulumController extends Controller {
             Yii::app()->end();
         }
     }
+
 }

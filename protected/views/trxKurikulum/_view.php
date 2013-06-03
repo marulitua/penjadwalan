@@ -20,10 +20,11 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('jumlah_kelas')); ?>:</b>
 	<?php echo CHtml::encode($data->jumlah_kelas); ?>
 	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('periode_id')); ?>:</b>
-	<?php echo CHtml::encode($data->periode_id); ?>
+        
+        <b><?php echo CHtml::encode('Ruang kelas', ''); ?>:</b>
+	<?php echo $data->findRoom(); ?>
 	<br />
+
 
 
 </div>

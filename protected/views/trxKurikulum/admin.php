@@ -57,6 +57,11 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
                     'name' => 'day',
                     'value' => '$data->findDay()',
                 ),
+                array(
+                    'header' => 'Ruang Kelas',
+                    'name' => 'ruang_kelas',
+                    'value' => '$data->findRoom()',
+                ),
 		'jumlah_kelas',
 //		'periode_id',
 		array(
