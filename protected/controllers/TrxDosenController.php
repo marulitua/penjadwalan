@@ -30,7 +30,7 @@ class TrxDosenController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('create', 'update'),
+                'actions' => array('create', 'update', 'hari'),
                 'users' => array('@'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -179,6 +179,20 @@ class TrxDosenController extends Controller {
             echo CActiveForm::validate($model);
             Yii::app()->end();
         }
+    }
+    
+    public function actionhari(){
+        
+        Yii::app()->clientScript->scriptMap = array(
+            '*.js'         => false,
+            'select2.min.js'  => true,
+        );
+        
+        $this->layout = false;
+        $model = TrxDosen::model()->findByPk($_GET["trxDosen"]);
+        $this->render('hari', array(
+            'model' => $model,
+        ));
     }
 
 }

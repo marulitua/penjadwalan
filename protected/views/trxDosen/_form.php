@@ -88,4 +88,64 @@
     </div>
 
 
+    <?php
+    if (isset($update)) {
+        $model2 = new TrxDosenTime;
+
+        $this->widget('bootstrap.widgets.TbGridView', array(
+            'id' => 'dosenTime',
+            'dataProvider' => $model2->search(),
+            //'filter'=>$model,
+            'columns' => array(
+                //'id',
+                //'dosen_id',
+                array(
+                    'name' => 'trx_dosen_id',
+                    'header' => 'Dosen',
+                    'value' => '$data->trxDosen->full_name',
+                ),
+                array(
+                    'name' => 'day_id',
+                    'header' => 'Day',
+                    'value' => '$data->day->day',
+                ),
+                array(
+                    'name' => 'start_time',
+                    'header' => 'Start Time',
+                    'value' => '$data->start_time',
+                ),
+                array(
+                    'name' => 'end_time',
+                    'header' => 'End Time',
+                    'value' => '$data->end_time',
+                ),
+//                array(
+//                    'name' => 'mata_kuliah',
+//                    'header' => 'Mata Kuliah',
+//                    'value' => '$data->showMataKuliah()',
+//                ),
+                //'periode_id',
+                array(
+                    'class' => 'bootstrap.widgets.TbButtonColumn',
+                ),
+            ),
+        ));
+
+        $config = array(
+            'centerOnScroll' => true,
+            'autoScale' => true,
+            'autoDimensions' => true,
+            'height' => 100,
+        );
+
+        $this->widget('application.extensions.fancybox.EFancyBox', array(
+            'target' => '#testing',
+            'config' => $config,));
+
+        echo CHtml::link('Tambah Hari', array('trxDosen/hari&trxDosen=' . $model->id), array('id' => 'testing'));
+        //echo CHtml::ajaxButton('TESTING', array('trxDosen/hari'), null, array('id' => $model->id));
+    }
+    ?>
+
+
 </div><!-- form -->

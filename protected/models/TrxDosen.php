@@ -112,5 +112,17 @@ class TrxDosen extends CActiveRecord {
         
         return $result;
     }
+    
+    public function dayToAdd(){
+        $criteria = new CDbCriteria;
+
+        $sql = TrxDosenTime::model()->findAll("trx_dosen_id = $this->id");
+
+        $sql = CHtml::listData($sql, 'day_id', 'day_id');
+
+        $criteria->addNotInCondition('id', $sql);
+
+        return Day::model()->findAll($criteria);
+    }
 
 }
