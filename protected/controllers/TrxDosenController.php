@@ -30,7 +30,7 @@ class TrxDosenController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('create', 'update', 'hari'),
+                'actions' => array('create', 'update', 'hari', 'addDay'),
                 'users' => array('@'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -101,7 +101,7 @@ class TrxDosenController extends Controller {
             $model->attributes = $_POST['TrxDosen'];
             if ($model->save()) {
                 TrxMataKuliah::model()->deleteAll("trx_dosen_id = $model->id");
-                
+
                 $param = explode(',', $_POST['TrxDosen']['mata_kuliah']);
                 foreach ($param as $a) {
                     $model2 = new TrxMataKuliah;
@@ -180,19 +180,39 @@ class TrxDosenController extends Controller {
             Yii::app()->end();
         }
     }
-    
-    public function actionhari(){
-        
+
+    public function actionhari() {
+
         Yii::app()->clientScript->scriptMap = array(
-            '*.js'         => false,
-            'select2.min.js'  => true,
+            '*.js' => false,
+            'select2.min.js' => true,
         );
-        
+
         $this->layout = false;
         $model = TrxDosen::model()->findByPk($_GET["trxDosen"]);
         $this->render('hari', array(
             'model' => $model,
         ));
+    }
+
+    public function actionaddDay() {
+
+        $trx_dosen_id = $_GET['trx_dosen_id'];
+        $day_id = $_GET['day_id'];
+        $start_time = $_GET['start_time'];
+        $end_time = $_GET['end_time'];
+        
+        $new = new TrxDosenTime;
+        $new->trx_dosen_id = $trx_dosen_id;
+        $new->day_id = $day_id;
+        $new->start_time = $start_time;
+        $new->end_time = $end_time;
+        
+        if($new->save(FALSE))
+            echo $jso = '{"user":[{"flag":"true"}]}';
+        else
+            echo $jso = '{"user":[{"flag":"false"}]}';
+        
     }
 
 }

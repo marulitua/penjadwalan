@@ -22,7 +22,35 @@
 
     $(document).ready(function() {
         $("#TrxDosen_dosen_id").select2();
-    })
+    });
+    
+    
+    $("#btnSave").live('click', function() {
+
+        var startTime = $("#dboxStart").val().split(':')[0];
+        var endTime = $("#dboxEnd").val().split(':')[0];
+
+        if (endTime <= startTime) {
+            if ($(".alertify-logs").children().length === 0)
+                l.error("Waktu akhir harus lebih besar dari waktu mulai");
+            return false; // return false to cancel form action
+        }
+
+
+        $.ajax({
+            url: "<?php echo Yii::app()->createUrl('/trxDosen/addDay'); ?>",
+            data: "trx_dosen_id=" + <?php echo $model->id; ?> + "&day_id=" + $("#tbxHari").val() + "&start_time=" + $("#dboxStart").val() + "&end_time="+$("#dboxEnd").val(),
+            dataType: "json",
+            success: function(data) {
+               
+            }
+        });
+
+        //succes
+        $("#fancybox-overlay").click();
+        $.fn.yiiGridView.update('dosenTime');
+    });
+    
 </script>
 
 <div class="form">
@@ -102,7 +130,7 @@
                 array(
                     'name' => 'trx_dosen_id',
                     'header' => 'Dosen',
-                    'value' => '$data->trxDosen->full_name',
+                    'value' => '$data->trxDosen->dosen->full_name',
                 ),
                 array(
                     'name' => 'day_id',

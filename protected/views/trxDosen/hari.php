@@ -1,3 +1,10 @@
+<script type="text/javascript">
+
+    
+
+</script>
+
+
 <div class="span-12">
 
     <div class="row span-3">
@@ -20,7 +27,7 @@
         echo penjadwalan::dropDownList(penjadwalan::time(), 'dboxEnd', 'dboxEnd');
         ?>
     </div>
-    
+
 </div>
 <button id="btnSave" style="margin-top: 20px;" class="button sexybutton sexyblue">Save</button>
 
