@@ -145,7 +145,7 @@ class SiteController extends Controller {
         $succ = socket_connect($sock, $HOST, $PORT) //Connecting to to server using that socket
                 or die("error: could not connect to host\n");
 
-        $text = "2"; //the text we want to send to the server
+        $text = "786"; //the text we want to send to the server
 
         socket_write($sock, $text . "\n", strlen($text) + 1) //Writing the text to the socket
                 or die("error: failed to write to socket\n");

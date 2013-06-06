@@ -18,7 +18,11 @@ import java.net.Socket;
  */
 public class MyJavaServer {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+        
+        //
+        MsgLog.write("java server stared");
+        
         int port = 20222;
         ServerSocket listenSock = null; //the listening server socket
         Socket sock = null;			 //the socket that will actually be used for communication
@@ -35,11 +39,14 @@ public class MyJavaServer {
                 BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(sock.getOutputStream()));
                 String line = "";
                 while ((line = br.readLine()) != null) {
+                    //write log
+                    MsgLog.write("php sent : "+line);
                     int param = Integer.parseInt(line);
                     param *= param;
                     //bw.write("PHP said: " + line  + "\n");
                     bw.write(Integer.toString(param) + "\n");
                     bw.flush();
+                    MsgLog.write("java sent : "+Integer.toString(param));
                 }
 
                 //Closing streams and the current socket (not the listening socket!)
