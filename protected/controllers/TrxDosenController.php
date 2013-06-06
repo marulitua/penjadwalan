@@ -30,7 +30,7 @@ class TrxDosenController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('create', 'update', 'hari', 'addDay'),
+                'actions' => array('create', 'update', 'hari', 'addDay', 'hapus', 'doUpdate'),
                 'users' => array('@'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -190,9 +190,23 @@ class TrxDosenController extends Controller {
 
         $this->layout = false;
         $model = TrxDosen::model()->findByPk($_GET["trxDosen"]);
-        $this->render('hari', array(
-            'model' => $model,
-        ));
+
+
+        if (isset($_GET['toUpdate'])) {
+            $this->render('ubah', array(
+                'model' => $model,
+            ));
+        } elseif (isset($_GET['trxDosen'])) {
+            if (count($model->dayToAdd()) > 0)
+                $this->render('tambah', array(
+                    'model' => $model,
+                ));
+            else {
+                echo '<div class="alert">
+                 <strong>Warning!</strong><br>Tidak dapat menambah hari !
+                 </div>';
+            }
+        }
     }
 
     public function actionaddDay() {
@@ -201,18 +215,47 @@ class TrxDosenController extends Controller {
         $day_id = $_GET['day_id'];
         $start_time = $_GET['start_time'];
         $end_time = $_GET['end_time'];
-        
+
         $new = new TrxDosenTime;
         $new->trx_dosen_id = $trx_dosen_id;
         $new->day_id = $day_id;
         $new->start_time = $start_time;
         $new->end_time = $end_time;
-        
-        if($new->save(FALSE))
+
+        if ($new->save(FALSE))
+            echo $jso = '{"user":[{"flag":"true"}]
+        }';
+        else
+            echo $jso = ' {
+            "user":[ {
+                "flag":"false"}]
+            }';
+    }
+
+    public function actionhapus() {
+        $model1 = TrxDosenTime::model()->findByPk($_GET['toRemove']);
+//        $model2 = TrxDosen::model()->findByPk($_GET["trxDosen"]);
+
+        if ($model1->delete())
             echo $jso = '{"user":[{"flag":"true"}]}';
         else
             echo $jso = '{"user":[{"flag":"false"}]}';
-        
+    }
+
+    public function actiondoUpdate() {
+            
+        $model = TrxDosenTime::model()->findByPk($_GET['trx_dosen_time']);
+        //echo '<br>$model->day_id = '.$model->day_id;
+        $model->day_id = $_GET['day_id'];
+        //echo '<br>$model->start_time = '.$model->start_time;
+        $model->start_time = $_GET['start_time'];
+        //echo '<br>$model->end_time = '.$model->end_time;
+        $model->end_time = $_GET['end_time'];
+
+        if ($model->save(false))
+            echo $jso = '{"user":[{"flag":"true"}]}';
+        else
+            echo $jso = '{"user":[{"flag":"false"}]}';
     }
 
 }

@@ -98,4 +98,23 @@ class TrxDosenTime extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+        
+        public function btn(){
+            $btn = '';
+            
+            $btn .= CHtml::link('<i class="icon-edit"></i>', Yii::app()->createAbsoluteUrl('trxDosen/hari&toUpdate=' . $this->id.'&trxDosen='.$this->trx_dosen_id), array('class' => 'testing'));
+            $btn .= CHtml::link('<i class="icon-remove"></i>', 'javascript:hapus('.$this->trx_dosen_id.','.$this->id.');');
+            //$btn .= CHtml::button('', array('trxDosen' => $this->trx_dosen_id, 'toRemove' => $this->id, 'class' => 'icon-remove', 'id' => 'btnHapus'));
+            
+            
+            return $btn;
+        }
+        
+        public function startTime(){
+            return date('H:i', strtotime($this->start_time));
+        }
+        
+        public function endTime(){
+            return date('H:i', strtotime($this->end_time));
+        }
 }
