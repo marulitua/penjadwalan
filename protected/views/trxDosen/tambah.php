@@ -1,10 +1,3 @@
-<script type="text/javascript">
-
-    
-
-</script>
-
-
 <div class="span-12">
 
     <div class="row span-3">
