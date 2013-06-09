@@ -128,6 +128,7 @@
                                     ),
                                 ),
                             ),
+                            /*
                             array(
                                 'label' => 'Fakultas & Program Studi',
                                 'url' => 'JavaScript:void(0);',
@@ -151,6 +152,8 @@
                                 'url' => Yii::app()->createUrl('site/help'),
                                 'visible' => !Yii::app()->user->isGuest
                             ),
+                             * 
+                             */
                             array('label' => 'Logout (' . Yii::app()->user->name . ')',
                                 'url' => array('/site/logout'),
                                 'visible' => !Yii::app()->user->isGuest
@@ -185,15 +188,15 @@
                 ?><!-- breadcrumbs -->
             <?php endif ?>
 
-            <div class="well">
+<!--            <div class="well">
 
                 <p class="lead">
                     <?php
-                    echo '<br>Tahun Ajar :  ' . Periode::model()->active()->tahun_ajar;
-                    echo '<br>Semester : ' . Periode::model()->active()->semester_id;
+//                    echo '<br>Tahun Ajar :  ' . Periode::model()->active()->tahun_ajar;
+//                    echo '<br>Semester : ' . Periode::model()->active()->semester_id;
                     ?>
                 </p>
-            </div>
+            </div>-->
 
             <?php
             echo $content;

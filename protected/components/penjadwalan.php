@@ -62,10 +62,10 @@ class penjadwalan extends CComponent {
 
         return $string;
     }
-    
-    public static function time(){
+
+    public static function time() {
         $result = array();
-        
+
         $result['08:00'] = "08:00";
         $result['09:00'] = "09:00";
         $result['10:00'] = "10:00";
@@ -79,7 +79,27 @@ class penjadwalan extends CComponent {
         $result['18:00'] = "18:00";
         $result['19:00'] = "19:00";
         $result['20:00'] = "20:00";
-        
+
+        return $result;
+    }
+
+    public static function check() {
+
+        $result = array();
+
+        if (Periode::model()->count('flag = 1') == 0)
+            array_push($result, "Tentukan Periode");
+        else {
+            if (TrxKurikulum::model()->count('periode_id = ' . Periode::model()->active()->id . ''))
+                array_push($result, "Kurikulum belum ditentukan");
+
+            if (TrxDosen::model()->count('periode_id = ' . Periode::model()->active()->id . ''))
+                array_push($result, "Pengajar belum ditentukan");
+
+            if (TrxDosenTime::model()->count() == 0)
+                array_push($result, "Waktu pengajar belum ditentukan");
+        }
+
         return $result;
     }
 

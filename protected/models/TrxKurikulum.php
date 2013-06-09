@@ -138,5 +138,18 @@ class TrxKurikulum extends CActiveRecord {
         
         return $result;
     }
+    
+    public function HariHari(){
+        
+        $param = array();
+        
+        $i = 1;
+        do{
+            $param[$i] = $i;
+            $i++;
+        }while ($i < 20);
+        
+        return $param;
+    }
 
 }

@@ -11,6 +11,10 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.TimeZone;
 
 /**
  *
@@ -19,10 +23,10 @@ import java.net.Socket;
 public class MyJavaServer {
 
     public static void main(String[] args) throws IOException {
-        
+
         //
         MsgLog.write("java server stared");
-        
+
         int port = 20222;
         ServerSocket listenSock = null; //the listening server socket
         Socket sock = null;			 //the socket that will actually be used for communication
@@ -40,13 +44,20 @@ public class MyJavaServer {
                 String line = "";
                 while ((line = br.readLine()) != null) {
                     //write log
-                    MsgLog.write("php sent : "+line);
-                    int param = Integer.parseInt(line);
-                    param *= param;
-                    //bw.write("PHP said: " + line  + "\n");
-                    bw.write(Integer.toString(param) + "\n");
+                    MsgLog.write("php sent : " + line);
+//                    int param = Integer.parseInt(line);
+//                    param *= param;
+//                    bw.write(Integer.toString(param) + "\n");
+//                  
+                    TimeZone tz = TimeZone.getTimeZone("EST"); // or PST, MID, etc ...
+                    Date now = new Date();
+                    DateFormat df = new SimpleDateFormat("yyyy.mm.dd hh:mm:ss ");
+                    df.setTimeZone(tz);
+                    String currentTime = df.format(now);
+
+                    bw.write(currentTime + "\n");
                     bw.flush();
-                    MsgLog.write("java sent : "+Integer.toString(param));
+                    MsgLog.write("java sent : " + (currentTime));
                 }
 
                 //Closing streams and the current socket (not the listening socket!)

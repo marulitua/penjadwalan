@@ -18,8 +18,8 @@
 
             if ($("#select2").val() !== "")
                 $("#TrxKurikulum_day_id").val($("#select2").val().join());
-
-
+//
+//
             if ($("#select3").val() !== "")
                 $("#TrxKurikulum_ruang_kelas").val($("#select3").val().join());
 
@@ -33,6 +33,12 @@
     });
 
 </script>
+
+<style>
+    select { width: 75px } 
+    .select2-choice { width: 250px } 
+</style>
+
 
 <div class="form">
 
@@ -79,7 +85,9 @@
 
     <div class="row">
         <?php echo $form->labelEx($model, 'jumlah_kelas'); ?>
-        <?php echo $form->textField($model, 'jumlah_kelas'); ?>
+        <?php //echo $form->textField($model, 'jumlah_kelas'); 
+            echo $form->dropDownList($model, 'jumlah_kelas', $model->hariHari());
+        ?>
         <?php echo $form->error($model, 'jumlah_kelas'); ?>
     </div>
 
@@ -114,7 +122,7 @@
             'name' => 'asdas',
             'options' => array(
                 'tags' => array('senin', 'selasa', 'rabu', 'kamis', 'jumat', 'sabtu'),
-                'width' => '40%',
+                'width' => '70%',
             )
         ));
         ?>

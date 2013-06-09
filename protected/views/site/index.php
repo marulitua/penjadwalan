@@ -1,20 +1,64 @@
-<?php
-/* @var $this SiteController */
+<script type="text/javascript">
 
-$this->pageTitle=Yii::app()->name;
+    $("#btnGenerate").live('click', function() {
+
+        $.ajax({
+            url: "<?php echo Yii::app()->createUrl('site/check'); ?>",
+            //data:,
+            dataType: "json",
+            success: function(data) {
+                if (data) {
+                     var msg = "";
+                     for(var i=0; i< data.length;i++)
+                        msg += data[i] + "<br>";
+                    
+                     l.error(msg);
+                }
+            },
+        });
+    });
+
+</script>
+
+
+<?php
+//
+/* @var $this SiteController */
+$this->pageTitle = Yii::app()->name;
 ?>
 
-<h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
-
-<p>Congratulations! You have successfully created your Yii application.</p>
-
-<p>You may change the content of this page by modifying the following two files:</p>
-<ul>
-	<li>View file: <code><?php echo __FILE__; ?></code></li>
-	<li>Layout file: <code><?php echo $this->getLayoutFile('main'); ?></code></li>
-</ul>
-
-<p>For more details on how to further develop this application, please read
-the <a href="http://www.yiiframework.com/doc/">documentation</a>.
-Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
-should you have any questions.</p>
+<div class="row">	
+    <div class="span-23 well" id="os">
+        <div class="page">
+            <a href="<?php echo Yii::app()->createUrl("periode/admin") ?>"><h1><i class="icon-time"></i>1. Tentukan Periode Perkuliahan</h1></a>   
+        </div>
+<!--        <p class="lead">
+            System Operasi yang digunakan adalah Ubuntu. Jenis ubuntu yang digunakan adalah ubuntu desktop. Ubuntu dapat diperoleh di <a href="http://www.ubuntu.com/"><font color="orange">Ubuntu.com</font></a>.</p>-->
+    </div>
+    <div class="span-23 well" id="os">
+        <div class="page">
+            <a href="<?php echo Yii::app()->createUrl("trxKurikulum/admin") ?>"><h1><i class="icon-tags"></i>2. Tentukan Kurikulum</h1></a>
+        </div>
+<!--        <p class="lead">
+            System Operasi yang digunakan adalah Ubuntu. Jenis ubuntu yang digunakan adalah ubuntu desktop. Ubuntu dapat diperoleh di <a href="http://www.ubuntu.com/"><font color="orange">Ubuntu.com</font></a>.</p>-->
+    </div>
+    <div class="span-23 well" id="os">
+        <div class="page">
+            <a href="<?php echo Yii::app()->createUrl("trxDosen/admin") ?>"><h1><i class="icon-user"></i>3. Tentukan Pengajar</h1></a>
+        </div>
+<!--        <p class="lead">
+            System Operasi yang digunakan adalah Ubuntu. Jenis ubuntu yang digunakan adalah ubuntu desktop. Ubuntu dapat diperoleh di <a href="http://www.ubuntu.com/"><font color="orange">Ubuntu.com</font></a>.</p>
+        <p class="lead">Ubuntu dengan arsitektur <strong>64 bit</strong> sangat disarankan guna mengoptimalkan kinerja hardware.</p>-->
+    </div>
+    <div class="span-23 well" id="os">
+        <div class="page">
+            <a href="<?php echo Yii::app()->createUrl("trxDosen/admin") ?>"><h1><i class="icon-list"></i>4. Tentukan Waktu Pengajar</h1></a>
+        </div>
+<!--        <p class="lead">
+            System Operasi yang digunakan adalah Ubuntu. Jenis ubuntu yang digunakan adalah ubuntu desktop. Ubuntu dapat diperoleh di <a href="http://www.ubuntu.com/"><font color="orange">Ubuntu.com</font></a>.</p>
+        <p class="lead">Ubuntu dengan arsitektur <strong>64 bit</strong> sangat disarankan guna mengoptimalkan kinerja hardware.</p>-->
+    </div>
+    <div class="span-10" style="margin-left:40%;">
+        <button id="btnGenerate" class="btn btn-large btn-primary"><i class="icon-play-circle"></i>Generate Jadwal</button>
+    </div>
+</div>
