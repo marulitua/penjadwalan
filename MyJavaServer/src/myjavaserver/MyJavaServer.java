@@ -30,6 +30,8 @@ public class MyJavaServer {
         int port = 20222;
         ServerSocket listenSock = null; //the listening server socket
         Socket sock = null;			 //the socket that will actually be used for communication
+        MyThread td = new MyThread(0, 3, 300);
+
 
         try {
 
@@ -54,8 +56,16 @@ public class MyJavaServer {
                     DateFormat df = new SimpleDateFormat("yyyy.mm.dd hh:mm:ss ");
                     df.setTimeZone(tz);
                     String currentTime = df.format(now);
+//
+                    if ("0".equals(line)) {
+                        bw.write(td.isAlive() + "\n");
+                    } else {
+                        bw.write("Do calculation" + "\n");
+                        td.start();
+                    }
 
-                    bw.write(currentTime + "\n");
+//                    bw.write(td.isAlive()+"\n");
+//                    bw.write(currentTime + "\n");
                     bw.flush();
                     MsgLog.write("java sent : " + (currentTime));
                 }
