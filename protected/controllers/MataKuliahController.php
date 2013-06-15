@@ -68,6 +68,7 @@ class MataKuliahController extends Controller {
             if ($model->praktek == 1) {
                 $model2 = new MataKuliah;
                 $model2->attributes = $model->attributes;
+                $model2->mata_kuliah .= " (Praktek)";
                 $model2->mata_kuliah_code .= 'P';
                 $model2->sks = $_POST['MataKuliah']['sksPraktek'];
                 

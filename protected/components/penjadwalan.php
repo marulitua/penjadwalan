@@ -29,7 +29,7 @@ class penjadwalan extends CComponent {
         $string .= "</select>";
 
         self::scriptReady($id);
-
+ 
         return $string;
     }
 
@@ -90,14 +90,25 @@ class penjadwalan extends CComponent {
         if (Periode::model()->count('flag = 1') == 0)
             array_push($result, "Tentukan Periode");
         else {
-            if (TrxKurikulum::model()->count('periode_id = ' . Periode::model()->active()->id . ''))
+            if (TrxKurikulum::model()->count('periode_id = ' . Periode::model()->active()->id . '') == 0)
                 array_push($result, "Kurikulum belum ditentukan");
 
-            if (TrxDosen::model()->count('periode_id = ' . Periode::model()->active()->id . ''))
+            if (TrxDosen::model()->count('periode_id = ' . Periode::model()->active()->id . '') == 0)
                 array_push($result, "Pengajar belum ditentukan");
-
+            else {
+                
+                $sql = Yii::app()->db->createCommand('select c.* from findMatakuliahTanpaDosen c')->queryAll();
+                foreach ($sql as $a)
+                    array_push ($result, "Mata kuliah ".$a['mata_kuliah'])." belum ada pengajarnya";                
+            }
+            
             if (TrxDosenTime::model()->count() == 0)
                 array_push($result, "Waktu pengajar belum ditentukan");
+            else{
+                $sql = Yii::app()->db->createCommand('select c.* from findDosenTanpaWaktu c')->queryAll();
+                foreach ($sql as $a)
+                    array_push ($result, "Dosen ".$a['full_name']." belum memili detail waktu");             
+            }
         }
 
         return $result;

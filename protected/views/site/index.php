@@ -11,8 +11,10 @@
                      var msg = "";
                      for(var i=0; i< data.length;i++)
                         msg += data[i] + "<br>";
-                    
                      l.error(msg);
+                }
+                else{
+                    alert("good to go");
                 }
             },
         });

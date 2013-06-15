@@ -110,9 +110,9 @@ class MataKuliah extends CActiveRecord {
 
     public function getText() {
 
-        if (substr($this->mata_kuliah_code, -1) == "P")
-            return $this->mata_kuliah . ' (praktek)';
-        else
+//        if (substr($this->mata_kuliah_code, -1) == "P")
+//            return $this->mata_kuliah . ' (praktek)';
+//        else
             return $this->mata_kuliah;
     }
 

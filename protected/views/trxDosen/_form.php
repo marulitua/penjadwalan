@@ -52,7 +52,7 @@
 
 
     });
-    
+
     $("#btnUpdate").live('click', function() {
 
         var startTime = $("#dboxStart").val().split(':')[0];
@@ -175,11 +175,18 @@
 
     <?php
     if (isset($update)) {
-        $model2 = new TrxDosenTime;
+
+
+        $rawData = TrxDosenTime::model()->findAll("trx_dosen_id = $model->id");
+        $dataProvider = new CArrayDataProvider($rawData, array(
+            'pagination' => array(
+                'pageSize' => 10,
+            ),
+        ));
 
         $this->widget('bootstrap.widgets.TbGridView', array(
             'id' => 'dosenTime',
-            'dataProvider' => $model2->search(),
+            'dataProvider' => $dataProvider,
             //'filter'=>$model,
             'columns' => array(
                 //'id',

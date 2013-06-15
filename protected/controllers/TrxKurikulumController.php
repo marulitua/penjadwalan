@@ -70,8 +70,8 @@ class TrxKurikulumController extends Controller {
 //            echo '</pre>';
             if ($model->save()) {
 
-                if ($_POST['TrxKurikulum']['day_id'] == "")
-                    $_POST['TrxKurikulum']['day_id'] = '1,2,3,4,5';
+//                if ($_POST['TrxKurikulum']['day_id'] == "")
+//                    $_POST['TrxKurikulum']['day_id'] = '1,2,3,4,5';
 
                 //$param = Day::model()->findId($_POST['TrxKurikulum']['day_id']);
 
@@ -121,8 +121,8 @@ class TrxKurikulumController extends Controller {
                 TrxDay::model()->deleteAll("trx_kurikulum_id = $model->id");
 
 
-                if ($_POST['TrxKurikulum']['day_id'] == "")
-                    $_POST['TrxKurikulum']['day_id'] = '1,2,3,4,5';
+//                if ($_POST['TrxKurikulum']['day_id'] == "")
+//                    $_POST['TrxKurikulum']['day_id'] = '1,2,3,4,5';
 
                 $param = $param = explode(',', $_POST['TrxKurikulum']['day_id']);
                 foreach ($param as $a) {

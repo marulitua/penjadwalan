@@ -71,7 +71,6 @@
         <?php echo CHtml::label('Day', 'TrxKurikulum[day_id]'); ?>
         <?php
         if (isset($update)) {
-
             echo penjadwalan::selected2(CHtml::listData(Day::model()->findAll('id < 7'), 'id', 'day'), 'select2', 'select2', $model->findDay2());
         }
         else
