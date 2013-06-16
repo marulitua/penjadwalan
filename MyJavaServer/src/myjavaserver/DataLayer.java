@@ -107,6 +107,7 @@ public class DataLayer {
                 int mataKuliah = rs.getInt(1);
                 String kelas = rs.getString(2);
                 String hari = rs.getString(3);
+                int sks = rs.getInt(4);
 
                 ArrayList<RuangKelas> listRuang = null;
                 ArrayList<Hari> listHari = null;
@@ -128,7 +129,7 @@ public class DataLayer {
                 }
 
                 for (int i = 0; i < rs.getInt(4); i++) {
-                    Kurikulum kurikulum = new Kurikulum(mataKuliah, listHari, listRuang);
+                    Kurikulum kurikulum = new Kurikulum(mataKuliah, listHari, listRuang, sks);
                     listKurikulum.add(kurikulum);
                 }
             }

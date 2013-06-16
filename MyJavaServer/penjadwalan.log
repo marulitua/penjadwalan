@@ -2029,3 +2029,16 @@
 2013.55.16 01:55:03  java sent : 2013.55.16 01:55:03 
 2013.55.16 01:55:03   Child thread terminating
 2013.55.16 01:55:03  execution time = 0.048919129 s
+2013.38.16 03:38:52  java server stared
+2013.39.16 03:39:22  php sent : 1
+2013.39.16 03:39:22  java sent : 2013.39.16 03:39:22 
+2013.39.16 03:39:22   Child thread terminating
+2013.39.16 03:39:22  execution time = 0.629330115 s
+2013.39.16 03:39:28  php sent : 1
+2013.39.16 03:39:28  java sent : 2013.39.16 03:39:28 
+2013.39.16 03:39:28   Child thread terminating
+2013.39.16 03:39:28  execution time = 0.103340004 s
+2013.39.16 03:39:37  php sent : 1
+2013.39.16 03:39:37  java sent : 2013.39.16 03:39:37 
+2013.39.16 03:39:38   Child thread terminating
+2013.39.16 03:39:38  execution time = 0.083218326 s
