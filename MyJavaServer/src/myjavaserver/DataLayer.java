@@ -32,6 +32,7 @@ public class DataLayer {
     ArrayList<String[]> result = new ArrayList<>();
     ArrayList<DosenTime> listDosen = new ArrayList<>();
     ArrayList<Kurikulum> listKurikulum = new ArrayList<>();
+    ArrayList<RuangKelas> listRuang = new ArrayList<>();
 
     public DataLayer() {
         try {
@@ -129,6 +130,33 @@ public class DataLayer {
                 for (int i = 0; i < rs.getInt(4); i++) {
                     Kurikulum kurikulum = new Kurikulum(mataKuliah, listHari, listRuang);
                     listKurikulum.add(kurikulum);
+                }
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(DataLayer.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    public void getRuang() {
+        int jamMulai = 8;
+        int jamEnd = 20;
+
+        int dayMin = 1; //pk hari senin
+        int dayMax = 6; //pk hari sabtu
+
+        try {
+            Statement ps = con.createStatement();
+            ResultSet rs = ps.executeQuery("SELECT id,praktek FROM ruang_kelas");
+            while (rs.next()) {
+
+                int id = rs.getInt(1);
+                int praktek = rs.getInt(2);
+
+                for (int j = dayMin; j <= dayMax; j++) {
+                    for (int i = jamMulai; i <= jamEnd; i++) {
+                        RuangKelas ruang = new RuangKelas(id, praktek, i,j);
+                        listRuang.add(ruang);
+                    }
                 }
             }
         } catch (SQLException ex) {

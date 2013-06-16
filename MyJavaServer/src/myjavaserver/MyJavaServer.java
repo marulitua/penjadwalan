@@ -32,7 +32,7 @@ public class MyJavaServer {
         int port = 20222;
         ServerSocket listenSock = null; //the listening server socket
         Socket sock = null;			 //the socket that will actually be used for communication
-        MyThread td = new MyThread(0, 3, 300);
+        MyThread td = new MyThread();
 
 //        System.out.println("getActivePeriode()\n");
 //        Periode activePeriode = new Periode();
@@ -50,6 +50,10 @@ public class MyJavaServer {
                 BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(sock.getOutputStream()));
                 String line = "";
                 while ((line = br.readLine()) != null) {
+                    //execution time
+                    long startTime = System.nanoTime();
+
+
                     //write log
                     MsgLog.write("php sent : " + line);
 //                    int param = Integer.parseInt(line);
@@ -68,7 +72,9 @@ public class MyJavaServer {
                     } else {
                         if (!td.isAlive()) {
                             bw.write("Do calculation" + "\n");
-                            td = new MyThread(0, 3, 300);
+
+
+                            td = new MyThread(startTime);
                             td.start();
                         } else {
                             bw.write("Child is running");

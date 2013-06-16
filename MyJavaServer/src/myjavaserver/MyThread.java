@@ -15,14 +15,17 @@ import java.util.logging.Logger;
  */
 public class MyThread extends Thread {
     
-    private int startIdx, nThreads, maxIdx;
+    long startTime;
     ArrayList <DosenTime> listDosen = new ArrayList<> ();    
     ArrayList <Kurikulum> listKurikulum = new ArrayList<> ();    
+    ArrayList <RuangKelas> listRuang = new ArrayList<> ();    
     
-    public MyThread(int s, int n, int m) {
-        this.startIdx = s;
-        this.nThreads = n;
-        this.maxIdx = m;
+    public MyThread() {
+        
+    }
+    
+    public MyThread(long StartTime){
+        startTime = StartTime;
     }
 
     @Override
@@ -50,7 +53,13 @@ public class MyThread extends Thread {
             //get kurikulum
             dao.getKurikulum();
             listKurikulum = dao.listKurikulum;
-            System.out.println("List Dosen = " + listKurikulum.size());
+            System.out.println("List Kurikulum = " + listKurikulum.size());
+            
+            //get All posible Room
+            dao.getRuang();
+            listRuang = dao.listRuang;
+            System.out.println("List Ruang = " + listRuang.size());
+            
 
 //            for (int i = this.startIdx; i < this.maxIdx; i += this.nThreads) {
 //                MsgLog.write("[ID " + this.getId() + "] " + i);
@@ -63,6 +72,10 @@ public class MyThread extends Thread {
 //            }
 
             MsgLog.write(" Child thread terminating");
+            
+            long endTime = System.nanoTime();
+            MsgLog.write("execution time = "+((double)(-startTime+endTime) / 1000000000)+" s");
+            System.out.println("execution time = "+((double)(-startTime+endTime) / 1000000000)+" s");
         } catch (IOException ex) {
             Logger.getLogger(MyThread.class.getName()).log(Level.SEVERE, null, ex);
         }

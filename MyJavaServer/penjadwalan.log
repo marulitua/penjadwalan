@@ -1958,3 +1958,74 @@
 2013.11.16 12:11:38  php sent : 1
 2013.11.16 12:11:38  java sent : 2013.11.16 12:11:38 
 2013.11.16 12:11:38   Child thread terminating
+2013.29.16 01:29:37  java server stared
+2013.29.16 01:29:47  php sent : 1
+2013.29.16 01:29:47  java sent : 2013.29.16 01:29:47 
+2013.29.16 01:29:47   Child thread terminating
+2013.36.16 01:36:42  java server stared
+2013.36.16 01:36:52  php sent : 1
+2013.36.16 01:36:52  java sent : 2013.36.16 01:36:52 
+2013.36.16 01:36:52   Child thread terminating
+2013.43.16 01:43:35  java server stared
+2013.43.16 01:43:43  php sent : 1
+2013.43.16 01:43:43  java sent : 2013.43.16 01:43:43 
+2013.43.16 01:43:44   Child thread terminating
+2013.43.16 01:43:44  execution time = -373721870
+2013.44.16 01:44:22  java server stared
+2013.44.16 01:44:30  php sent : 1
+2013.44.16 01:44:30  java sent : 2013.44.16 01:44:30 
+2013.44.16 01:44:30   Child thread terminating
+2013.44.16 01:44:30  execution time = -388167794
+2013.46.16 01:46:08  java server stared
+2013.46.16 01:46:17  php sent : 1
+2013.46.16 01:46:17  java sent : 2013.46.16 01:46:17 
+2013.46.16 01:46:17   Child thread terminating
+2013.46.16 01:46:17  execution time = -386555717
+2013.47.16 01:47:10  java server stared
+2013.47.16 01:47:19  php sent : 1
+2013.47.16 01:47:19  java sent : 2013.47.16 01:47:19 
+2013.47.16 01:47:19   Child thread terminating
+2013.47.16 01:47:19  execution time = -369887001
+2013.47.16 01:47:41  php sent : 1
+2013.47.16 01:47:41  java sent : 2013.47.16 01:47:41 
+2013.47.16 01:47:41   Child thread terminating
+2013.47.16 01:47:41  execution time = -85688955
+2013.48.16 01:48:00  php sent : 1
+2013.48.16 01:48:00  java sent : 2013.48.16 01:48:00 
+2013.48.16 01:48:00   Child thread terminating
+2013.48.16 01:48:00  execution time = -68422935
+2013.48.16 01:48:54  java server stared
+2013.49.16 01:49:06  java server stared
+2013.49.16 01:49:14  php sent : 1
+2013.49.16 01:49:14  java sent : 2013.49.16 01:49:14 
+2013.49.16 01:49:14   Child thread terminating
+2013.49.16 01:49:14  execution time = 0.383753183 s
+2013.49.16 01:49:49  php sent : 1
+2013.49.16 01:49:49  java sent : 2013.49.16 01:49:49 
+2013.49.16 01:49:49   Child thread terminating
+2013.49.16 01:49:49  execution time = 0.081019302 s
+2013.49.16 01:49:54  php sent : 1
+2013.49.16 01:49:54  java sent : 2013.49.16 01:49:54 
+2013.49.16 01:49:54   Child thread terminating
+2013.49.16 01:49:54  execution time = 0.075352562 s
+2013.49.16 01:49:58  php sent : 1
+2013.49.16 01:49:58  java sent : 2013.49.16 01:49:58 
+2013.49.16 01:49:58   Child thread terminating
+2013.49.16 01:49:58  execution time = 0.071422796 s
+2013.54.16 01:54:41  java server stared
+2013.54.16 01:54:52  php sent : 1
+2013.54.16 01:54:52  java sent : 2013.54.16 01:54:52 
+2013.54.16 01:54:53   Child thread terminating
+2013.54.16 01:54:53  execution time = 0.375316456 s
+2013.54.16 01:54:59  php sent : 1
+2013.54.16 01:54:59  java sent : 2013.54.16 01:54:59 
+2013.54.16 01:54:59   Child thread terminating
+2013.54.16 01:54:59  execution time = 0.079623092 s
+2013.55.16 01:55:01  php sent : 1
+2013.55.16 01:55:01  java sent : 2013.55.16 01:55:01 
+2013.55.16 01:55:01   Child thread terminating
+2013.55.16 01:55:01  execution time = 0.05958485 s
+2013.55.16 01:55:03  php sent : 1
+2013.55.16 01:55:03  java sent : 2013.55.16 01:55:03 
+2013.55.16 01:55:03   Child thread terminating
+2013.55.16 01:55:03  execution time = 0.048919129 s
