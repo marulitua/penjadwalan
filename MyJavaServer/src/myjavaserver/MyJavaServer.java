@@ -13,6 +13,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.TimeZone;
 
@@ -23,6 +24,7 @@ import java.util.TimeZone;
 public class MyJavaServer {
 
     public static void main(String[] args) throws IOException {
+        
 
         //
         MsgLog.write("java server stared");
@@ -32,7 +34,10 @@ public class MyJavaServer {
         Socket sock = null;			 //the socket that will actually be used for communication
         MyThread td = new MyThread(0, 3, 300);
 
-
+//        System.out.println("getActivePeriode()\n");
+//        Periode activePeriode = new Periode();
+//        System.out.println(activePeriode.getPeriode());
+//        
         try {
 
             listenSock = new ServerSocket(port);
@@ -58,12 +63,12 @@ public class MyJavaServer {
                     String currentTime = df.format(now);
 //
                     if ("0".equals(line)) {
+                        //check doang
                         bw.write(td.isAlive() + "\n");
                     } else {
                         bw.write("Do calculation" + "\n");
                         td.start();
                     }
-
 //                    bw.write(td.isAlive()+"\n");
 //                    bw.write(currentTime + "\n");
                     bw.flush();

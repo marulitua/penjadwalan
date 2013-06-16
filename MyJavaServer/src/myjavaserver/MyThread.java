@@ -36,15 +36,28 @@ public class MyThread extends Thread {
             String currentTime = df.format(now);
             MsgLog.write(currentTime + " Child thread starting");
 
-            for (int i = this.startIdx; i < this.maxIdx; i += this.nThreads) {
-                MsgLog.write("[ID " + this.getId() + "] " + i);
-                try {
-                    MsgLog.write(currentTime + " Child thread is sleeping");
-                    Thread.sleep(2000);
-                } catch (InterruptedException ex) {
-                    Logger.getLogger(MyThread.class.getName()).log(Level.SEVERE, null, ex);
-                }
-            }
+
+            Periode activePeriode = new Periode();
+            System.out.println(activePeriode.getPeriode());
+//        
+
+            //test DataLayer
+
+//            DataLayer dao = new DataLayer();
+//            dao.getActivePeriode();
+//            System.out.println("getActivePeriode()\n");
+//            System.out.println("Contents of result: " + dao.result);
+
+
+//            for (int i = this.startIdx; i < this.maxIdx; i += this.nThreads) {
+//                MsgLog.write("[ID " + this.getId() + "] " + i);
+//                try {
+//                    MsgLog.write(currentTime + " Child thread is sleeping");
+//                    Thread.sleep(2000);
+//                } catch (InterruptedException ex) {
+//                    Logger.getLogger(MyThread.class.getName()).log(Level.SEVERE, null, ex);
+//                }
+//            }
 
             MsgLog.write(currentTime + " Child thread terminating");
         } catch (IOException ex) {
