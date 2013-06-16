@@ -5,10 +5,7 @@
 package myjavaserver;
 
 import java.io.IOException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.TimeZone;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -17,9 +14,11 @@ import java.util.logging.Logger;
  * @author erwin
  */
 public class MyThread extends Thread {
-
+    
     private int startIdx, nThreads, maxIdx;
-
+    ArrayList <DosenTime> listDosen = new ArrayList<> ();    
+    ArrayList <Kurikulum> listKurikulum = new ArrayList<> ();    
+    
     public MyThread(int s, int n, int m) {
         this.startIdx = s;
         this.nThreads = n;
@@ -38,21 +37,30 @@ public class MyThread extends Thread {
 
             //test DataLayer
 
-//            DataLayer dao = new DataLayer();
-//            dao.getActivePeriode();
-//            System.out.println("getActivePeriode()\n");
-//            System.out.println("Contents of result: " + dao.result);
+            DataLayer dao = new DataLayer();
+            dao.getActivePeriode();
+            System.out.println("getActivePeriode()\n");
+            System.out.println("Contents of result: " + dao.result.get(0)[1]);
+            
+            //get doset time
+            dao.getDosenTime();
+            listDosen = dao.listDosen;
+            System.out.println("List Dosen = " + listDosen.size());
+            
+            //get kurikulum
+            dao.getKurikulum();
+            listKurikulum = dao.listKurikulum;
+            System.out.println("List Dosen = " + listKurikulum.size());
 
-
-            for (int i = this.startIdx; i < this.maxIdx; i += this.nThreads) {
-                MsgLog.write("[ID " + this.getId() + "] " + i);
-                try {
-                    MsgLog.write(" Child thread is sleeping");
-                    Thread.sleep(100);
-                } catch (InterruptedException ex) {
-                    Logger.getLogger(MyThread.class.getName()).log(Level.SEVERE, null, ex);
-                }
-            }
+//            for (int i = this.startIdx; i < this.maxIdx; i += this.nThreads) {
+//                MsgLog.write("[ID " + this.getId() + "] " + i);
+//                try {
+//                    MsgLog.write(" Child thread is sleeping");
+//                    Thread.sleep(100);
+//                } catch (InterruptedException ex) {
+//                    Logger.getLogger(MyThread.class.getName()).log(Level.SEVERE, null, ex);
+//                }
+//            }
 
             MsgLog.write(" Child thread terminating");
         } catch (IOException ex) {
