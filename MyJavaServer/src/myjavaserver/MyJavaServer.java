@@ -24,7 +24,7 @@ import java.util.TimeZone;
 public class MyJavaServer {
 
     public static void main(String[] args) throws IOException {
-        
+
 
         //
         MsgLog.write("java server stared");
@@ -66,8 +66,13 @@ public class MyJavaServer {
                         //check doang
                         bw.write(td.isAlive() + "\n");
                     } else {
-                        bw.write("Do calculation" + "\n");
-                        td.start();
+                        if (!td.isAlive()) {
+                            bw.write("Do calculation" + "\n");
+                            td = new MyThread(0, 3, 300);
+                            td.start();
+                        } else {
+                            bw.write("Child is running");
+                        }
                     }
 //                    bw.write(td.isAlive()+"\n");
 //                    bw.write(currentTime + "\n");
@@ -76,9 +81,9 @@ public class MyJavaServer {
                 }
 
                 //Closing streams and the current socket (not the listening socket!)
-                bw.close();
-                br.close();
-                sock.close();
+//                bw.close();
+//                br.close();
+//                sock.close();
             }
         } catch (IOException ex) {
             ex.printStackTrace();

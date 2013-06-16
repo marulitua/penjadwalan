@@ -29,16 +29,11 @@ public class MyThread extends Thread {
     @Override
     public void run() {
         try {
-            TimeZone tz = TimeZone.getTimeZone("EST"); // or PST, MID, etc ...
-            Date now = new Date();
-            DateFormat df = new SimpleDateFormat("yyyy.mm.dd hh:mm:ss ");
-            df.setTimeZone(tz);
-            String currentTime = df.format(now);
-            MsgLog.write(currentTime + " Child thread starting");
-
-
             Periode activePeriode = new Periode();
-            System.out.println(activePeriode.getPeriode());
+//            System.out.println(activePeriode.getId());
+//            System.out.println(activePeriode.getPeriode());
+//            System.out.println(activePeriode.getSemester());
+//            System.out.println(activePeriode.getFlag());
 //        
 
             //test DataLayer
@@ -49,17 +44,17 @@ public class MyThread extends Thread {
 //            System.out.println("Contents of result: " + dao.result);
 
 
-//            for (int i = this.startIdx; i < this.maxIdx; i += this.nThreads) {
-//                MsgLog.write("[ID " + this.getId() + "] " + i);
-//                try {
-//                    MsgLog.write(currentTime + " Child thread is sleeping");
-//                    Thread.sleep(2000);
-//                } catch (InterruptedException ex) {
-//                    Logger.getLogger(MyThread.class.getName()).log(Level.SEVERE, null, ex);
-//                }
-//            }
+            for (int i = this.startIdx; i < this.maxIdx; i += this.nThreads) {
+                MsgLog.write("[ID " + this.getId() + "] " + i);
+                try {
+                    MsgLog.write(" Child thread is sleeping");
+                    Thread.sleep(100);
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(MyThread.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
 
-            MsgLog.write(currentTime + " Child thread terminating");
+            MsgLog.write(" Child thread terminating");
         } catch (IOException ex) {
             Logger.getLogger(MyThread.class.getName()).log(Level.SEVERE, null, ex);
         }
