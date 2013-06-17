@@ -9,11 +9,14 @@
             success: function(data) {
                 if (data) {
                     if (data[0] == "true") {
-                        alert("Generating...");
+                        l.error("Generating...");
                         window.setInterval(isRunning, 5000);
                     }
                     else
-                        alert("Something bad happen");
+                        if(data[0] == "-1")
+                            l.error("YO MAMA IS SO FAT");
+                        else
+                            l.error("Something bad happen");
                 }
             },
         });
@@ -30,8 +33,11 @@
                         l.error("running...");
                         //alert("running...");
                     else
-                        l.error("not running...");
-                        //alert("not runing...");
+                        if(data[0] == "-1")
+                            l.error("YO MAMA IS SO FAT");
+                        else
+                            l.error("not running...");
+                         //alert("not runing...");
                 }
             },
         });

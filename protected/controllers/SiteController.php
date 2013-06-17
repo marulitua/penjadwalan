@@ -135,21 +135,23 @@ class SiteController extends Controller {
     }
 
     public function actionDoGenerate() {
+        $data = array();
         $PORT = 20222; //the port on which we are connecting to the "remote" machine
         $HOST = "localhost"; //the ip of the remote machine (in this case it's the same machine)
 
         $sock = socket_create(AF_INET, SOCK_STREAM, 0) //Creating a TCP socket
                 or die("error: could not create socket\n");
 
-         $succ = socket_connect($sock, $HOST, $PORT) //Connecting to to server using that socket
-                 or die("error: could not connect to host\n");
+//         $succ = socket_connect($sock, $HOST, $PORT) //Connecting to to server using that socket
+//                 or die("error: could not connect to host\n");
 
-//        $succ = @socket_connect($sock, $HOST, $PORT); //Connecting to to server using that socket
-                //or die("error: could not connect to host\n");
+        $succ = @socket_connect($sock, $HOST, $PORT); //Connecting to to server using that socket
+        //or die("error: could not connect to host\n");
 
-        if ($succ === FALSE)
-            $reply = $this->renderJSON("-1");
-        else {
+        if ($succ === FALSE) {
+            array_push($data, "-1");
+            $reply = $this->renderJSON($data);
+        } else {
             $text = "1"; //start
             //$text = "0"; //test
 
@@ -158,30 +160,32 @@ class SiteController extends Controller {
 
             $reply = socket_read($sock, 10000, PHP_NORMAL_READ) //Reading the reply from socket
                     or die("error: failed to read from socket\n");
-            
-            $data = array();
-            array_push($data,substr($reply, 0, -1));
-            
+
+            array_push($data, substr($reply, 0, -1));
+
             echo $this->renderJSON($data);
         }
+        echo $this->renderJSON($data);
     }
-    
+
     public function actionIsRunning() {
+        $data = array();
         $PORT = 20222; //the port on which we are connecting to the "remote" machine
         $HOST = "localhost"; //the ip of the remote machine (in this case it's the same machine)
 
         $sock = socket_create(AF_INET, SOCK_STREAM, 0) //Creating a TCP socket
                 or die("error: could not create socket\n");
 
-         $succ = socket_connect($sock, $HOST, $PORT) //Connecting to to server using that socket
-                 or die("error: could not connect to host\n");
+//         $succ = socket_connect($sock, $HOST, $PORT) //Connecting to to server using that socket
+//                 or die("error: could not connect to host\n");
 
-//        $succ = @socket_connect($sock, $HOST, $PORT); //Connecting to to server using that socket
-                //or die("error: could not connect to host\n");
+        $succ = @socket_connect($sock, $HOST, $PORT); //Connecting to to server using that socket
+        //or die("error: could not connect to host\n");
 
-        if ($succ === FALSE)
-            $reply = $this->renderJSON("-1");
-        else {
+        if ($succ === FALSE) {
+            array_push($data, "-1");
+            $reply = $this->renderJSON($data);
+        } else {
             //$text = "1"; //start
             $text = "0"; //test
 
@@ -191,22 +195,22 @@ class SiteController extends Controller {
             $reply = socket_read($sock, 10000, PHP_NORMAL_READ) //Reading the reply from socket
                     or die("error: failed to read from socket\n");
 
-            $data = array();
-            array_push($data,substr($reply, 0, -1));
-            
+            array_push($data, substr($reply, 0, -1));
+
             echo $this->renderJSON($data);
         }
+        echo $this->renderJSON($data);
     }
 
     public function actioncheck() {
-        
+
         $param = penjadwalan::check();
 
-        if(count($param)==0){
+        if (count($param) == 0) {
             $param = array();
-            array_push($param,"true");
+            array_push($param, "true");
         }
-        
+
         $this->renderJSON($param);
     }
 
