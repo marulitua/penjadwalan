@@ -6,7 +6,7 @@ package myjavaserver;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.ListIterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -22,8 +22,13 @@ public class MyThread extends Thread {
     ArrayList<DosenTime> listDosen = new ArrayList<>();
     ArrayList<Kurikulum> listKurikulum = new ArrayList<>();
     ArrayList<RuangKelas> listRuang = new ArrayList<>();
+    
     ArrayList<Possible> listPossibles = new ArrayList<>();
+    ListIterator<Possible> iterator = listPossibles.listIterator();
 
+    ArrayList<Possible> finalSolutions = new ArrayList<>();
+    ListIterator<Possible> iteratorFinal = finalSolutions.listIterator();
+    
     public MyThread() {
     }
 
@@ -102,5 +107,9 @@ public class MyThread extends Thread {
                 }
             }
         }
+    }
+    
+    private boolean doBacktracking(){
+        return true;
     }
 }
