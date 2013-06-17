@@ -1,20 +1,57 @@
 <script type="text/javascript">
 
-    $("#btnGenerate").live('click', function() {
 
+    function doGenerate() {
+        $.ajax({
+            url: "<?php echo Yii::app()->createUrl('site/DoGenerate'); ?>",
+            //data:,
+            dataType: "json",
+            success: function(data) {
+                if (data) {
+                    if (data[0] == "true") {
+                        alert("Generating...");
+                        window.setInterval(isRunning, 5000);
+                    }
+                    else
+                        alert("Something bad happen");
+                }
+            },
+        });
+    }
+
+    function isRunning() {
+        $.ajax({
+            url: "<?php echo Yii::app()->createUrl('site/isRunning'); ?>",
+            //data:,
+            dataType: "json",
+            success: function(data) {
+                if (data) {
+                    if (data[0] == "true")
+                        l.error("running...");
+                        //alert("running...");
+                    else
+                        l.error("not running...");
+                        //alert("not runing...");
+                }
+            },
+        });
+    }
+
+    $("#btnGenerate").live('click', function() {
         $.ajax({
             url: "<?php echo Yii::app()->createUrl('site/check'); ?>",
             //data:,
             dataType: "json",
             success: function(data) {
                 if (data) {
-                     var msg = "";
-                     for(var i=0; i< data.length;i++)
-                        msg += data[i] + "<br>";
-                     l.error(msg);
-                }
-                else{
-                    alert("good to go");
+                    if (data[0] != "true") {
+                        var msg = "";
+                        for (var i = 0; i < data.length; i++)
+                            msg += data[i] + "<br>";
+                        l.error(msg);
+                    }
+                    else
+                        doGenerate();
                 }
             },
         });

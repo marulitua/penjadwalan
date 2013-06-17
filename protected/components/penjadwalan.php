@@ -99,7 +99,7 @@ class penjadwalan extends CComponent {
                 
                 $sql = Yii::app()->db->createCommand('select c.* from findMatakuliahTanpaDosen c')->queryAll();
                 foreach ($sql as $a)
-                    array_push ($result, "Mata kuliah ".$a['mata_kuliah'])." belum ada pengajarnya";                
+                    array_push ($result, "Mata kuliah ".$a['mata_kuliah']." belum ada pengajarnya");                
             }
             
             if (TrxDosenTime::model()->count() == 0)

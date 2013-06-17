@@ -2042,3 +2042,2793 @@
 2013.39.16 03:39:37  java sent : 2013.39.16 03:39:37 
 2013.39.16 03:39:38   Child thread terminating
 2013.39.16 03:39:38  execution time = 0.083218326 s
+2013.55.16 11:55:01  php sent : 1
+2013.55.16 11:55:01  java sent : 2013.55.16 11:55:01 
+2013.55.16 11:55:01   Child thread terminating
+2013.55.16 11:55:01  execution time = 0.268986628 s
+2013.21.17 09:21:59  java server stared
+2013.22.17 09:22:22  php sent : 1
+2013.22.17 09:22:22  java sent : 2013.22.17 09:22:22 
+2013.22.17 09:22:23   Child thread terminating
+2013.22.17 09:22:23  execution time = 0.782169682 s
+2013.24.17 09:24:25  php sent : 1
+2013.24.17 09:24:25  java sent : 2013.24.17 09:24:25 
+2013.24.17 09:24:25   Child thread terminating
+2013.24.17 09:24:25  execution time = 0.091071337 s
+2013.27.17 09:27:40  php sent : 1
+2013.27.17 09:27:40  java sent : 2013.27.17 09:27:40 
+2013.27.17 09:27:40   Child thread terminating
+2013.27.17 09:27:40  execution time = 0.059744838 s
+2013.29.17 09:29:15  php sent : 1
+2013.29.17 09:29:15  java sent : 2013.29.17 09:29:15 
+2013.29.17 09:29:15   Child thread terminating
+2013.29.17 09:29:15  execution time = 0.050173552 s
+2013.31.17 09:31:40  php sent : 1
+2013.31.17 09:31:40  java sent : 2013.31.17 09:31:40 
+2013.31.17 09:31:40   Child thread terminating
+2013.31.17 09:31:40  execution time = 0.040659722 s
+2013.32.17 09:32:54  java server stared
+2013.33.17 09:33:04  php sent : 1
+2013.33.17 09:33:04  java sent : 2013.33.17 09:33:04 
+2013.33.17 09:33:04   Child thread terminating
+2013.33.17 09:33:04  execution time = 0.33690347 s
+2013.33.17 09:33:54  java server stared
+2013.34.17 09:34:07  php sent : 1
+2013.34.17 09:34:07  java sent : 2013.34.17 09:34:07 
+2013.34.17 09:34:07   Child thread terminating
+2013.34.17 09:34:07  execution time = 0.36297401 s
+2013.36.17 09:36:07  java server stared
+2013.36.17 09:36:16  php sent : 1
+2013.36.17 09:36:16  java sent : 2013.36.17 09:36:16 
+2013.36.17 09:36:17   Child thread terminating
+2013.36.17 09:36:17  execution time = 0.336370865 s
+2013.37.17 09:37:17  php sent : 1
+2013.37.17 09:37:17  java sent : 2013.37.17 09:37:17 
+2013.37.17 09:37:17   Child thread terminating
+2013.37.17 09:37:17  execution time = 0.08202313 s
+2013.37.17 09:37:42  php sent : 1
+2013.37.17 09:37:42  java sent : 2013.37.17 09:37:42 
+2013.37.17 09:37:42   Child thread terminating
+2013.37.17 09:37:42  execution time = 0.055547326 s
+2013.37.17 09:37:55  php sent : 1
+2013.37.17 09:37:55  java sent : 2013.37.17 09:37:55 
+2013.37.17 09:37:55   Child thread terminating
+2013.37.17 09:37:55  execution time = 0.047348725 s
+2013.38.17 09:38:31  php sent : 1
+2013.38.17 09:38:31  java sent : 2013.38.17 09:38:31 
+2013.38.17 09:38:31   Child thread terminating
+2013.38.17 09:38:31  execution time = 0.040835307 s
+2013.38.17 09:38:32  php sent : 0
+2013.38.17 09:38:32  java sent : 2013.38.17 09:38:32 
+2013.39.17 09:39:11  java server stared
+2013.41.17 09:41:20  php sent : 1
+2013.41.17 09:41:20  java sent : 2013.41.17 09:41:20 
+2013.41.17 09:41:20  [ID 9] 0
+2013.41.17 09:41:20   Child thread is sleeping
+2013.41.17 09:41:20  [ID 9] 1
+2013.41.17 09:41:20   Child thread is sleeping
+2013.41.17 09:41:20  [ID 9] 2
+2013.41.17 09:41:20   Child thread is sleeping
+2013.41.17 09:41:20  [ID 9] 3
+2013.41.17 09:41:20   Child thread is sleeping
+2013.41.17 09:41:20  [ID 9] 4
+2013.41.17 09:41:20   Child thread is sleeping
+2013.41.17 09:41:21  [ID 9] 5
+2013.41.17 09:41:21   Child thread is sleeping
+2013.41.17 09:41:21  [ID 9] 6
+2013.41.17 09:41:21   Child thread is sleeping
+2013.41.17 09:41:21  [ID 9] 7
+2013.41.17 09:41:21   Child thread is sleeping
+2013.41.17 09:41:21  [ID 9] 8
+2013.41.17 09:41:21   Child thread is sleeping
+2013.41.17 09:41:21  [ID 9] 9
+2013.41.17 09:41:21   Child thread is sleeping
+2013.41.17 09:41:21  [ID 9] 10
+2013.41.17 09:41:21   Child thread is sleeping
+2013.41.17 09:41:21  [ID 9] 11
+2013.41.17 09:41:21   Child thread is sleeping
+2013.41.17 09:41:21  [ID 9] 12
+2013.41.17 09:41:21   Child thread is sleeping
+2013.41.17 09:41:21  [ID 9] 13
+2013.41.17 09:41:21   Child thread is sleeping
+2013.41.17 09:41:21  php sent : 0
+2013.41.17 09:41:21  java sent : 2013.41.17 09:41:21 
+2013.41.17 09:41:21  [ID 9] 14
+2013.41.17 09:41:21   Child thread is sleeping
+2013.41.17 09:41:22  [ID 9] 15
+2013.41.17 09:41:22   Child thread is sleeping
+2013.41.17 09:41:22  [ID 9] 16
+2013.41.17 09:41:22   Child thread is sleeping
+2013.41.17 09:41:22  [ID 9] 17
+2013.41.17 09:41:22   Child thread is sleeping
+2013.41.17 09:41:22  [ID 9] 18
+2013.41.17 09:41:22   Child thread is sleeping
+2013.41.17 09:41:22  [ID 9] 19
+2013.41.17 09:41:22   Child thread is sleeping
+2013.41.17 09:41:22  [ID 9] 20
+2013.41.17 09:41:22   Child thread is sleeping
+2013.41.17 09:41:22  [ID 9] 21
+2013.41.17 09:41:22   Child thread is sleeping
+2013.41.17 09:41:22  [ID 9] 22
+2013.41.17 09:41:22   Child thread is sleeping
+2013.41.17 09:41:22  [ID 9] 23
+2013.41.17 09:41:22   Child thread is sleeping
+2013.41.17 09:41:22  [ID 9] 24
+2013.41.17 09:41:22   Child thread is sleeping
+2013.41.17 09:41:23  [ID 9] 25
+2013.41.17 09:41:23   Child thread is sleeping
+2013.41.17 09:41:23  [ID 9] 26
+2013.41.17 09:41:23   Child thread is sleeping
+2013.41.17 09:41:23  [ID 9] 27
+2013.41.17 09:41:23   Child thread is sleeping
+2013.41.17 09:41:23  [ID 9] 28
+2013.41.17 09:41:23   Child thread is sleeping
+2013.41.17 09:41:23  [ID 9] 29
+2013.41.17 09:41:23   Child thread is sleeping
+2013.41.17 09:41:23  [ID 9] 30
+2013.41.17 09:41:23   Child thread is sleeping
+2013.41.17 09:41:23  [ID 9] 31
+2013.41.17 09:41:23   Child thread is sleeping
+2013.41.17 09:41:23  [ID 9] 32
+2013.41.17 09:41:23   Child thread is sleeping
+2013.41.17 09:41:23  [ID 9] 33
+2013.41.17 09:41:23   Child thread is sleeping
+2013.41.17 09:41:24  [ID 9] 34
+2013.41.17 09:41:24   Child thread is sleeping
+2013.41.17 09:41:24  [ID 9] 35
+2013.41.17 09:41:24   Child thread is sleeping
+2013.41.17 09:41:24  [ID 9] 36
+2013.41.17 09:41:24   Child thread is sleeping
+2013.41.17 09:41:24  [ID 9] 37
+2013.41.17 09:41:24   Child thread is sleeping
+2013.41.17 09:41:24  [ID 9] 38
+2013.41.17 09:41:24   Child thread is sleeping
+2013.41.17 09:41:24  [ID 9] 39
+2013.41.17 09:41:24   Child thread is sleeping
+2013.41.17 09:41:24  [ID 9] 40
+2013.41.17 09:41:24   Child thread is sleeping
+2013.41.17 09:41:24  [ID 9] 41
+2013.41.17 09:41:24   Child thread is sleeping
+2013.41.17 09:41:24  [ID 9] 42
+2013.41.17 09:41:24   Child thread is sleeping
+2013.41.17 09:41:24  [ID 9] 43
+2013.41.17 09:41:24   Child thread is sleeping
+2013.41.17 09:41:25  [ID 9] 44
+2013.41.17 09:41:25   Child thread is sleeping
+2013.41.17 09:41:25  [ID 9] 45
+2013.41.17 09:41:25   Child thread is sleeping
+2013.41.17 09:41:25  [ID 9] 46
+2013.41.17 09:41:25   Child thread is sleeping
+2013.41.17 09:41:25  [ID 9] 47
+2013.41.17 09:41:25   Child thread is sleeping
+2013.41.17 09:41:25  [ID 9] 48
+2013.41.17 09:41:25   Child thread is sleeping
+2013.41.17 09:41:25  [ID 9] 49
+2013.41.17 09:41:25   Child thread is sleeping
+2013.41.17 09:41:25  [ID 9] 50
+2013.41.17 09:41:25   Child thread is sleeping
+2013.41.17 09:41:25  [ID 9] 51
+2013.41.17 09:41:25   Child thread is sleeping
+2013.41.17 09:41:25  [ID 9] 52
+2013.41.17 09:41:25   Child thread is sleeping
+2013.41.17 09:41:25  [ID 9] 53
+2013.41.17 09:41:25   Child thread is sleeping
+2013.41.17 09:41:26  [ID 9] 54
+2013.41.17 09:41:26   Child thread is sleeping
+2013.41.17 09:41:26  [ID 9] 55
+2013.41.17 09:41:26   Child thread is sleeping
+2013.41.17 09:41:26  [ID 9] 56
+2013.41.17 09:41:26   Child thread is sleeping
+2013.41.17 09:41:26  [ID 9] 57
+2013.41.17 09:41:26   Child thread is sleeping
+2013.41.17 09:41:26  [ID 9] 58
+2013.41.17 09:41:26   Child thread is sleeping
+2013.41.17 09:41:26  [ID 9] 59
+2013.41.17 09:41:26   Child thread is sleeping
+2013.41.17 09:41:26  [ID 9] 60
+2013.41.17 09:41:26   Child thread is sleeping
+2013.41.17 09:41:26  [ID 9] 61
+2013.41.17 09:41:26   Child thread is sleeping
+2013.41.17 09:41:26  [ID 9] 62
+2013.41.17 09:41:26   Child thread is sleeping
+2013.41.17 09:41:26  [ID 9] 63
+2013.41.17 09:41:26   Child thread is sleeping
+2013.41.17 09:41:27  [ID 9] 64
+2013.41.17 09:41:27   Child thread is sleeping
+2013.41.17 09:41:27  [ID 9] 65
+2013.41.17 09:41:27   Child thread is sleeping
+2013.41.17 09:41:27  [ID 9] 66
+2013.41.17 09:41:27   Child thread is sleeping
+2013.41.17 09:41:27  [ID 9] 67
+2013.41.17 09:41:27   Child thread is sleeping
+2013.41.17 09:41:27  [ID 9] 68
+2013.41.17 09:41:27   Child thread is sleeping
+2013.41.17 09:41:27  [ID 9] 69
+2013.41.17 09:41:27   Child thread is sleeping
+2013.41.17 09:41:27  [ID 9] 70
+2013.41.17 09:41:27   Child thread is sleeping
+2013.41.17 09:41:27  [ID 9] 71
+2013.41.17 09:41:27   Child thread is sleeping
+2013.41.17 09:41:27  [ID 9] 72
+2013.41.17 09:41:27   Child thread is sleeping
+2013.41.17 09:41:27  [ID 9] 73
+2013.41.17 09:41:27   Child thread is sleeping
+2013.41.17 09:41:28  [ID 9] 74
+2013.41.17 09:41:28   Child thread is sleeping
+2013.41.17 09:41:28  [ID 9] 75
+2013.41.17 09:41:28   Child thread is sleeping
+2013.41.17 09:41:28  [ID 9] 76
+2013.41.17 09:41:28   Child thread is sleeping
+2013.41.17 09:41:28  [ID 9] 77
+2013.41.17 09:41:28   Child thread is sleeping
+2013.41.17 09:41:28  [ID 9] 78
+2013.41.17 09:41:28   Child thread is sleeping
+2013.41.17 09:41:28  [ID 9] 79
+2013.41.17 09:41:28   Child thread is sleeping
+2013.41.17 09:41:28  [ID 9] 80
+2013.41.17 09:41:28   Child thread is sleeping
+2013.41.17 09:41:28  [ID 9] 81
+2013.41.17 09:41:28   Child thread is sleeping
+2013.41.17 09:41:28  [ID 9] 82
+2013.41.17 09:41:28   Child thread is sleeping
+2013.41.17 09:41:28  [ID 9] 83
+2013.41.17 09:41:28   Child thread is sleeping
+2013.41.17 09:41:29  [ID 9] 84
+2013.41.17 09:41:29   Child thread is sleeping
+2013.41.17 09:41:29  [ID 9] 85
+2013.41.17 09:41:29   Child thread is sleeping
+2013.41.17 09:41:29  [ID 9] 86
+2013.41.17 09:41:29   Child thread is sleeping
+2013.41.17 09:41:29  [ID 9] 87
+2013.41.17 09:41:29   Child thread is sleeping
+2013.41.17 09:41:29  [ID 9] 88
+2013.41.17 09:41:29   Child thread is sleeping
+2013.41.17 09:41:29  [ID 9] 89
+2013.41.17 09:41:29   Child thread is sleeping
+2013.41.17 09:41:29  [ID 9] 90
+2013.41.17 09:41:29   Child thread is sleeping
+2013.41.17 09:41:29  [ID 9] 91
+2013.41.17 09:41:29   Child thread is sleeping
+2013.41.17 09:41:29  [ID 9] 92
+2013.41.17 09:41:29   Child thread is sleeping
+2013.41.17 09:41:29  [ID 9] 93
+2013.41.17 09:41:29   Child thread is sleeping
+2013.41.17 09:41:30  [ID 9] 94
+2013.41.17 09:41:30   Child thread is sleeping
+2013.41.17 09:41:30  [ID 9] 95
+2013.41.17 09:41:30   Child thread is sleeping
+2013.41.17 09:41:30  [ID 9] 96
+2013.41.17 09:41:30   Child thread is sleeping
+2013.41.17 09:41:30  [ID 9] 97
+2013.41.17 09:41:30   Child thread is sleeping
+2013.41.17 09:41:30  [ID 9] 98
+2013.41.17 09:41:30   Child thread is sleeping
+2013.41.17 09:41:30  [ID 9] 99
+2013.41.17 09:41:30   Child thread is sleeping
+2013.41.17 09:41:30  [ID 9] 100
+2013.41.17 09:41:30   Child thread is sleeping
+2013.41.17 09:41:30  [ID 9] 101
+2013.41.17 09:41:30   Child thread is sleeping
+2013.41.17 09:41:30  [ID 9] 102
+2013.41.17 09:41:30   Child thread is sleeping
+2013.41.17 09:41:31  [ID 9] 103
+2013.41.17 09:41:31   Child thread is sleeping
+2013.41.17 09:41:31  [ID 9] 104
+2013.41.17 09:41:31   Child thread is sleeping
+2013.41.17 09:41:31  [ID 9] 105
+2013.41.17 09:41:31   Child thread is sleeping
+2013.41.17 09:41:31  [ID 9] 106
+2013.41.17 09:41:31   Child thread is sleeping
+2013.41.17 09:41:31  [ID 9] 107
+2013.41.17 09:41:31   Child thread is sleeping
+2013.41.17 09:41:31  [ID 9] 108
+2013.41.17 09:41:31   Child thread is sleeping
+2013.41.17 09:41:31  [ID 9] 109
+2013.41.17 09:41:31   Child thread is sleeping
+2013.41.17 09:41:31  [ID 9] 110
+2013.41.17 09:41:31   Child thread is sleeping
+2013.41.17 09:41:31  [ID 9] 111
+2013.41.17 09:41:31   Child thread is sleeping
+2013.41.17 09:41:31  [ID 9] 112
+2013.41.17 09:41:31   Child thread is sleeping
+2013.41.17 09:41:32  [ID 9] 113
+2013.41.17 09:41:32   Child thread is sleeping
+2013.41.17 09:41:32  [ID 9] 114
+2013.41.17 09:41:32   Child thread is sleeping
+2013.41.17 09:41:32  [ID 9] 115
+2013.41.17 09:41:32   Child thread is sleeping
+2013.41.17 09:41:32  [ID 9] 116
+2013.41.17 09:41:32   Child thread is sleeping
+2013.41.17 09:41:32  [ID 9] 117
+2013.41.17 09:41:32   Child thread is sleeping
+2013.41.17 09:41:32  [ID 9] 118
+2013.41.17 09:41:32   Child thread is sleeping
+2013.41.17 09:41:32  [ID 9] 119
+2013.41.17 09:41:32   Child thread is sleeping
+2013.41.17 09:41:32  [ID 9] 120
+2013.41.17 09:41:32   Child thread is sleeping
+2013.41.17 09:41:32  [ID 9] 121
+2013.41.17 09:41:32   Child thread is sleeping
+2013.41.17 09:41:32  [ID 9] 122
+2013.41.17 09:41:32   Child thread is sleeping
+2013.41.17 09:41:33  [ID 9] 123
+2013.41.17 09:41:33   Child thread is sleeping
+2013.41.17 09:41:33  [ID 9] 124
+2013.41.17 09:41:33   Child thread is sleeping
+2013.41.17 09:41:33  [ID 9] 125
+2013.41.17 09:41:33   Child thread is sleeping
+2013.41.17 09:41:33  [ID 9] 126
+2013.41.17 09:41:33   Child thread is sleeping
+2013.41.17 09:41:33  [ID 9] 127
+2013.41.17 09:41:33   Child thread is sleeping
+2013.41.17 09:41:33  [ID 9] 128
+2013.41.17 09:41:33   Child thread is sleeping
+2013.41.17 09:41:33  [ID 9] 129
+2013.41.17 09:41:33   Child thread is sleeping
+2013.41.17 09:41:33  [ID 9] 130
+2013.41.17 09:41:33   Child thread is sleeping
+2013.41.17 09:41:33  [ID 9] 131
+2013.41.17 09:41:33   Child thread is sleeping
+2013.41.17 09:41:33  [ID 9] 132
+2013.41.17 09:41:33   Child thread is sleeping
+2013.41.17 09:41:34  [ID 9] 133
+2013.41.17 09:41:34   Child thread is sleeping
+2013.41.17 09:41:34  [ID 9] 134
+2013.41.17 09:41:34   Child thread is sleeping
+2013.41.17 09:41:34  [ID 9] 135
+2013.41.17 09:41:34   Child thread is sleeping
+2013.41.17 09:41:34  [ID 9] 136
+2013.41.17 09:41:34   Child thread is sleeping
+2013.41.17 09:41:34  [ID 9] 137
+2013.41.17 09:41:34   Child thread is sleeping
+2013.41.17 09:41:34  [ID 9] 138
+2013.41.17 09:41:34   Child thread is sleeping
+2013.41.17 09:41:34  [ID 9] 139
+2013.41.17 09:41:34   Child thread is sleeping
+2013.41.17 09:41:34  [ID 9] 140
+2013.41.17 09:41:34   Child thread is sleeping
+2013.41.17 09:41:34  [ID 9] 141
+2013.41.17 09:41:34   Child thread is sleeping
+2013.41.17 09:41:34  [ID 9] 142
+2013.41.17 09:41:34   Child thread is sleeping
+2013.41.17 09:41:35  [ID 9] 143
+2013.41.17 09:41:35   Child thread is sleeping
+2013.41.17 09:41:35  [ID 9] 144
+2013.41.17 09:41:35   Child thread is sleeping
+2013.41.17 09:41:35  [ID 9] 145
+2013.41.17 09:41:35   Child thread is sleeping
+2013.41.17 09:41:35  [ID 9] 146
+2013.41.17 09:41:35   Child thread is sleeping
+2013.41.17 09:41:35  [ID 9] 147
+2013.41.17 09:41:35   Child thread is sleeping
+2013.41.17 09:41:35  [ID 9] 148
+2013.41.17 09:41:35   Child thread is sleeping
+2013.41.17 09:41:35  [ID 9] 149
+2013.41.17 09:41:35   Child thread is sleeping
+2013.41.17 09:41:35  [ID 9] 150
+2013.41.17 09:41:35   Child thread is sleeping
+2013.41.17 09:41:35  [ID 9] 151
+2013.41.17 09:41:35   Child thread is sleeping
+2013.41.17 09:41:35  [ID 9] 152
+2013.41.17 09:41:35   Child thread is sleeping
+2013.41.17 09:41:36  [ID 9] 153
+2013.41.17 09:41:36   Child thread is sleeping
+2013.41.17 09:41:36  [ID 9] 154
+2013.41.17 09:41:36   Child thread is sleeping
+2013.41.17 09:41:36  [ID 9] 155
+2013.41.17 09:41:36   Child thread is sleeping
+2013.41.17 09:41:36  [ID 9] 156
+2013.41.17 09:41:36   Child thread is sleeping
+2013.41.17 09:41:36  [ID 9] 157
+2013.41.17 09:41:36   Child thread is sleeping
+2013.41.17 09:41:36  [ID 9] 158
+2013.41.17 09:41:36   Child thread is sleeping
+2013.41.17 09:41:36  [ID 9] 159
+2013.41.17 09:41:36   Child thread is sleeping
+2013.41.17 09:41:36  [ID 9] 160
+2013.41.17 09:41:36   Child thread is sleeping
+2013.41.17 09:41:36  [ID 9] 161
+2013.41.17 09:41:36   Child thread is sleeping
+2013.41.17 09:41:36  [ID 9] 162
+2013.41.17 09:41:36   Child thread is sleeping
+2013.41.17 09:41:37  [ID 9] 163
+2013.41.17 09:41:37   Child thread is sleeping
+2013.41.17 09:41:37  [ID 9] 164
+2013.41.17 09:41:37   Child thread is sleeping
+2013.41.17 09:41:37  [ID 9] 165
+2013.41.17 09:41:37   Child thread is sleeping
+2013.41.17 09:41:37  [ID 9] 166
+2013.41.17 09:41:37   Child thread is sleeping
+2013.41.17 09:41:37  [ID 9] 167
+2013.41.17 09:41:37   Child thread is sleeping
+2013.41.17 09:41:37  [ID 9] 168
+2013.41.17 09:41:37   Child thread is sleeping
+2013.41.17 09:41:37  [ID 9] 169
+2013.41.17 09:41:37   Child thread is sleeping
+2013.41.17 09:41:37  [ID 9] 170
+2013.41.17 09:41:37   Child thread is sleeping
+2013.41.17 09:41:37  [ID 9] 171
+2013.41.17 09:41:37   Child thread is sleeping
+2013.41.17 09:41:37  [ID 9] 172
+2013.41.17 09:41:37   Child thread is sleeping
+2013.41.17 09:41:38  [ID 9] 173
+2013.41.17 09:41:38   Child thread is sleeping
+2013.41.17 09:41:38  [ID 9] 174
+2013.41.17 09:41:38   Child thread is sleeping
+2013.41.17 09:41:38  [ID 9] 175
+2013.41.17 09:41:38   Child thread is sleeping
+2013.41.17 09:41:38  [ID 9] 176
+2013.41.17 09:41:38   Child thread is sleeping
+2013.41.17 09:41:38  [ID 9] 177
+2013.41.17 09:41:38   Child thread is sleeping
+2013.41.17 09:41:38  [ID 9] 178
+2013.41.17 09:41:38   Child thread is sleeping
+2013.41.17 09:41:38  [ID 9] 179
+2013.41.17 09:41:38   Child thread is sleeping
+2013.41.17 09:41:38  [ID 9] 180
+2013.41.17 09:41:38   Child thread is sleeping
+2013.41.17 09:41:38  [ID 9] 181
+2013.41.17 09:41:38   Child thread is sleeping
+2013.41.17 09:41:39  [ID 9] 182
+2013.41.17 09:41:39   Child thread is sleeping
+2013.41.17 09:41:39  [ID 9] 183
+2013.41.17 09:41:39   Child thread is sleeping
+2013.41.17 09:41:39  [ID 9] 184
+2013.41.17 09:41:39   Child thread is sleeping
+2013.41.17 09:41:39  [ID 9] 185
+2013.41.17 09:41:39   Child thread is sleeping
+2013.41.17 09:41:39  [ID 9] 186
+2013.41.17 09:41:39   Child thread is sleeping
+2013.41.17 09:41:39  [ID 9] 187
+2013.41.17 09:41:39   Child thread is sleeping
+2013.41.17 09:41:39  [ID 9] 188
+2013.41.17 09:41:39   Child thread is sleeping
+2013.41.17 09:41:39  [ID 9] 189
+2013.41.17 09:41:39   Child thread is sleeping
+2013.41.17 09:41:39  [ID 9] 190
+2013.41.17 09:41:39   Child thread is sleeping
+2013.41.17 09:41:39  [ID 9] 191
+2013.41.17 09:41:39   Child thread is sleeping
+2013.41.17 09:41:40  [ID 9] 192
+2013.41.17 09:41:40   Child thread is sleeping
+2013.41.17 09:41:40  [ID 9] 193
+2013.41.17 09:41:40   Child thread is sleeping
+2013.41.17 09:41:40  [ID 9] 194
+2013.41.17 09:41:40   Child thread is sleeping
+2013.41.17 09:41:40  [ID 9] 195
+2013.41.17 09:41:40   Child thread is sleeping
+2013.41.17 09:41:40  [ID 9] 196
+2013.41.17 09:41:40   Child thread is sleeping
+2013.41.17 09:41:40  [ID 9] 197
+2013.41.17 09:41:40   Child thread is sleeping
+2013.41.17 09:41:40  [ID 9] 198
+2013.41.17 09:41:40   Child thread is sleeping
+2013.41.17 09:41:40  [ID 9] 199
+2013.41.17 09:41:40   Child thread is sleeping
+2013.41.17 09:41:40   Child thread terminating
+2013.41.17 09:41:40  execution time = 20.626284141 s
+2013.45.17 09:45:32  php sent : 1
+2013.45.17 09:45:32  java sent : 2013.45.17 09:45:32 
+2013.45.17 09:45:32  [ID 10] 0
+2013.45.17 09:45:32   Child thread is sleeping
+2013.45.17 09:45:32  [ID 10] 1
+2013.45.17 09:45:32   Child thread is sleeping
+2013.45.17 09:45:32  [ID 10] 2
+2013.45.17 09:45:32   Child thread is sleeping
+2013.45.17 09:45:32  [ID 10] 3
+2013.45.17 09:45:32   Child thread is sleeping
+2013.45.17 09:45:32  [ID 10] 4
+2013.45.17 09:45:32   Child thread is sleeping
+2013.45.17 09:45:32  [ID 10] 5
+2013.45.17 09:45:32   Child thread is sleeping
+2013.45.17 09:45:32  [ID 10] 6
+2013.45.17 09:45:32   Child thread is sleeping
+2013.45.17 09:45:32  [ID 10] 7
+2013.45.17 09:45:32   Child thread is sleeping
+2013.45.17 09:45:32  [ID 10] 8
+2013.45.17 09:45:32   Child thread is sleeping
+2013.45.17 09:45:33  [ID 10] 9
+2013.45.17 09:45:33   Child thread is sleeping
+2013.45.17 09:45:33  [ID 10] 10
+2013.45.17 09:45:33   Child thread is sleeping
+2013.45.17 09:45:33  [ID 10] 11
+2013.45.17 09:45:33   Child thread is sleeping
+2013.45.17 09:45:33  [ID 10] 12
+2013.45.17 09:45:33   Child thread is sleeping
+2013.45.17 09:45:33  [ID 10] 13
+2013.45.17 09:45:33   Child thread is sleeping
+2013.45.17 09:45:33  [ID 10] 14
+2013.45.17 09:45:33   Child thread is sleeping
+2013.45.17 09:45:33  [ID 10] 15
+2013.45.17 09:45:33   Child thread is sleeping
+2013.45.17 09:45:33  [ID 10] 16
+2013.45.17 09:45:33   Child thread is sleeping
+2013.45.17 09:45:33  [ID 10] 17
+2013.45.17 09:45:33   Child thread is sleeping
+2013.45.17 09:45:34  [ID 10] 18
+2013.45.17 09:45:34   Child thread is sleeping
+2013.45.17 09:45:34  [ID 10] 19
+2013.45.17 09:45:34   Child thread is sleeping
+2013.45.17 09:45:34  [ID 10] 20
+2013.45.17 09:45:34   Child thread is sleeping
+2013.45.17 09:45:34  [ID 10] 21
+2013.45.17 09:45:34   Child thread is sleeping
+2013.45.17 09:45:34  php sent : 0
+2013.45.17 09:45:34  java sent : 2013.45.17 09:45:34 
+2013.45.17 09:45:34  [ID 10] 22
+2013.45.17 09:45:34   Child thread is sleeping
+2013.45.17 09:45:34  [ID 10] 23
+2013.45.17 09:45:34   Child thread is sleeping
+2013.45.17 09:45:34  [ID 10] 24
+2013.45.17 09:45:34   Child thread is sleeping
+2013.45.17 09:45:34  [ID 10] 25
+2013.45.17 09:45:34   Child thread is sleeping
+2013.45.17 09:45:34  [ID 10] 26
+2013.45.17 09:45:34   Child thread is sleeping
+2013.45.17 09:45:34  [ID 10] 27
+2013.45.17 09:45:34   Child thread is sleeping
+2013.45.17 09:45:35  [ID 10] 28
+2013.45.17 09:45:35   Child thread is sleeping
+2013.45.17 09:45:35  [ID 10] 29
+2013.45.17 09:45:35   Child thread is sleeping
+2013.45.17 09:45:35  [ID 10] 30
+2013.45.17 09:45:35   Child thread is sleeping
+2013.45.17 09:45:35  [ID 10] 31
+2013.45.17 09:45:35   Child thread is sleeping
+2013.45.17 09:45:35  [ID 10] 32
+2013.45.17 09:45:35   Child thread is sleeping
+2013.45.17 09:45:35  [ID 10] 33
+2013.45.17 09:45:35   Child thread is sleeping
+2013.45.17 09:45:35  [ID 10] 34
+2013.45.17 09:45:35   Child thread is sleeping
+2013.45.17 09:45:35  [ID 10] 35
+2013.45.17 09:45:35   Child thread is sleeping
+2013.45.17 09:45:35  [ID 10] 36
+2013.45.17 09:45:35   Child thread is sleeping
+2013.45.17 09:45:35  [ID 10] 37
+2013.45.17 09:45:35   Child thread is sleeping
+2013.45.17 09:45:36  [ID 10] 38
+2013.45.17 09:45:36   Child thread is sleeping
+2013.45.17 09:45:36  [ID 10] 39
+2013.45.17 09:45:36   Child thread is sleeping
+2013.45.17 09:45:36  [ID 10] 40
+2013.45.17 09:45:36   Child thread is sleeping
+2013.45.17 09:45:36  [ID 10] 41
+2013.45.17 09:45:36   Child thread is sleeping
+2013.45.17 09:45:36  [ID 10] 42
+2013.45.17 09:45:36   Child thread is sleeping
+2013.45.17 09:45:36  [ID 10] 43
+2013.45.17 09:45:36   Child thread is sleeping
+2013.45.17 09:45:36  [ID 10] 44
+2013.45.17 09:45:36   Child thread is sleeping
+2013.45.17 09:45:36  [ID 10] 45
+2013.45.17 09:45:36   Child thread is sleeping
+2013.45.17 09:45:36  [ID 10] 46
+2013.45.17 09:45:36   Child thread is sleeping
+2013.45.17 09:45:36  [ID 10] 47
+2013.45.17 09:45:36   Child thread is sleeping
+2013.45.17 09:45:37  [ID 10] 48
+2013.45.17 09:45:37   Child thread is sleeping
+2013.45.17 09:45:37  [ID 10] 49
+2013.45.17 09:45:37   Child thread is sleeping
+2013.45.17 09:45:37  [ID 10] 50
+2013.45.17 09:45:37   Child thread is sleeping
+2013.45.17 09:45:37  [ID 10] 51
+2013.45.17 09:45:37   Child thread is sleeping
+2013.45.17 09:45:37  [ID 10] 52
+2013.45.17 09:45:37   Child thread is sleeping
+2013.45.17 09:45:37  [ID 10] 53
+2013.45.17 09:45:37   Child thread is sleeping
+2013.45.17 09:45:37  [ID 10] 54
+2013.45.17 09:45:37   Child thread is sleeping
+2013.45.17 09:45:37  [ID 10] 55
+2013.45.17 09:45:37   Child thread is sleeping
+2013.45.17 09:45:37  [ID 10] 56
+2013.45.17 09:45:37   Child thread is sleeping
+2013.45.17 09:45:37  [ID 10] 57
+2013.45.17 09:45:37   Child thread is sleeping
+2013.45.17 09:45:38  [ID 10] 58
+2013.45.17 09:45:38   Child thread is sleeping
+2013.45.17 09:45:38  [ID 10] 59
+2013.45.17 09:45:38   Child thread is sleeping
+2013.45.17 09:45:38  [ID 10] 60
+2013.45.17 09:45:38   Child thread is sleeping
+2013.45.17 09:45:38  [ID 10] 61
+2013.45.17 09:45:38   Child thread is sleeping
+2013.45.17 09:45:38  [ID 10] 62
+2013.45.17 09:45:38   Child thread is sleeping
+2013.45.17 09:45:38  [ID 10] 63
+2013.45.17 09:45:38   Child thread is sleeping
+2013.45.17 09:45:38  [ID 10] 64
+2013.45.17 09:45:38   Child thread is sleeping
+2013.45.17 09:45:38  [ID 10] 65
+2013.45.17 09:45:38   Child thread is sleeping
+2013.45.17 09:45:38  [ID 10] 66
+2013.45.17 09:45:38   Child thread is sleeping
+2013.45.17 09:45:38  [ID 10] 67
+2013.45.17 09:45:38   Child thread is sleeping
+2013.45.17 09:45:39  [ID 10] 68
+2013.45.17 09:45:39   Child thread is sleeping
+2013.45.17 09:45:39  [ID 10] 69
+2013.45.17 09:45:39   Child thread is sleeping
+2013.45.17 09:45:39  [ID 10] 70
+2013.45.17 09:45:39   Child thread is sleeping
+2013.45.17 09:45:39  [ID 10] 71
+2013.45.17 09:45:39   Child thread is sleeping
+2013.45.17 09:45:39  [ID 10] 72
+2013.45.17 09:45:39   Child thread is sleeping
+2013.45.17 09:45:39  [ID 10] 73
+2013.45.17 09:45:39   Child thread is sleeping
+2013.45.17 09:45:39  [ID 10] 74
+2013.45.17 09:45:39   Child thread is sleeping
+2013.45.17 09:45:39  [ID 10] 75
+2013.45.17 09:45:39   Child thread is sleeping
+2013.45.17 09:45:39  [ID 10] 76
+2013.45.17 09:45:39   Child thread is sleeping
+2013.45.17 09:45:39  [ID 10] 77
+2013.45.17 09:45:39   Child thread is sleeping
+2013.45.17 09:45:40  [ID 10] 78
+2013.45.17 09:45:40   Child thread is sleeping
+2013.45.17 09:45:40  [ID 10] 79
+2013.45.17 09:45:40   Child thread is sleeping
+2013.45.17 09:45:40  [ID 10] 80
+2013.45.17 09:45:40   Child thread is sleeping
+2013.45.17 09:45:40  [ID 10] 81
+2013.45.17 09:45:40   Child thread is sleeping
+2013.45.17 09:45:40  [ID 10] 82
+2013.45.17 09:45:40   Child thread is sleeping
+2013.45.17 09:45:40  [ID 10] 83
+2013.45.17 09:45:40   Child thread is sleeping
+2013.45.17 09:45:40  [ID 10] 84
+2013.45.17 09:45:40   Child thread is sleeping
+2013.45.17 09:45:40  [ID 10] 85
+2013.45.17 09:45:40   Child thread is sleeping
+2013.45.17 09:45:40  [ID 10] 86
+2013.45.17 09:45:40   Child thread is sleeping
+2013.45.17 09:45:40  [ID 10] 87
+2013.45.17 09:45:40   Child thread is sleeping
+2013.45.17 09:45:41  [ID 10] 88
+2013.45.17 09:45:41   Child thread is sleeping
+2013.45.17 09:45:41  [ID 10] 89
+2013.45.17 09:45:41   Child thread is sleeping
+2013.45.17 09:45:41  [ID 10] 90
+2013.45.17 09:45:41   Child thread is sleeping
+2013.45.17 09:45:41  [ID 10] 91
+2013.45.17 09:45:41   Child thread is sleeping
+2013.45.17 09:45:41  [ID 10] 92
+2013.45.17 09:45:41   Child thread is sleeping
+2013.45.17 09:45:41  [ID 10] 93
+2013.45.17 09:45:41   Child thread is sleeping
+2013.45.17 09:45:41  [ID 10] 94
+2013.45.17 09:45:41   Child thread is sleeping
+2013.45.17 09:45:41  [ID 10] 95
+2013.45.17 09:45:41   Child thread is sleeping
+2013.45.17 09:45:41  [ID 10] 96
+2013.45.17 09:45:41   Child thread is sleeping
+2013.45.17 09:45:42  [ID 10] 97
+2013.45.17 09:45:42   Child thread is sleeping
+2013.45.17 09:45:42  [ID 10] 98
+2013.45.17 09:45:42   Child thread is sleeping
+2013.45.17 09:45:42  [ID 10] 99
+2013.45.17 09:45:42   Child thread is sleeping
+2013.45.17 09:45:42  [ID 10] 100
+2013.45.17 09:45:42   Child thread is sleeping
+2013.45.17 09:45:42  [ID 10] 101
+2013.45.17 09:45:42   Child thread is sleeping
+2013.45.17 09:45:42  [ID 10] 102
+2013.45.17 09:45:42   Child thread is sleeping
+2013.45.17 09:45:42  [ID 10] 103
+2013.45.17 09:45:42   Child thread is sleeping
+2013.45.17 09:45:42  [ID 10] 104
+2013.45.17 09:45:42   Child thread is sleeping
+2013.45.17 09:45:42  [ID 10] 105
+2013.45.17 09:45:42   Child thread is sleeping
+2013.45.17 09:45:42  [ID 10] 106
+2013.45.17 09:45:42   Child thread is sleeping
+2013.45.17 09:45:43  [ID 10] 107
+2013.45.17 09:45:43   Child thread is sleeping
+2013.45.17 09:45:43  [ID 10] 108
+2013.45.17 09:45:43   Child thread is sleeping
+2013.45.17 09:45:43  [ID 10] 109
+2013.45.17 09:45:43   Child thread is sleeping
+2013.45.17 09:45:43  [ID 10] 110
+2013.45.17 09:45:43   Child thread is sleeping
+2013.45.17 09:45:43  [ID 10] 111
+2013.45.17 09:45:43   Child thread is sleeping
+2013.45.17 09:45:43  [ID 10] 112
+2013.45.17 09:45:43   Child thread is sleeping
+2013.45.17 09:45:43  [ID 10] 113
+2013.45.17 09:45:43   Child thread is sleeping
+2013.45.17 09:45:43  [ID 10] 114
+2013.45.17 09:45:43   Child thread is sleeping
+2013.45.17 09:45:43  [ID 10] 115
+2013.45.17 09:45:43   Child thread is sleeping
+2013.45.17 09:45:43  [ID 10] 116
+2013.45.17 09:45:43   Child thread is sleeping
+2013.45.17 09:45:44  [ID 10] 117
+2013.45.17 09:45:44   Child thread is sleeping
+2013.45.17 09:45:44  [ID 10] 118
+2013.45.17 09:45:44   Child thread is sleeping
+2013.45.17 09:45:44  [ID 10] 119
+2013.45.17 09:45:44   Child thread is sleeping
+2013.45.17 09:45:44  [ID 10] 120
+2013.45.17 09:45:44   Child thread is sleeping
+2013.45.17 09:45:44  [ID 10] 121
+2013.45.17 09:45:44   Child thread is sleeping
+2013.45.17 09:45:44  [ID 10] 122
+2013.45.17 09:45:44   Child thread is sleeping
+2013.45.17 09:45:44  [ID 10] 123
+2013.45.17 09:45:44   Child thread is sleeping
+2013.45.17 09:45:44  [ID 10] 124
+2013.45.17 09:45:44   Child thread is sleeping
+2013.45.17 09:45:44  [ID 10] 125
+2013.45.17 09:45:44   Child thread is sleeping
+2013.45.17 09:45:44  [ID 10] 126
+2013.45.17 09:45:44   Child thread is sleeping
+2013.45.17 09:45:45  [ID 10] 127
+2013.45.17 09:45:45   Child thread is sleeping
+2013.45.17 09:45:45  [ID 10] 128
+2013.45.17 09:45:45   Child thread is sleeping
+2013.45.17 09:45:45  [ID 10] 129
+2013.45.17 09:45:45   Child thread is sleeping
+2013.45.17 09:45:45  [ID 10] 130
+2013.45.17 09:45:45   Child thread is sleeping
+2013.45.17 09:45:45  [ID 10] 131
+2013.45.17 09:45:45   Child thread is sleeping
+2013.45.17 09:45:45  [ID 10] 132
+2013.45.17 09:45:45   Child thread is sleeping
+2013.45.17 09:45:45  [ID 10] 133
+2013.45.17 09:45:45   Child thread is sleeping
+2013.45.17 09:45:45  [ID 10] 134
+2013.45.17 09:45:45   Child thread is sleeping
+2013.45.17 09:45:45  [ID 10] 135
+2013.45.17 09:45:45   Child thread is sleeping
+2013.45.17 09:45:45  [ID 10] 136
+2013.45.17 09:45:45   Child thread is sleeping
+2013.45.17 09:45:46  [ID 10] 137
+2013.45.17 09:45:46   Child thread is sleeping
+2013.45.17 09:45:46  [ID 10] 138
+2013.45.17 09:45:46   Child thread is sleeping
+2013.45.17 09:45:46  [ID 10] 139
+2013.45.17 09:45:46   Child thread is sleeping
+2013.45.17 09:45:46  [ID 10] 140
+2013.45.17 09:45:46   Child thread is sleeping
+2013.45.17 09:45:46  [ID 10] 141
+2013.45.17 09:45:46   Child thread is sleeping
+2013.45.17 09:45:46  [ID 10] 142
+2013.45.17 09:45:46   Child thread is sleeping
+2013.45.17 09:45:46  [ID 10] 143
+2013.45.17 09:45:46   Child thread is sleeping
+2013.45.17 09:45:46  [ID 10] 144
+2013.45.17 09:45:46   Child thread is sleeping
+2013.45.17 09:45:46  [ID 10] 145
+2013.45.17 09:45:46   Child thread is sleeping
+2013.45.17 09:45:46  [ID 10] 146
+2013.45.17 09:45:46   Child thread is sleeping
+2013.45.17 09:45:47  [ID 10] 147
+2013.45.17 09:45:47   Child thread is sleeping
+2013.45.17 09:45:47  [ID 10] 148
+2013.45.17 09:45:47   Child thread is sleeping
+2013.45.17 09:45:47  [ID 10] 149
+2013.45.17 09:45:47   Child thread is sleeping
+2013.45.17 09:45:47  [ID 10] 150
+2013.45.17 09:45:47   Child thread is sleeping
+2013.45.17 09:45:47  [ID 10] 151
+2013.45.17 09:45:47   Child thread is sleeping
+2013.45.17 09:45:47  [ID 10] 152
+2013.45.17 09:45:47   Child thread is sleeping
+2013.45.17 09:45:47  [ID 10] 153
+2013.45.17 09:45:47   Child thread is sleeping
+2013.45.17 09:45:47  [ID 10] 154
+2013.45.17 09:45:47   Child thread is sleeping
+2013.45.17 09:45:47  [ID 10] 155
+2013.45.17 09:45:47   Child thread is sleeping
+2013.45.17 09:45:47  [ID 10] 156
+2013.45.17 09:45:47   Child thread is sleeping
+2013.45.17 09:45:48  [ID 10] 157
+2013.45.17 09:45:48   Child thread is sleeping
+2013.45.17 09:45:48  [ID 10] 158
+2013.45.17 09:45:48   Child thread is sleeping
+2013.45.17 09:45:48  [ID 10] 159
+2013.45.17 09:45:48   Child thread is sleeping
+2013.45.17 09:45:48  [ID 10] 160
+2013.45.17 09:45:48   Child thread is sleeping
+2013.45.17 09:45:48  [ID 10] 161
+2013.45.17 09:45:48   Child thread is sleeping
+2013.45.17 09:45:48  [ID 10] 162
+2013.45.17 09:45:48   Child thread is sleeping
+2013.45.17 09:45:48  [ID 10] 163
+2013.45.17 09:45:48   Child thread is sleeping
+2013.45.17 09:45:48  [ID 10] 164
+2013.45.17 09:45:48   Child thread is sleeping
+2013.45.17 09:45:48  [ID 10] 165
+2013.45.17 09:45:48   Child thread is sleeping
+2013.45.17 09:45:49  [ID 10] 166
+2013.45.17 09:45:49   Child thread is sleeping
+2013.45.17 09:45:49  [ID 10] 167
+2013.45.17 09:45:49   Child thread is sleeping
+2013.45.17 09:45:49  [ID 10] 168
+2013.45.17 09:45:49   Child thread is sleeping
+2013.45.17 09:45:49  [ID 10] 169
+2013.45.17 09:45:49   Child thread is sleeping
+2013.45.17 09:45:49  [ID 10] 170
+2013.45.17 09:45:49   Child thread is sleeping
+2013.45.17 09:45:49  [ID 10] 171
+2013.45.17 09:45:49   Child thread is sleeping
+2013.45.17 09:45:49  [ID 10] 172
+2013.45.17 09:45:49   Child thread is sleeping
+2013.45.17 09:45:49  [ID 10] 173
+2013.45.17 09:45:49   Child thread is sleeping
+2013.45.17 09:45:49  [ID 10] 174
+2013.45.17 09:45:49   Child thread is sleeping
+2013.45.17 09:45:49  [ID 10] 175
+2013.45.17 09:45:49   Child thread is sleeping
+2013.45.17 09:45:50  [ID 10] 176
+2013.45.17 09:45:50   Child thread is sleeping
+2013.45.17 09:45:50  [ID 10] 177
+2013.45.17 09:45:50   Child thread is sleeping
+2013.45.17 09:45:50  [ID 10] 178
+2013.45.17 09:45:50   Child thread is sleeping
+2013.45.17 09:45:50  [ID 10] 179
+2013.45.17 09:45:50   Child thread is sleeping
+2013.45.17 09:45:50  [ID 10] 180
+2013.45.17 09:45:50   Child thread is sleeping
+2013.45.17 09:45:50  [ID 10] 181
+2013.45.17 09:45:50   Child thread is sleeping
+2013.45.17 09:45:50  [ID 10] 182
+2013.45.17 09:45:50   Child thread is sleeping
+2013.45.17 09:45:50  [ID 10] 183
+2013.45.17 09:45:50   Child thread is sleeping
+2013.45.17 09:45:50  [ID 10] 184
+2013.45.17 09:45:50   Child thread is sleeping
+2013.45.17 09:45:50  [ID 10] 185
+2013.45.17 09:45:50   Child thread is sleeping
+2013.45.17 09:45:51  [ID 10] 186
+2013.45.17 09:45:51   Child thread is sleeping
+2013.45.17 09:45:51  [ID 10] 187
+2013.45.17 09:45:51   Child thread is sleeping
+2013.45.17 09:45:51  [ID 10] 188
+2013.45.17 09:45:51   Child thread is sleeping
+2013.45.17 09:45:51  [ID 10] 189
+2013.45.17 09:45:51   Child thread is sleeping
+2013.45.17 09:45:51  [ID 10] 190
+2013.45.17 09:45:51   Child thread is sleeping
+2013.45.17 09:45:51  [ID 10] 191
+2013.45.17 09:45:51   Child thread is sleeping
+2013.45.17 09:45:51  [ID 10] 192
+2013.45.17 09:45:51   Child thread is sleeping
+2013.45.17 09:45:51  [ID 10] 193
+2013.45.17 09:45:51   Child thread is sleeping
+2013.45.17 09:45:51  [ID 10] 194
+2013.45.17 09:45:51   Child thread is sleeping
+2013.45.17 09:45:51  [ID 10] 195
+2013.45.17 09:45:51   Child thread is sleeping
+2013.45.17 09:45:52  [ID 10] 196
+2013.45.17 09:45:52   Child thread is sleeping
+2013.45.17 09:45:52  [ID 10] 197
+2013.45.17 09:45:52   Child thread is sleeping
+2013.45.17 09:45:52  [ID 10] 198
+2013.45.17 09:45:52   Child thread is sleeping
+2013.45.17 09:45:52  [ID 10] 199
+2013.45.17 09:45:52   Child thread is sleeping
+2013.45.17 09:45:52   Child thread terminating
+2013.45.17 09:45:52  execution time = 20.362256116 s
+2013.46.17 09:46:10  php sent : 1
+2013.46.17 09:46:10  java sent : 2013.46.17 09:46:10 
+2013.46.17 09:46:10  [ID 11] 0
+2013.46.17 09:46:10   Child thread is sleeping
+2013.46.17 09:46:10  [ID 11] 1
+2013.46.17 09:46:10   Child thread is sleeping
+2013.46.17 09:46:11  [ID 11] 2
+2013.46.17 09:46:11   Child thread is sleeping
+2013.46.17 09:46:11  [ID 11] 3
+2013.46.17 09:46:11   Child thread is sleeping
+2013.46.17 09:46:11  [ID 11] 4
+2013.46.17 09:46:11   Child thread is sleeping
+2013.46.17 09:46:11  [ID 11] 5
+2013.46.17 09:46:11   Child thread is sleeping
+2013.46.17 09:46:11  [ID 11] 6
+2013.46.17 09:46:11   Child thread is sleeping
+2013.46.17 09:46:11  [ID 11] 7
+2013.46.17 09:46:11   Child thread is sleeping
+2013.46.17 09:46:11  [ID 11] 8
+2013.46.17 09:46:11   Child thread is sleeping
+2013.46.17 09:46:11  [ID 11] 9
+2013.46.17 09:46:11   Child thread is sleeping
+2013.46.17 09:46:11  [ID 11] 10
+2013.46.17 09:46:11   Child thread is sleeping
+2013.46.17 09:46:11  [ID 11] 11
+2013.46.17 09:46:11   Child thread is sleeping
+2013.46.17 09:46:12  [ID 11] 12
+2013.46.17 09:46:12   Child thread is sleeping
+2013.46.17 09:46:12  [ID 11] 13
+2013.46.17 09:46:12   Child thread is sleeping
+2013.46.17 09:46:12  [ID 11] 14
+2013.46.17 09:46:12   Child thread is sleeping
+2013.46.17 09:46:12  php sent : 0
+2013.46.17 09:46:12  java sent : 2013.46.17 09:46:12 
+2013.46.17 09:46:12  [ID 11] 15
+2013.46.17 09:46:12   Child thread is sleeping
+2013.46.17 09:46:12  [ID 11] 16
+2013.46.17 09:46:12   Child thread is sleeping
+2013.46.17 09:46:12  [ID 11] 17
+2013.46.17 09:46:12   Child thread is sleeping
+2013.46.17 09:46:12  [ID 11] 18
+2013.46.17 09:46:12   Child thread is sleeping
+2013.46.17 09:46:12  [ID 11] 19
+2013.46.17 09:46:12   Child thread is sleeping
+2013.46.17 09:46:12  [ID 11] 20
+2013.46.17 09:46:12   Child thread is sleeping
+2013.46.17 09:46:12  [ID 11] 21
+2013.46.17 09:46:12   Child thread is sleeping
+2013.46.17 09:46:13  [ID 11] 22
+2013.46.17 09:46:13   Child thread is sleeping
+2013.46.17 09:46:13  [ID 11] 23
+2013.46.17 09:46:13   Child thread is sleeping
+2013.46.17 09:46:13  [ID 11] 24
+2013.46.17 09:46:13   Child thread is sleeping
+2013.46.17 09:46:13  [ID 11] 25
+2013.46.17 09:46:13   Child thread is sleeping
+2013.46.17 09:46:13  [ID 11] 26
+2013.46.17 09:46:13   Child thread is sleeping
+2013.46.17 09:46:13  [ID 11] 27
+2013.46.17 09:46:13   Child thread is sleeping
+2013.46.17 09:46:13  [ID 11] 28
+2013.46.17 09:46:13   Child thread is sleeping
+2013.46.17 09:46:13  [ID 11] 29
+2013.46.17 09:46:13   Child thread is sleeping
+2013.46.17 09:46:13  [ID 11] 30
+2013.46.17 09:46:13   Child thread is sleeping
+2013.46.17 09:46:14  [ID 11] 31
+2013.46.17 09:46:14   Child thread is sleeping
+2013.46.17 09:46:14  [ID 11] 32
+2013.46.17 09:46:14   Child thread is sleeping
+2013.46.17 09:46:14  [ID 11] 33
+2013.46.17 09:46:14   Child thread is sleeping
+2013.46.17 09:46:14  [ID 11] 34
+2013.46.17 09:46:14   Child thread is sleeping
+2013.46.17 09:46:14  [ID 11] 35
+2013.46.17 09:46:14   Child thread is sleeping
+2013.46.17 09:46:14  [ID 11] 36
+2013.46.17 09:46:14   Child thread is sleeping
+2013.46.17 09:46:14  [ID 11] 37
+2013.46.17 09:46:14   Child thread is sleeping
+2013.46.17 09:46:14  [ID 11] 38
+2013.46.17 09:46:14   Child thread is sleeping
+2013.46.17 09:46:14  [ID 11] 39
+2013.46.17 09:46:14   Child thread is sleeping
+2013.46.17 09:46:14  [ID 11] 40
+2013.46.17 09:46:14   Child thread is sleeping
+2013.46.17 09:46:15  [ID 11] 41
+2013.46.17 09:46:15   Child thread is sleeping
+2013.46.17 09:46:15  [ID 11] 42
+2013.46.17 09:46:15   Child thread is sleeping
+2013.46.17 09:46:15  [ID 11] 43
+2013.46.17 09:46:15   Child thread is sleeping
+2013.46.17 09:46:15  [ID 11] 44
+2013.46.17 09:46:15   Child thread is sleeping
+2013.46.17 09:46:15  [ID 11] 45
+2013.46.17 09:46:15   Child thread is sleeping
+2013.46.17 09:46:15  [ID 11] 46
+2013.46.17 09:46:15   Child thread is sleeping
+2013.46.17 09:46:15  [ID 11] 47
+2013.46.17 09:46:15   Child thread is sleeping
+2013.46.17 09:46:15  [ID 11] 48
+2013.46.17 09:46:15   Child thread is sleeping
+2013.46.17 09:46:15  [ID 11] 49
+2013.46.17 09:46:15   Child thread is sleeping
+2013.46.17 09:46:15  [ID 11] 50
+2013.46.17 09:46:15   Child thread is sleeping
+2013.46.17 09:46:16  [ID 11] 51
+2013.46.17 09:46:16   Child thread is sleeping
+2013.46.17 09:46:16  [ID 11] 52
+2013.46.17 09:46:16   Child thread is sleeping
+2013.46.17 09:46:16  [ID 11] 53
+2013.46.17 09:46:16   Child thread is sleeping
+2013.46.17 09:46:16  [ID 11] 54
+2013.46.17 09:46:16   Child thread is sleeping
+2013.46.17 09:46:16  [ID 11] 55
+2013.46.17 09:46:16   Child thread is sleeping
+2013.46.17 09:46:16  [ID 11] 56
+2013.46.17 09:46:16   Child thread is sleeping
+2013.46.17 09:46:16  [ID 11] 57
+2013.46.17 09:46:16   Child thread is sleeping
+2013.46.17 09:46:16  [ID 11] 58
+2013.46.17 09:46:16   Child thread is sleeping
+2013.46.17 09:46:16  [ID 11] 59
+2013.46.17 09:46:16   Child thread is sleeping
+2013.46.17 09:46:16  [ID 11] 60
+2013.46.17 09:46:16   Child thread is sleeping
+2013.46.17 09:46:17  [ID 11] 61
+2013.46.17 09:46:17   Child thread is sleeping
+2013.46.17 09:46:17  [ID 11] 62
+2013.46.17 09:46:17   Child thread is sleeping
+2013.46.17 09:46:17  [ID 11] 63
+2013.46.17 09:46:17   Child thread is sleeping
+2013.46.17 09:46:17  [ID 11] 64
+2013.46.17 09:46:17   Child thread is sleeping
+2013.46.17 09:46:17  [ID 11] 65
+2013.46.17 09:46:17   Child thread is sleeping
+2013.46.17 09:46:17  [ID 11] 66
+2013.46.17 09:46:17   Child thread is sleeping
+2013.46.17 09:46:17  [ID 11] 67
+2013.46.17 09:46:17   Child thread is sleeping
+2013.46.17 09:46:17  [ID 11] 68
+2013.46.17 09:46:17   Child thread is sleeping
+2013.46.17 09:46:17  [ID 11] 69
+2013.46.17 09:46:17   Child thread is sleeping
+2013.46.17 09:46:17  [ID 11] 70
+2013.46.17 09:46:17   Child thread is sleeping
+2013.46.17 09:46:18  [ID 11] 71
+2013.46.17 09:46:18   Child thread is sleeping
+2013.46.17 09:46:18  [ID 11] 72
+2013.46.17 09:46:18   Child thread is sleeping
+2013.46.17 09:46:18  [ID 11] 73
+2013.46.17 09:46:18   Child thread is sleeping
+2013.46.17 09:46:18  php sent : 1
+2013.46.17 09:46:18  java sent : 2013.46.17 09:46:18 
+2013.46.17 09:46:18  [ID 11] 74
+2013.46.17 09:46:18   Child thread is sleeping
+2013.46.17 09:46:18  [ID 11] 75
+2013.46.17 09:46:18   Child thread is sleeping
+2013.46.17 09:46:18  [ID 11] 76
+2013.46.17 09:46:18   Child thread is sleeping
+2013.46.17 09:46:18  [ID 11] 77
+2013.46.17 09:46:18   Child thread is sleeping
+2013.46.17 09:46:18  [ID 11] 78
+2013.46.17 09:46:18   Child thread is sleeping
+2013.46.17 09:46:18  [ID 11] 79
+2013.46.17 09:46:18   Child thread is sleeping
+2013.46.17 09:46:18  [ID 11] 80
+2013.46.17 09:46:18   Child thread is sleeping
+2013.46.17 09:46:19  [ID 11] 81
+2013.46.17 09:46:19   Child thread is sleeping
+2013.46.17 09:46:19  [ID 11] 82
+2013.46.17 09:46:19   Child thread is sleeping
+2013.46.17 09:46:19  [ID 11] 83
+2013.46.17 09:46:19   Child thread is sleeping
+2013.46.17 09:46:19  [ID 11] 84
+2013.46.17 09:46:19   Child thread is sleeping
+2013.46.17 09:46:19  [ID 11] 85
+2013.46.17 09:46:19   Child thread is sleeping
+2013.46.17 09:46:19  [ID 11] 86
+2013.46.17 09:46:19   Child thread is sleeping
+2013.46.17 09:46:19  [ID 11] 87
+2013.46.17 09:46:19   Child thread is sleeping
+2013.46.17 09:46:19  [ID 11] 88
+2013.46.17 09:46:19   Child thread is sleeping
+2013.46.17 09:46:19  [ID 11] 89
+2013.46.17 09:46:19   Child thread is sleeping
+2013.46.17 09:46:19  [ID 11] 90
+2013.46.17 09:46:19   Child thread is sleeping
+2013.46.17 09:46:20  [ID 11] 91
+2013.46.17 09:46:20   Child thread is sleeping
+2013.46.17 09:46:20  [ID 11] 92
+2013.46.17 09:46:20   Child thread is sleeping
+2013.46.17 09:46:20  [ID 11] 93
+2013.46.17 09:46:20   Child thread is sleeping
+2013.46.17 09:46:20  [ID 11] 94
+2013.46.17 09:46:20   Child thread is sleeping
+2013.46.17 09:46:20  [ID 11] 95
+2013.46.17 09:46:20   Child thread is sleeping
+2013.46.17 09:46:20  [ID 11] 96
+2013.46.17 09:46:20   Child thread is sleeping
+2013.46.17 09:46:20  [ID 11] 97
+2013.46.17 09:46:20   Child thread is sleeping
+2013.46.17 09:46:20  [ID 11] 98
+2013.46.17 09:46:20   Child thread is sleeping
+2013.46.17 09:46:20  [ID 11] 99
+2013.46.17 09:46:20   Child thread is sleeping
+2013.46.17 09:46:21  [ID 11] 100
+2013.46.17 09:46:21   Child thread is sleeping
+2013.46.17 09:46:21  [ID 11] 101
+2013.46.17 09:46:21   Child thread is sleeping
+2013.46.17 09:46:21  [ID 11] 102
+2013.46.17 09:46:21   Child thread is sleeping
+2013.46.17 09:46:21  [ID 11] 103
+2013.46.17 09:46:21   Child thread is sleeping
+2013.46.17 09:46:21  [ID 11] 104
+2013.46.17 09:46:21   Child thread is sleeping
+2013.46.17 09:46:21  [ID 11] 105
+2013.46.17 09:46:21   Child thread is sleeping
+2013.46.17 09:46:21  [ID 11] 106
+2013.46.17 09:46:21   Child thread is sleeping
+2013.46.17 09:46:21  [ID 11] 107
+2013.46.17 09:46:21   Child thread is sleeping
+2013.46.17 09:46:21  [ID 11] 108
+2013.46.17 09:46:21   Child thread is sleeping
+2013.46.17 09:46:21  [ID 11] 109
+2013.46.17 09:46:21   Child thread is sleeping
+2013.46.17 09:46:22  [ID 11] 110
+2013.46.17 09:46:22   Child thread is sleeping
+2013.46.17 09:46:22  [ID 11] 111
+2013.46.17 09:46:22   Child thread is sleeping
+2013.46.17 09:46:22  [ID 11] 112
+2013.46.17 09:46:22   Child thread is sleeping
+2013.46.17 09:46:22  [ID 11] 113
+2013.46.17 09:46:22   Child thread is sleeping
+2013.46.17 09:46:22  [ID 11] 114
+2013.46.17 09:46:22   Child thread is sleeping
+2013.46.17 09:46:22  [ID 11] 115
+2013.46.17 09:46:22   Child thread is sleeping
+2013.46.17 09:46:22  [ID 11] 116
+2013.46.17 09:46:22   Child thread is sleeping
+2013.46.17 09:46:22  [ID 11] 117
+2013.46.17 09:46:22   Child thread is sleeping
+2013.46.17 09:46:22  [ID 11] 118
+2013.46.17 09:46:22   Child thread is sleeping
+2013.46.17 09:46:22  [ID 11] 119
+2013.46.17 09:46:22   Child thread is sleeping
+2013.46.17 09:46:23  [ID 11] 120
+2013.46.17 09:46:23   Child thread is sleeping
+2013.46.17 09:46:23  [ID 11] 121
+2013.46.17 09:46:23   Child thread is sleeping
+2013.46.17 09:46:23  [ID 11] 122
+2013.46.17 09:46:23   Child thread is sleeping
+2013.46.17 09:46:23  [ID 11] 123
+2013.46.17 09:46:23   Child thread is sleeping
+2013.46.17 09:46:23  [ID 11] 124
+2013.46.17 09:46:23   Child thread is sleeping
+2013.46.17 09:46:23  [ID 11] 125
+2013.46.17 09:46:23   Child thread is sleeping
+2013.46.17 09:46:23  [ID 11] 126
+2013.46.17 09:46:23   Child thread is sleeping
+2013.46.17 09:46:23  [ID 11] 127
+2013.46.17 09:46:23   Child thread is sleeping
+2013.46.17 09:46:23  [ID 11] 128
+2013.46.17 09:46:23   Child thread is sleeping
+2013.46.17 09:46:23  [ID 11] 129
+2013.46.17 09:46:23   Child thread is sleeping
+2013.46.17 09:46:24  [ID 11] 130
+2013.46.17 09:46:24   Child thread is sleeping
+2013.46.17 09:46:24  [ID 11] 131
+2013.46.17 09:46:24   Child thread is sleeping
+2013.46.17 09:46:24  [ID 11] 132
+2013.46.17 09:46:24   Child thread is sleeping
+2013.46.17 09:46:24  [ID 11] 133
+2013.46.17 09:46:24   Child thread is sleeping
+2013.46.17 09:46:24  [ID 11] 134
+2013.46.17 09:46:24   Child thread is sleeping
+2013.46.17 09:46:24  [ID 11] 135
+2013.46.17 09:46:24   Child thread is sleeping
+2013.46.17 09:46:24  [ID 11] 136
+2013.46.17 09:46:24   Child thread is sleeping
+2013.46.17 09:46:24  [ID 11] 137
+2013.46.17 09:46:24   Child thread is sleeping
+2013.46.17 09:46:24  [ID 11] 138
+2013.46.17 09:46:24   Child thread is sleeping
+2013.46.17 09:46:24  [ID 11] 139
+2013.46.17 09:46:24   Child thread is sleeping
+2013.46.17 09:46:25  [ID 11] 140
+2013.46.17 09:46:25   Child thread is sleeping
+2013.46.17 09:46:25  [ID 11] 141
+2013.46.17 09:46:25   Child thread is sleeping
+2013.46.17 09:46:25  [ID 11] 142
+2013.46.17 09:46:25   Child thread is sleeping
+2013.46.17 09:46:25  [ID 11] 143
+2013.46.17 09:46:25   Child thread is sleeping
+2013.46.17 09:46:25  [ID 11] 144
+2013.46.17 09:46:25   Child thread is sleeping
+2013.46.17 09:46:25  [ID 11] 145
+2013.46.17 09:46:25   Child thread is sleeping
+2013.46.17 09:46:25  [ID 11] 146
+2013.46.17 09:46:25   Child thread is sleeping
+2013.46.17 09:46:25  [ID 11] 147
+2013.46.17 09:46:25   Child thread is sleeping
+2013.46.17 09:46:25  [ID 11] 148
+2013.46.17 09:46:25   Child thread is sleeping
+2013.46.17 09:46:25  [ID 11] 149
+2013.46.17 09:46:25   Child thread is sleeping
+2013.46.17 09:46:26  [ID 11] 150
+2013.46.17 09:46:26   Child thread is sleeping
+2013.46.17 09:46:26  [ID 11] 151
+2013.46.17 09:46:26   Child thread is sleeping
+2013.46.17 09:46:26  [ID 11] 152
+2013.46.17 09:46:26   Child thread is sleeping
+2013.46.17 09:46:26  [ID 11] 153
+2013.46.17 09:46:26   Child thread is sleeping
+2013.46.17 09:46:26  [ID 11] 154
+2013.46.17 09:46:26   Child thread is sleeping
+2013.46.17 09:46:26  [ID 11] 155
+2013.46.17 09:46:26   Child thread is sleeping
+2013.46.17 09:46:26  [ID 11] 156
+2013.46.17 09:46:26   Child thread is sleeping
+2013.46.17 09:46:26  [ID 11] 157
+2013.46.17 09:46:26   Child thread is sleeping
+2013.46.17 09:46:26  [ID 11] 158
+2013.46.17 09:46:26   Child thread is sleeping
+2013.46.17 09:46:26  [ID 11] 159
+2013.46.17 09:46:26   Child thread is sleeping
+2013.46.17 09:46:27  [ID 11] 160
+2013.46.17 09:46:27   Child thread is sleeping
+2013.46.17 09:46:27  [ID 11] 161
+2013.46.17 09:46:27   Child thread is sleeping
+2013.46.17 09:46:27  [ID 11] 162
+2013.46.17 09:46:27   Child thread is sleeping
+2013.46.17 09:46:27  [ID 11] 163
+2013.46.17 09:46:27   Child thread is sleeping
+2013.46.17 09:46:27  [ID 11] 164
+2013.46.17 09:46:27   Child thread is sleeping
+2013.46.17 09:46:27  [ID 11] 165
+2013.46.17 09:46:27   Child thread is sleeping
+2013.46.17 09:46:27  [ID 11] 166
+2013.46.17 09:46:27   Child thread is sleeping
+2013.46.17 09:46:27  [ID 11] 167
+2013.46.17 09:46:27   Child thread is sleeping
+2013.46.17 09:46:27  [ID 11] 168
+2013.46.17 09:46:27   Child thread is sleeping
+2013.46.17 09:46:27  [ID 11] 169
+2013.46.17 09:46:27   Child thread is sleeping
+2013.46.17 09:46:28  [ID 11] 170
+2013.46.17 09:46:28   Child thread is sleeping
+2013.46.17 09:46:28  [ID 11] 171
+2013.46.17 09:46:28   Child thread is sleeping
+2013.46.17 09:46:28  [ID 11] 172
+2013.46.17 09:46:28   Child thread is sleeping
+2013.46.17 09:46:28  [ID 11] 173
+2013.46.17 09:46:28   Child thread is sleeping
+2013.46.17 09:46:28  [ID 11] 174
+2013.46.17 09:46:28   Child thread is sleeping
+2013.46.17 09:46:28  [ID 11] 175
+2013.46.17 09:46:28   Child thread is sleeping
+2013.46.17 09:46:28  [ID 11] 176
+2013.46.17 09:46:28   Child thread is sleeping
+2013.46.17 09:46:28  [ID 11] 177
+2013.46.17 09:46:28   Child thread is sleeping
+2013.46.17 09:46:28  [ID 11] 178
+2013.46.17 09:46:28   Child thread is sleeping
+2013.46.17 09:46:28  [ID 11] 179
+2013.46.17 09:46:28   Child thread is sleeping
+2013.46.17 09:46:29  [ID 11] 180
+2013.46.17 09:46:29   Child thread is sleeping
+2013.46.17 09:46:29  [ID 11] 181
+2013.46.17 09:46:29   Child thread is sleeping
+2013.46.17 09:46:29  [ID 11] 182
+2013.46.17 09:46:29   Child thread is sleeping
+2013.46.17 09:46:29  [ID 11] 183
+2013.46.17 09:46:29   Child thread is sleeping
+2013.46.17 09:46:29  [ID 11] 184
+2013.46.17 09:46:29   Child thread is sleeping
+2013.46.17 09:46:29  [ID 11] 185
+2013.46.17 09:46:29   Child thread is sleeping
+2013.46.17 09:46:29  [ID 11] 186
+2013.46.17 09:46:29   Child thread is sleeping
+2013.46.17 09:46:29  [ID 11] 187
+2013.46.17 09:46:29   Child thread is sleeping
+2013.46.17 09:46:29  [ID 11] 188
+2013.46.17 09:46:29   Child thread is sleeping
+2013.46.17 09:46:30  [ID 11] 189
+2013.46.17 09:46:30   Child thread is sleeping
+2013.46.17 09:46:30  [ID 11] 190
+2013.46.17 09:46:30   Child thread is sleeping
+2013.46.17 09:46:30  [ID 11] 191
+2013.46.17 09:46:30   Child thread is sleeping
+2013.46.17 09:46:30  [ID 11] 192
+2013.46.17 09:46:30   Child thread is sleeping
+2013.46.17 09:46:30  [ID 11] 193
+2013.46.17 09:46:30   Child thread is sleeping
+2013.46.17 09:46:30  [ID 11] 194
+2013.46.17 09:46:30   Child thread is sleeping
+2013.46.17 09:46:30  [ID 11] 195
+2013.46.17 09:46:30   Child thread is sleeping
+2013.46.17 09:46:30  [ID 11] 196
+2013.46.17 09:46:30   Child thread is sleeping
+2013.46.17 09:46:30  [ID 11] 197
+2013.46.17 09:46:30   Child thread is sleeping
+2013.46.17 09:46:30  [ID 11] 198
+2013.46.17 09:46:30   Child thread is sleeping
+2013.46.17 09:46:31  [ID 11] 199
+2013.46.17 09:46:31   Child thread is sleeping
+2013.46.17 09:46:31   Child thread terminating
+2013.46.17 09:46:31  execution time = 20.305306865 s
+2013.49.17 09:49:43  java server stared
+2013.49.17 09:49:47  php sent : 1
+2013.49.17 09:49:47  java sent : 2013.49.17 09:49:47 
+2013.49.17 09:49:48  [ID 9] 0
+2013.49.17 09:49:48   Child thread is sleeping
+2013.49.17 09:49:48  [ID 9] 1
+2013.49.17 09:49:48   Child thread is sleeping
+2013.49.17 09:49:48  [ID 9] 2
+2013.49.17 09:49:48   Child thread is sleeping
+2013.49.17 09:49:48  [ID 9] 3
+2013.49.17 09:49:48   Child thread is sleeping
+2013.49.17 09:49:48  [ID 9] 4
+2013.49.17 09:49:48   Child thread is sleeping
+2013.49.17 09:49:48  [ID 9] 5
+2013.49.17 09:49:48   Child thread is sleeping
+2013.49.17 09:49:48  [ID 9] 6
+2013.49.17 09:49:48   Child thread is sleeping
+2013.49.17 09:49:48  [ID 9] 7
+2013.49.17 09:49:48   Child thread is sleeping
+2013.49.17 09:49:49  [ID 9] 8
+2013.49.17 09:49:49   Child thread is sleeping
+2013.49.17 09:49:49  [ID 9] 9
+2013.49.17 09:49:49   Child thread is sleeping
+2013.49.17 09:49:49  [ID 9] 10
+2013.49.17 09:49:49   Child thread is sleeping
+2013.49.17 09:49:49  [ID 9] 11
+2013.49.17 09:49:49   Child thread is sleeping
+2013.49.17 09:49:49  [ID 9] 12
+2013.49.17 09:49:49   Child thread is sleeping
+2013.49.17 09:49:49  [ID 9] 13
+2013.49.17 09:49:49   Child thread is sleeping
+2013.49.17 09:49:49  [ID 9] 14
+2013.49.17 09:49:49   Child thread is sleeping
+2013.49.17 09:49:49  [ID 9] 15
+2013.49.17 09:49:49   Child thread is sleeping
+2013.49.17 09:49:49  [ID 9] 16
+2013.49.17 09:49:49   Child thread is sleeping
+2013.49.17 09:49:50  [ID 9] 17
+2013.49.17 09:49:50   Child thread is sleeping
+2013.49.17 09:49:50  [ID 9] 18
+2013.49.17 09:49:50   Child thread is sleeping
+2013.49.17 09:49:50  [ID 9] 19
+2013.49.17 09:49:50   Child thread is sleeping
+2013.49.17 09:49:50  [ID 9] 20
+2013.49.17 09:49:50   Child thread is sleeping
+2013.49.17 09:49:50  [ID 9] 21
+2013.49.17 09:49:50   Child thread is sleeping
+2013.49.17 09:49:50  php sent : 0
+2013.49.17 09:49:50  java sent : 2013.49.17 09:49:50 
+2013.49.17 09:49:50  [ID 9] 22
+2013.49.17 09:49:50   Child thread is sleeping
+2013.49.17 09:49:50  [ID 9] 23
+2013.49.17 09:49:50   Child thread is sleeping
+2013.49.17 09:49:50  [ID 9] 24
+2013.49.17 09:49:50   Child thread is sleeping
+2013.49.17 09:49:50  [ID 9] 25
+2013.49.17 09:49:50   Child thread is sleeping
+2013.49.17 09:49:50  [ID 9] 26
+2013.49.17 09:49:50   Child thread is sleeping
+2013.49.17 09:49:51  [ID 9] 27
+2013.49.17 09:49:51   Child thread is sleeping
+2013.49.17 09:49:51  [ID 9] 28
+2013.49.17 09:49:51   Child thread is sleeping
+2013.49.17 09:49:51  [ID 9] 29
+2013.49.17 09:49:51   Child thread is sleeping
+2013.49.17 09:49:51  [ID 9] 30
+2013.49.17 09:49:51   Child thread is sleeping
+2013.49.17 09:49:51  [ID 9] 31
+2013.49.17 09:49:51   Child thread is sleeping
+2013.49.17 09:49:51  [ID 9] 32
+2013.49.17 09:49:51   Child thread is sleeping
+2013.49.17 09:49:51  [ID 9] 33
+2013.49.17 09:49:51   Child thread is sleeping
+2013.49.17 09:49:51  [ID 9] 34
+2013.49.17 09:49:51   Child thread is sleeping
+2013.49.17 09:49:51  [ID 9] 35
+2013.49.17 09:49:51   Child thread is sleeping
+2013.49.17 09:49:51  [ID 9] 36
+2013.49.17 09:49:51   Child thread is sleeping
+2013.49.17 09:49:52  [ID 9] 37
+2013.49.17 09:49:52   Child thread is sleeping
+2013.49.17 09:49:52  [ID 9] 38
+2013.49.17 09:49:52   Child thread is sleeping
+2013.49.17 09:49:52  [ID 9] 39
+2013.49.17 09:49:52   Child thread is sleeping
+2013.49.17 09:49:52  [ID 9] 40
+2013.49.17 09:49:52   Child thread is sleeping
+2013.49.17 09:49:52  [ID 9] 41
+2013.49.17 09:49:52   Child thread is sleeping
+2013.49.17 09:49:52  [ID 9] 42
+2013.49.17 09:49:52   Child thread is sleeping
+2013.49.17 09:49:52  [ID 9] 43
+2013.49.17 09:49:52   Child thread is sleeping
+2013.49.17 09:49:52  [ID 9] 44
+2013.49.17 09:49:52   Child thread is sleeping
+2013.49.17 09:49:52  [ID 9] 45
+2013.49.17 09:49:52   Child thread is sleeping
+2013.49.17 09:49:52  [ID 9] 46
+2013.49.17 09:49:52   Child thread is sleeping
+2013.49.17 09:49:53  [ID 9] 47
+2013.49.17 09:49:53   Child thread is sleeping
+2013.49.17 09:49:53  [ID 9] 48
+2013.49.17 09:49:53   Child thread is sleeping
+2013.49.17 09:49:53  [ID 9] 49
+2013.49.17 09:49:53   Child thread is sleeping
+2013.49.17 09:49:53  [ID 9] 50
+2013.49.17 09:49:53   Child thread is sleeping
+2013.49.17 09:49:53  [ID 9] 51
+2013.49.17 09:49:53   Child thread is sleeping
+2013.49.17 09:49:53  [ID 9] 52
+2013.49.17 09:49:53   Child thread is sleeping
+2013.49.17 09:49:53  [ID 9] 53
+2013.49.17 09:49:53   Child thread is sleeping
+2013.49.17 09:49:53  [ID 9] 54
+2013.49.17 09:49:53   Child thread is sleeping
+2013.49.17 09:49:53  [ID 9] 55
+2013.49.17 09:49:53   Child thread is sleeping
+2013.49.17 09:49:53  [ID 9] 56
+2013.49.17 09:49:53   Child thread is sleeping
+2013.49.17 09:49:54  [ID 9] 57
+2013.49.17 09:49:54   Child thread is sleeping
+2013.49.17 09:49:54  [ID 9] 58
+2013.49.17 09:49:54   Child thread is sleeping
+2013.49.17 09:49:54  [ID 9] 59
+2013.49.17 09:49:54   Child thread is sleeping
+2013.49.17 09:49:54  [ID 9] 60
+2013.49.17 09:49:54   Child thread is sleeping
+2013.49.17 09:49:54  [ID 9] 61
+2013.49.17 09:49:54   Child thread is sleeping
+2013.49.17 09:49:54  [ID 9] 62
+2013.49.17 09:49:54   Child thread is sleeping
+2013.49.17 09:49:54  [ID 9] 63
+2013.49.17 09:49:54   Child thread is sleeping
+2013.49.17 09:49:54  [ID 9] 64
+2013.49.17 09:49:54   Child thread is sleeping
+2013.49.17 09:49:54  [ID 9] 65
+2013.49.17 09:49:54   Child thread is sleeping
+2013.49.17 09:49:54  [ID 9] 66
+2013.49.17 09:49:54   Child thread is sleeping
+2013.49.17 09:49:55  [ID 9] 67
+2013.49.17 09:49:55   Child thread is sleeping
+2013.49.17 09:49:55  [ID 9] 68
+2013.49.17 09:49:55   Child thread is sleeping
+2013.49.17 09:49:55  [ID 9] 69
+2013.49.17 09:49:55   Child thread is sleeping
+2013.49.17 09:49:55  [ID 9] 70
+2013.49.17 09:49:55   Child thread is sleeping
+2013.49.17 09:49:55  [ID 9] 71
+2013.49.17 09:49:55   Child thread is sleeping
+2013.49.17 09:49:55  [ID 9] 72
+2013.49.17 09:49:55   Child thread is sleeping
+2013.49.17 09:49:55  [ID 9] 73
+2013.49.17 09:49:55   Child thread is sleeping
+2013.49.17 09:49:55  [ID 9] 74
+2013.49.17 09:49:55   Child thread is sleeping
+2013.49.17 09:49:55  [ID 9] 75
+2013.49.17 09:49:55   Child thread is sleeping
+2013.49.17 09:49:55  [ID 9] 76
+2013.49.17 09:49:55   Child thread is sleeping
+2013.49.17 09:49:56  [ID 9] 77
+2013.49.17 09:49:56   Child thread is sleeping
+2013.49.17 09:49:56  [ID 9] 78
+2013.49.17 09:49:56   Child thread is sleeping
+2013.49.17 09:49:56  [ID 9] 79
+2013.49.17 09:49:56   Child thread is sleeping
+2013.49.17 09:49:56  [ID 9] 80
+2013.49.17 09:49:56   Child thread is sleeping
+2013.49.17 09:49:56  [ID 9] 81
+2013.49.17 09:49:56   Child thread is sleeping
+2013.49.17 09:49:56  [ID 9] 82
+2013.49.17 09:49:56   Child thread is sleeping
+2013.49.17 09:49:56  [ID 9] 83
+2013.49.17 09:49:56   Child thread is sleeping
+2013.49.17 09:49:56  [ID 9] 84
+2013.49.17 09:49:56   Child thread is sleeping
+2013.49.17 09:49:56  [ID 9] 85
+2013.49.17 09:49:56   Child thread is sleeping
+2013.49.17 09:49:57  [ID 9] 86
+2013.49.17 09:49:57   Child thread is sleeping
+2013.49.17 09:49:57  [ID 9] 87
+2013.49.17 09:49:57   Child thread is sleeping
+2013.49.17 09:49:57  [ID 9] 88
+2013.49.17 09:49:57   Child thread is sleeping
+2013.49.17 09:49:57  [ID 9] 89
+2013.49.17 09:49:57   Child thread is sleeping
+2013.49.17 09:49:57  [ID 9] 90
+2013.49.17 09:49:57   Child thread is sleeping
+2013.49.17 09:49:57  [ID 9] 91
+2013.49.17 09:49:57   Child thread is sleeping
+2013.49.17 09:49:57  [ID 9] 92
+2013.49.17 09:49:57   Child thread is sleeping
+2013.49.17 09:49:57  [ID 9] 93
+2013.49.17 09:49:57   Child thread is sleeping
+2013.49.17 09:49:57  [ID 9] 94
+2013.49.17 09:49:57   Child thread is sleeping
+2013.49.17 09:49:57  [ID 9] 95
+2013.49.17 09:49:57   Child thread is sleeping
+2013.49.17 09:49:58  [ID 9] 96
+2013.49.17 09:49:58   Child thread is sleeping
+2013.49.17 09:49:58  [ID 9] 97
+2013.49.17 09:49:58   Child thread is sleeping
+2013.49.17 09:49:58  [ID 9] 98
+2013.49.17 09:49:58   Child thread is sleeping
+2013.49.17 09:49:58  [ID 9] 99
+2013.49.17 09:49:58   Child thread is sleeping
+2013.49.17 09:49:58  [ID 9] 100
+2013.49.17 09:49:58   Child thread is sleeping
+2013.49.17 09:49:58  [ID 9] 101
+2013.49.17 09:49:58   Child thread is sleeping
+2013.49.17 09:49:58  [ID 9] 102
+2013.49.17 09:49:58   Child thread is sleeping
+2013.49.17 09:49:58  [ID 9] 103
+2013.49.17 09:49:58   Child thread is sleeping
+2013.49.17 09:49:58  [ID 9] 104
+2013.49.17 09:49:58   Child thread is sleeping
+2013.49.17 09:49:58  [ID 9] 105
+2013.49.17 09:49:58   Child thread is sleeping
+2013.49.17 09:49:59  [ID 9] 106
+2013.49.17 09:49:59   Child thread is sleeping
+2013.49.17 09:49:59  [ID 9] 107
+2013.49.17 09:49:59   Child thread is sleeping
+2013.49.17 09:49:59  [ID 9] 108
+2013.49.17 09:49:59   Child thread is sleeping
+2013.49.17 09:49:59  [ID 9] 109
+2013.49.17 09:49:59   Child thread is sleeping
+2013.49.17 09:49:59  [ID 9] 110
+2013.49.17 09:49:59   Child thread is sleeping
+2013.49.17 09:49:59  [ID 9] 111
+2013.49.17 09:49:59   Child thread is sleeping
+2013.49.17 09:49:59  [ID 9] 112
+2013.49.17 09:49:59   Child thread is sleeping
+2013.49.17 09:49:59  [ID 9] 113
+2013.49.17 09:49:59   Child thread is sleeping
+2013.49.17 09:49:59  [ID 9] 114
+2013.49.17 09:49:59   Child thread is sleeping
+2013.49.17 09:49:59  [ID 9] 115
+2013.49.17 09:49:59   Child thread is sleeping
+2013.50.17 09:50:00  [ID 9] 116
+2013.50.17 09:50:00   Child thread is sleeping
+2013.50.17 09:50:00  [ID 9] 117
+2013.50.17 09:50:00   Child thread is sleeping
+2013.50.17 09:50:00  [ID 9] 118
+2013.50.17 09:50:00   Child thread is sleeping
+2013.50.17 09:50:00  [ID 9] 119
+2013.50.17 09:50:00   Child thread is sleeping
+2013.50.17 09:50:00  [ID 9] 120
+2013.50.17 09:50:00   Child thread is sleeping
+2013.50.17 09:50:00  [ID 9] 121
+2013.50.17 09:50:00   Child thread is sleeping
+2013.50.17 09:50:00  [ID 9] 122
+2013.50.17 09:50:00   Child thread is sleeping
+2013.50.17 09:50:00  [ID 9] 123
+2013.50.17 09:50:00   Child thread is sleeping
+2013.50.17 09:50:00  [ID 9] 124
+2013.50.17 09:50:00   Child thread is sleeping
+2013.50.17 09:50:00  [ID 9] 125
+2013.50.17 09:50:00   Child thread is sleeping
+2013.50.17 09:50:01  [ID 9] 126
+2013.50.17 09:50:01   Child thread is sleeping
+2013.50.17 09:50:01  [ID 9] 127
+2013.50.17 09:50:01   Child thread is sleeping
+2013.50.17 09:50:01  [ID 9] 128
+2013.50.17 09:50:01   Child thread is sleeping
+2013.50.17 09:50:01  [ID 9] 129
+2013.50.17 09:50:01   Child thread is sleeping
+2013.50.17 09:50:01  [ID 9] 130
+2013.50.17 09:50:01   Child thread is sleeping
+2013.50.17 09:50:01  [ID 9] 131
+2013.50.17 09:50:01   Child thread is sleeping
+2013.50.17 09:50:01  [ID 9] 132
+2013.50.17 09:50:01   Child thread is sleeping
+2013.50.17 09:50:01  [ID 9] 133
+2013.50.17 09:50:01   Child thread is sleeping
+2013.50.17 09:50:01  [ID 9] 134
+2013.50.17 09:50:01   Child thread is sleeping
+2013.50.17 09:50:01  [ID 9] 135
+2013.50.17 09:50:01   Child thread is sleeping
+2013.50.17 09:50:02  [ID 9] 136
+2013.50.17 09:50:02   Child thread is sleeping
+2013.50.17 09:50:02  [ID 9] 137
+2013.50.17 09:50:02   Child thread is sleeping
+2013.50.17 09:50:02  [ID 9] 138
+2013.50.17 09:50:02   Child thread is sleeping
+2013.50.17 09:50:02  [ID 9] 139
+2013.50.17 09:50:02   Child thread is sleeping
+2013.50.17 09:50:02  [ID 9] 140
+2013.50.17 09:50:02   Child thread is sleeping
+2013.50.17 09:50:02  [ID 9] 141
+2013.50.17 09:50:02   Child thread is sleeping
+2013.50.17 09:50:02  [ID 9] 142
+2013.50.17 09:50:02   Child thread is sleeping
+2013.50.17 09:50:02  [ID 9] 143
+2013.50.17 09:50:02   Child thread is sleeping
+2013.50.17 09:50:02  [ID 9] 144
+2013.50.17 09:50:02   Child thread is sleeping
+2013.50.17 09:50:02  [ID 9] 145
+2013.50.17 09:50:02   Child thread is sleeping
+2013.50.17 09:50:03  [ID 9] 146
+2013.50.17 09:50:03   Child thread is sleeping
+2013.50.17 09:50:03  [ID 9] 147
+2013.50.17 09:50:03   Child thread is sleeping
+2013.50.17 09:50:03  [ID 9] 148
+2013.50.17 09:50:03   Child thread is sleeping
+2013.50.17 09:50:03  [ID 9] 149
+2013.50.17 09:50:03   Child thread is sleeping
+2013.50.17 09:50:03  [ID 9] 150
+2013.50.17 09:50:03   Child thread is sleeping
+2013.50.17 09:50:03  [ID 9] 151
+2013.50.17 09:50:03   Child thread is sleeping
+2013.50.17 09:50:03  [ID 9] 152
+2013.50.17 09:50:03   Child thread is sleeping
+2013.50.17 09:50:03  [ID 9] 153
+2013.50.17 09:50:03   Child thread is sleeping
+2013.50.17 09:50:03  [ID 9] 154
+2013.50.17 09:50:03   Child thread is sleeping
+2013.50.17 09:50:04  [ID 9] 155
+2013.50.17 09:50:04   Child thread is sleeping
+2013.50.17 09:50:04  [ID 9] 156
+2013.50.17 09:50:04   Child thread is sleeping
+2013.50.17 09:50:04  [ID 9] 157
+2013.50.17 09:50:04   Child thread is sleeping
+2013.50.17 09:50:04  [ID 9] 158
+2013.50.17 09:50:04   Child thread is sleeping
+2013.50.17 09:50:04  [ID 9] 159
+2013.50.17 09:50:04   Child thread is sleeping
+2013.50.17 09:50:04  [ID 9] 160
+2013.50.17 09:50:04   Child thread is sleeping
+2013.50.17 09:50:04  [ID 9] 161
+2013.50.17 09:50:04   Child thread is sleeping
+2013.50.17 09:50:04  [ID 9] 162
+2013.50.17 09:50:04   Child thread is sleeping
+2013.50.17 09:50:04  [ID 9] 163
+2013.50.17 09:50:04   Child thread is sleeping
+2013.50.17 09:50:04  [ID 9] 164
+2013.50.17 09:50:04   Child thread is sleeping
+2013.50.17 09:50:05  [ID 9] 165
+2013.50.17 09:50:05   Child thread is sleeping
+2013.50.17 09:50:05  [ID 9] 166
+2013.50.17 09:50:05   Child thread is sleeping
+2013.50.17 09:50:05  [ID 9] 167
+2013.50.17 09:50:05   Child thread is sleeping
+2013.50.17 09:50:05  [ID 9] 168
+2013.50.17 09:50:05   Child thread is sleeping
+2013.50.17 09:50:05  [ID 9] 169
+2013.50.17 09:50:05   Child thread is sleeping
+2013.50.17 09:50:05  [ID 9] 170
+2013.50.17 09:50:05   Child thread is sleeping
+2013.50.17 09:50:05  [ID 9] 171
+2013.50.17 09:50:05   Child thread is sleeping
+2013.50.17 09:50:05  [ID 9] 172
+2013.50.17 09:50:05   Child thread is sleeping
+2013.50.17 09:50:05  [ID 9] 173
+2013.50.17 09:50:05   Child thread is sleeping
+2013.50.17 09:50:05  [ID 9] 174
+2013.50.17 09:50:05   Child thread is sleeping
+2013.50.17 09:50:06  [ID 9] 175
+2013.50.17 09:50:06   Child thread is sleeping
+2013.50.17 09:50:06  [ID 9] 176
+2013.50.17 09:50:06   Child thread is sleeping
+2013.50.17 09:50:06  [ID 9] 177
+2013.50.17 09:50:06   Child thread is sleeping
+2013.50.17 09:50:06  [ID 9] 178
+2013.50.17 09:50:06   Child thread is sleeping
+2013.50.17 09:50:06  [ID 9] 179
+2013.50.17 09:50:06   Child thread is sleeping
+2013.50.17 09:50:06  [ID 9] 180
+2013.50.17 09:50:06   Child thread is sleeping
+2013.50.17 09:50:06  [ID 9] 181
+2013.50.17 09:50:06   Child thread is sleeping
+2013.50.17 09:50:06  [ID 9] 182
+2013.50.17 09:50:06   Child thread is sleeping
+2013.50.17 09:50:06  [ID 9] 183
+2013.50.17 09:50:06   Child thread is sleeping
+2013.50.17 09:50:06  [ID 9] 184
+2013.50.17 09:50:06   Child thread is sleeping
+2013.50.17 09:50:07  [ID 9] 185
+2013.50.17 09:50:07   Child thread is sleeping
+2013.50.17 09:50:07  [ID 9] 186
+2013.50.17 09:50:07   Child thread is sleeping
+2013.50.17 09:50:07  [ID 9] 187
+2013.50.17 09:50:07   Child thread is sleeping
+2013.50.17 09:50:07  [ID 9] 188
+2013.50.17 09:50:07   Child thread is sleeping
+2013.50.17 09:50:07  [ID 9] 189
+2013.50.17 09:50:07   Child thread is sleeping
+2013.50.17 09:50:07  [ID 9] 190
+2013.50.17 09:50:07   Child thread is sleeping
+2013.50.17 09:50:07  [ID 9] 191
+2013.50.17 09:50:07   Child thread is sleeping
+2013.50.17 09:50:07  [ID 9] 192
+2013.50.17 09:50:07   Child thread is sleeping
+2013.50.17 09:50:07  [ID 9] 193
+2013.50.17 09:50:07   Child thread is sleeping
+2013.50.17 09:50:07  [ID 9] 194
+2013.50.17 09:50:07   Child thread is sleeping
+2013.50.17 09:50:08  [ID 9] 195
+2013.50.17 09:50:08   Child thread is sleeping
+2013.50.17 09:50:08  [ID 9] 196
+2013.50.17 09:50:08   Child thread is sleeping
+2013.50.17 09:50:08  [ID 9] 197
+2013.50.17 09:50:08   Child thread is sleeping
+2013.50.17 09:50:08  [ID 9] 198
+2013.50.17 09:50:08   Child thread is sleeping
+2013.50.17 09:50:08  [ID 9] 199
+2013.50.17 09:50:08   Child thread is sleeping
+2013.50.17 09:50:08   Child thread terminating
+2013.50.17 09:50:08  execution time = 20.65813605 s
+2013.51.17 09:51:59  php sent : 1
+2013.51.17 09:51:59  java sent : 2013.51.17 09:51:59 
+2013.51.17 09:51:59  [ID 10] 0
+2013.51.17 09:51:59   Child thread is sleeping
+2013.51.17 09:51:59  [ID 10] 1
+2013.51.17 09:51:59   Child thread is sleeping
+2013.51.17 09:51:59  [ID 10] 2
+2013.51.17 09:51:59   Child thread is sleeping
+2013.51.17 09:51:59  [ID 10] 3
+2013.51.17 09:51:59   Child thread is sleeping
+2013.52.17 09:52:00  [ID 10] 4
+2013.52.17 09:52:00   Child thread is sleeping
+2013.52.17 09:52:00  [ID 10] 5
+2013.52.17 09:52:00   Child thread is sleeping
+2013.52.17 09:52:00  [ID 10] 6
+2013.52.17 09:52:00   Child thread is sleeping
+2013.52.17 09:52:00  [ID 10] 7
+2013.52.17 09:52:00   Child thread is sleeping
+2013.52.17 09:52:00  [ID 10] 8
+2013.52.17 09:52:00   Child thread is sleeping
+2013.52.17 09:52:00  [ID 10] 9
+2013.52.17 09:52:00   Child thread is sleeping
+2013.52.17 09:52:00  [ID 10] 10
+2013.52.17 09:52:00   Child thread is sleeping
+2013.52.17 09:52:00  [ID 10] 11
+2013.52.17 09:52:00   Child thread is sleeping
+2013.52.17 09:52:00  [ID 10] 12
+2013.52.17 09:52:00   Child thread is sleeping
+2013.52.17 09:52:01  [ID 10] 13
+2013.52.17 09:52:01   Child thread is sleeping
+2013.52.17 09:52:01  [ID 10] 14
+2013.52.17 09:52:01   Child thread is sleeping
+2013.52.17 09:52:01  [ID 10] 15
+2013.52.17 09:52:01   Child thread is sleeping
+2013.52.17 09:52:01  [ID 10] 16
+2013.52.17 09:52:01   Child thread is sleeping
+2013.52.17 09:52:01  [ID 10] 17
+2013.52.17 09:52:01   Child thread is sleeping
+2013.52.17 09:52:01  [ID 10] 18
+2013.52.17 09:52:01   Child thread is sleeping
+2013.52.17 09:52:01  [ID 10] 19
+2013.52.17 09:52:01   Child thread is sleeping
+2013.52.17 09:52:01  [ID 10] 20
+2013.52.17 09:52:01   Child thread is sleeping
+2013.52.17 09:52:01  [ID 10] 21
+2013.52.17 09:52:01   Child thread is sleeping
+2013.52.17 09:52:01  [ID 10] 22
+2013.52.17 09:52:01   Child thread is sleeping
+2013.52.17 09:52:02  [ID 10] 23
+2013.52.17 09:52:02   Child thread is sleeping
+2013.52.17 09:52:02  [ID 10] 24
+2013.52.17 09:52:02   Child thread is sleeping
+2013.52.17 09:52:02  [ID 10] 25
+2013.52.17 09:52:02   Child thread is sleeping
+2013.52.17 09:52:02  [ID 10] 26
+2013.52.17 09:52:02   Child thread is sleeping
+2013.52.17 09:52:02  [ID 10] 27
+2013.52.17 09:52:02   Child thread is sleeping
+2013.52.17 09:52:02  [ID 10] 28
+2013.52.17 09:52:02   Child thread is sleeping
+2013.52.17 09:52:02  [ID 10] 29
+2013.52.17 09:52:02   Child thread is sleeping
+2013.52.17 09:52:02  [ID 10] 30
+2013.52.17 09:52:02   Child thread is sleeping
+2013.52.17 09:52:02  [ID 10] 31
+2013.52.17 09:52:02   Child thread is sleeping
+2013.52.17 09:52:02  [ID 10] 32
+2013.52.17 09:52:02   Child thread is sleeping
+2013.52.17 09:52:03  [ID 10] 33
+2013.52.17 09:52:03   Child thread is sleeping
+2013.52.17 09:52:03  [ID 10] 34
+2013.52.17 09:52:03   Child thread is sleeping
+2013.52.17 09:52:03  [ID 10] 35
+2013.52.17 09:52:03   Child thread is sleeping
+2013.52.17 09:52:03  [ID 10] 36
+2013.52.17 09:52:03   Child thread is sleeping
+2013.52.17 09:52:03  [ID 10] 37
+2013.52.17 09:52:03   Child thread is sleeping
+2013.52.17 09:52:03  [ID 10] 38
+2013.52.17 09:52:03   Child thread is sleeping
+2013.52.17 09:52:03  [ID 10] 39
+2013.52.17 09:52:03   Child thread is sleeping
+2013.52.17 09:52:03  [ID 10] 40
+2013.52.17 09:52:03   Child thread is sleeping
+2013.52.17 09:52:03  [ID 10] 41
+2013.52.17 09:52:03   Child thread is sleeping
+2013.52.17 09:52:03  [ID 10] 42
+2013.52.17 09:52:03   Child thread is sleeping
+2013.52.17 09:52:04  [ID 10] 43
+2013.52.17 09:52:04   Child thread is sleeping
+2013.52.17 09:52:04  [ID 10] 44
+2013.52.17 09:52:04   Child thread is sleeping
+2013.52.17 09:52:04  [ID 10] 45
+2013.52.17 09:52:04   Child thread is sleeping
+2013.52.17 09:52:04  [ID 10] 46
+2013.52.17 09:52:04   Child thread is sleeping
+2013.52.17 09:52:04  [ID 10] 47
+2013.52.17 09:52:04   Child thread is sleeping
+2013.52.17 09:52:04  [ID 10] 48
+2013.52.17 09:52:04   Child thread is sleeping
+2013.52.17 09:52:04  [ID 10] 49
+2013.52.17 09:52:04   Child thread is sleeping
+2013.52.17 09:52:04  [ID 10] 50
+2013.52.17 09:52:04   Child thread is sleeping
+2013.52.17 09:52:04  [ID 10] 51
+2013.52.17 09:52:04   Child thread is sleeping
+2013.52.17 09:52:04  [ID 10] 52
+2013.52.17 09:52:04   Child thread is sleeping
+2013.52.17 09:52:05  [ID 10] 53
+2013.52.17 09:52:05   Child thread is sleeping
+2013.52.17 09:52:05  [ID 10] 54
+2013.52.17 09:52:05   Child thread is sleeping
+2013.52.17 09:52:05  [ID 10] 55
+2013.52.17 09:52:05   Child thread is sleeping
+2013.52.17 09:52:05  [ID 10] 56
+2013.52.17 09:52:05   Child thread is sleeping
+2013.52.17 09:52:05  [ID 10] 57
+2013.52.17 09:52:05   Child thread is sleeping
+2013.52.17 09:52:05  [ID 10] 58
+2013.52.17 09:52:05   Child thread is sleeping
+2013.52.17 09:52:05  [ID 10] 59
+2013.52.17 09:52:05   Child thread is sleeping
+2013.52.17 09:52:05  [ID 10] 60
+2013.52.17 09:52:05   Child thread is sleeping
+2013.52.17 09:52:05  php sent : 0
+2013.52.17 09:52:05  java sent : 2013.52.17 09:52:05 
+2013.52.17 09:52:05  [ID 10] 61
+2013.52.17 09:52:05   Child thread is sleeping
+2013.52.17 09:52:05  [ID 10] 62
+2013.52.17 09:52:05   Child thread is sleeping
+2013.52.17 09:52:06  [ID 10] 63
+2013.52.17 09:52:06   Child thread is sleeping
+2013.52.17 09:52:06  [ID 10] 64
+2013.52.17 09:52:06   Child thread is sleeping
+2013.52.17 09:52:06  [ID 10] 65
+2013.52.17 09:52:06   Child thread is sleeping
+2013.52.17 09:52:06  [ID 10] 66
+2013.52.17 09:52:06   Child thread is sleeping
+2013.52.17 09:52:06  [ID 10] 67
+2013.52.17 09:52:06   Child thread is sleeping
+2013.52.17 09:52:06  [ID 10] 68
+2013.52.17 09:52:06   Child thread is sleeping
+2013.52.17 09:52:06  [ID 10] 69
+2013.52.17 09:52:06   Child thread is sleeping
+2013.52.17 09:52:06  [ID 10] 70
+2013.52.17 09:52:06   Child thread is sleeping
+2013.52.17 09:52:06  [ID 10] 71
+2013.52.17 09:52:06   Child thread is sleeping
+2013.52.17 09:52:06  [ID 10] 72
+2013.52.17 09:52:06   Child thread is sleeping
+2013.52.17 09:52:07  [ID 10] 73
+2013.52.17 09:52:07   Child thread is sleeping
+2013.52.17 09:52:07  [ID 10] 74
+2013.52.17 09:52:07   Child thread is sleeping
+2013.52.17 09:52:07  [ID 10] 75
+2013.52.17 09:52:07   Child thread is sleeping
+2013.52.17 09:52:07  [ID 10] 76
+2013.52.17 09:52:07   Child thread is sleeping
+2013.52.17 09:52:07  [ID 10] 77
+2013.52.17 09:52:07   Child thread is sleeping
+2013.52.17 09:52:07  [ID 10] 78
+2013.52.17 09:52:07   Child thread is sleeping
+2013.52.17 09:52:07  [ID 10] 79
+2013.52.17 09:52:07   Child thread is sleeping
+2013.52.17 09:52:07  [ID 10] 80
+2013.52.17 09:52:07   Child thread is sleeping
+2013.52.17 09:52:07  [ID 10] 81
+2013.52.17 09:52:07   Child thread is sleeping
+2013.52.17 09:52:07  [ID 10] 82
+2013.52.17 09:52:07   Child thread is sleeping
+2013.52.17 09:52:08  [ID 10] 83
+2013.52.17 09:52:08   Child thread is sleeping
+2013.52.17 09:52:08  [ID 10] 84
+2013.52.17 09:52:08   Child thread is sleeping
+2013.52.17 09:52:08  [ID 10] 85
+2013.52.17 09:52:08   Child thread is sleeping
+2013.52.17 09:52:08  [ID 10] 86
+2013.52.17 09:52:08   Child thread is sleeping
+2013.52.17 09:52:08  [ID 10] 87
+2013.52.17 09:52:08   Child thread is sleeping
+2013.52.17 09:52:08  [ID 10] 88
+2013.52.17 09:52:08   Child thread is sleeping
+2013.52.17 09:52:08  [ID 10] 89
+2013.52.17 09:52:08   Child thread is sleeping
+2013.52.17 09:52:08  [ID 10] 90
+2013.52.17 09:52:08   Child thread is sleeping
+2013.52.17 09:52:08  [ID 10] 91
+2013.52.17 09:52:08   Child thread is sleeping
+2013.52.17 09:52:09  [ID 10] 92
+2013.52.17 09:52:09   Child thread is sleeping
+2013.52.17 09:52:09  [ID 10] 93
+2013.52.17 09:52:09   Child thread is sleeping
+2013.52.17 09:52:09  [ID 10] 94
+2013.52.17 09:52:09   Child thread is sleeping
+2013.52.17 09:52:09  [ID 10] 95
+2013.52.17 09:52:09   Child thread is sleeping
+2013.52.17 09:52:09  [ID 10] 96
+2013.52.17 09:52:09   Child thread is sleeping
+2013.52.17 09:52:09  [ID 10] 97
+2013.52.17 09:52:09   Child thread is sleeping
+2013.52.17 09:52:09  [ID 10] 98
+2013.52.17 09:52:09   Child thread is sleeping
+2013.52.17 09:52:09  [ID 10] 99
+2013.52.17 09:52:09   Child thread is sleeping
+2013.52.17 09:52:09  [ID 10] 100
+2013.52.17 09:52:09   Child thread is sleeping
+2013.52.17 09:52:09  [ID 10] 101
+2013.52.17 09:52:09   Child thread is sleeping
+2013.52.17 09:52:10  [ID 10] 102
+2013.52.17 09:52:10   Child thread is sleeping
+2013.52.17 09:52:10  [ID 10] 103
+2013.52.17 09:52:10   Child thread is sleeping
+2013.52.17 09:52:10  [ID 10] 104
+2013.52.17 09:52:10   Child thread is sleeping
+2013.52.17 09:52:10  [ID 10] 105
+2013.52.17 09:52:10   Child thread is sleeping
+2013.52.17 09:52:10  [ID 10] 106
+2013.52.17 09:52:10   Child thread is sleeping
+2013.52.17 09:52:10  [ID 10] 107
+2013.52.17 09:52:10   Child thread is sleeping
+2013.52.17 09:52:10  [ID 10] 108
+2013.52.17 09:52:10   Child thread is sleeping
+2013.52.17 09:52:10  [ID 10] 109
+2013.52.17 09:52:10   Child thread is sleeping
+2013.52.17 09:52:10  php sent : 0
+2013.52.17 09:52:10  java sent : 2013.52.17 09:52:10 
+2013.52.17 09:52:10  [ID 10] 110
+2013.52.17 09:52:10   Child thread is sleeping
+2013.52.17 09:52:10  [ID 10] 111
+2013.52.17 09:52:10   Child thread is sleeping
+2013.52.17 09:52:11  [ID 10] 112
+2013.52.17 09:52:11   Child thread is sleeping
+2013.52.17 09:52:11  [ID 10] 113
+2013.52.17 09:52:11   Child thread is sleeping
+2013.52.17 09:52:11  [ID 10] 114
+2013.52.17 09:52:11   Child thread is sleeping
+2013.52.17 09:52:11  [ID 10] 115
+2013.52.17 09:52:11   Child thread is sleeping
+2013.52.17 09:52:11  [ID 10] 116
+2013.52.17 09:52:11   Child thread is sleeping
+2013.52.17 09:52:11  [ID 10] 117
+2013.52.17 09:52:11   Child thread is sleeping
+2013.52.17 09:52:11  [ID 10] 118
+2013.52.17 09:52:11   Child thread is sleeping
+2013.52.17 09:52:11  [ID 10] 119
+2013.52.17 09:52:11   Child thread is sleeping
+2013.52.17 09:52:11  [ID 10] 120
+2013.52.17 09:52:11   Child thread is sleeping
+2013.52.17 09:52:11  [ID 10] 121
+2013.52.17 09:52:11   Child thread is sleeping
+2013.52.17 09:52:12  [ID 10] 122
+2013.52.17 09:52:12   Child thread is sleeping
+2013.52.17 09:52:12  [ID 10] 123
+2013.52.17 09:52:12   Child thread is sleeping
+2013.52.17 09:52:12  [ID 10] 124
+2013.52.17 09:52:12   Child thread is sleeping
+2013.52.17 09:52:12  [ID 10] 125
+2013.52.17 09:52:12   Child thread is sleeping
+2013.52.17 09:52:12  [ID 10] 126
+2013.52.17 09:52:12   Child thread is sleeping
+2013.52.17 09:52:12  [ID 10] 127
+2013.52.17 09:52:12   Child thread is sleeping
+2013.52.17 09:52:12  [ID 10] 128
+2013.52.17 09:52:12   Child thread is sleeping
+2013.52.17 09:52:12  [ID 10] 129
+2013.52.17 09:52:12   Child thread is sleeping
+2013.52.17 09:52:12  [ID 10] 130
+2013.52.17 09:52:12   Child thread is sleeping
+2013.52.17 09:52:12  [ID 10] 131
+2013.52.17 09:52:12   Child thread is sleeping
+2013.52.17 09:52:13  [ID 10] 132
+2013.52.17 09:52:13   Child thread is sleeping
+2013.52.17 09:52:13  [ID 10] 133
+2013.52.17 09:52:13   Child thread is sleeping
+2013.52.17 09:52:13  [ID 10] 134
+2013.52.17 09:52:13   Child thread is sleeping
+2013.52.17 09:52:13  [ID 10] 135
+2013.52.17 09:52:13   Child thread is sleeping
+2013.52.17 09:52:13  [ID 10] 136
+2013.52.17 09:52:13   Child thread is sleeping
+2013.52.17 09:52:13  [ID 10] 137
+2013.52.17 09:52:13   Child thread is sleeping
+2013.52.17 09:52:13  [ID 10] 138
+2013.52.17 09:52:13   Child thread is sleeping
+2013.52.17 09:52:13  [ID 10] 139
+2013.52.17 09:52:13   Child thread is sleeping
+2013.52.17 09:52:13  [ID 10] 140
+2013.52.17 09:52:13   Child thread is sleeping
+2013.52.17 09:52:13  [ID 10] 141
+2013.52.17 09:52:13   Child thread is sleeping
+2013.52.17 09:52:14  [ID 10] 142
+2013.52.17 09:52:14   Child thread is sleeping
+2013.52.17 09:52:14  [ID 10] 143
+2013.52.17 09:52:14   Child thread is sleeping
+2013.52.17 09:52:14  [ID 10] 144
+2013.52.17 09:52:14   Child thread is sleeping
+2013.52.17 09:52:14  [ID 10] 145
+2013.52.17 09:52:14   Child thread is sleeping
+2013.52.17 09:52:14  [ID 10] 146
+2013.52.17 09:52:14   Child thread is sleeping
+2013.52.17 09:52:14  [ID 10] 147
+2013.52.17 09:52:14   Child thread is sleeping
+2013.52.17 09:52:14  [ID 10] 148
+2013.52.17 09:52:14   Child thread is sleeping
+2013.52.17 09:52:14  [ID 10] 149
+2013.52.17 09:52:14   Child thread is sleeping
+2013.52.17 09:52:14  [ID 10] 150
+2013.52.17 09:52:14   Child thread is sleeping
+2013.52.17 09:52:15  [ID 10] 151
+2013.52.17 09:52:15   Child thread is sleeping
+2013.52.17 09:52:15  [ID 10] 152
+2013.52.17 09:52:15   Child thread is sleeping
+2013.52.17 09:52:15  [ID 10] 153
+2013.52.17 09:52:15   Child thread is sleeping
+2013.52.17 09:52:15  [ID 10] 154
+2013.52.17 09:52:15   Child thread is sleeping
+2013.52.17 09:52:15  [ID 10] 155
+2013.52.17 09:52:15   Child thread is sleeping
+2013.52.17 09:52:15  [ID 10] 156
+2013.52.17 09:52:15   Child thread is sleeping
+2013.52.17 09:52:15  [ID 10] 157
+2013.52.17 09:52:15   Child thread is sleeping
+2013.52.17 09:52:15  [ID 10] 158
+2013.52.17 09:52:15   Child thread is sleeping
+2013.52.17 09:52:15  php sent : 0
+2013.52.17 09:52:15  java sent : 2013.52.17 09:52:15 
+2013.52.17 09:52:15  [ID 10] 159
+2013.52.17 09:52:15   Child thread is sleeping
+2013.52.17 09:52:15  [ID 10] 160
+2013.52.17 09:52:15   Child thread is sleeping
+2013.52.17 09:52:16  [ID 10] 161
+2013.52.17 09:52:16   Child thread is sleeping
+2013.52.17 09:52:16  [ID 10] 162
+2013.52.17 09:52:16   Child thread is sleeping
+2013.52.17 09:52:16  [ID 10] 163
+2013.52.17 09:52:16   Child thread is sleeping
+2013.52.17 09:52:16  [ID 10] 164
+2013.52.17 09:52:16   Child thread is sleeping
+2013.52.17 09:52:16  [ID 10] 165
+2013.52.17 09:52:16   Child thread is sleeping
+2013.52.17 09:52:16  [ID 10] 166
+2013.52.17 09:52:16   Child thread is sleeping
+2013.52.17 09:52:16  [ID 10] 167
+2013.52.17 09:52:16   Child thread is sleeping
+2013.52.17 09:52:16  [ID 10] 168
+2013.52.17 09:52:16   Child thread is sleeping
+2013.52.17 09:52:16  [ID 10] 169
+2013.52.17 09:52:16   Child thread is sleeping
+2013.52.17 09:52:16  [ID 10] 170
+2013.52.17 09:52:16   Child thread is sleeping
+2013.52.17 09:52:17  [ID 10] 171
+2013.52.17 09:52:17   Child thread is sleeping
+2013.52.17 09:52:17  [ID 10] 172
+2013.52.17 09:52:17   Child thread is sleeping
+2013.52.17 09:52:17  [ID 10] 173
+2013.52.17 09:52:17   Child thread is sleeping
+2013.52.17 09:52:17  [ID 10] 174
+2013.52.17 09:52:17   Child thread is sleeping
+2013.52.17 09:52:17  [ID 10] 175
+2013.52.17 09:52:17   Child thread is sleeping
+2013.52.17 09:52:17  [ID 10] 176
+2013.52.17 09:52:17   Child thread is sleeping
+2013.52.17 09:52:17  [ID 10] 177
+2013.52.17 09:52:17   Child thread is sleeping
+2013.52.17 09:52:17  [ID 10] 178
+2013.52.17 09:52:17   Child thread is sleeping
+2013.52.17 09:52:17  [ID 10] 179
+2013.52.17 09:52:17   Child thread is sleeping
+2013.52.17 09:52:17  [ID 10] 180
+2013.52.17 09:52:17   Child thread is sleeping
+2013.52.17 09:52:18  [ID 10] 181
+2013.52.17 09:52:18   Child thread is sleeping
+2013.52.17 09:52:18  [ID 10] 182
+2013.52.17 09:52:18   Child thread is sleeping
+2013.52.17 09:52:18  [ID 10] 183
+2013.52.17 09:52:18   Child thread is sleeping
+2013.52.17 09:52:18  [ID 10] 184
+2013.52.17 09:52:18   Child thread is sleeping
+2013.52.17 09:52:18  [ID 10] 185
+2013.52.17 09:52:18   Child thread is sleeping
+2013.52.17 09:52:18  [ID 10] 186
+2013.52.17 09:52:18   Child thread is sleeping
+2013.52.17 09:52:18  [ID 10] 187
+2013.52.17 09:52:18   Child thread is sleeping
+2013.52.17 09:52:18  [ID 10] 188
+2013.52.17 09:52:18   Child thread is sleeping
+2013.52.17 09:52:18  [ID 10] 189
+2013.52.17 09:52:18   Child thread is sleeping
+2013.52.17 09:52:18  [ID 10] 190
+2013.52.17 09:52:18   Child thread is sleeping
+2013.52.17 09:52:19  [ID 10] 191
+2013.52.17 09:52:19   Child thread is sleeping
+2013.52.17 09:52:19  [ID 10] 192
+2013.52.17 09:52:19   Child thread is sleeping
+2013.52.17 09:52:19  [ID 10] 193
+2013.52.17 09:52:19   Child thread is sleeping
+2013.52.17 09:52:19  [ID 10] 194
+2013.52.17 09:52:19   Child thread is sleeping
+2013.52.17 09:52:19  [ID 10] 195
+2013.52.17 09:52:19   Child thread is sleeping
+2013.52.17 09:52:19  [ID 10] 196
+2013.52.17 09:52:19   Child thread is sleeping
+2013.52.17 09:52:19  [ID 10] 197
+2013.52.17 09:52:19   Child thread is sleeping
+2013.52.17 09:52:19  [ID 10] 198
+2013.52.17 09:52:19   Child thread is sleeping
+2013.52.17 09:52:19  [ID 10] 199
+2013.52.17 09:52:19   Child thread is sleeping
+2013.52.17 09:52:19   Child thread terminating
+2013.52.17 09:52:19  execution time = 20.348467693 s
+2013.52.17 09:52:20  php sent : 0
+2013.52.17 09:52:20  java sent : 2013.52.17 09:52:20 
+2013.52.17 09:52:25  php sent : 0
+2013.52.17 09:52:25  java sent : 2013.52.17 09:52:25 
+2013.52.17 09:52:30  php sent : 0
+2013.52.17 09:52:30  java sent : 2013.52.17 09:52:30 
+2013.52.17 09:52:35  php sent : 0
+2013.52.17 09:52:35  java sent : 2013.52.17 09:52:35 
+2013.52.17 09:52:40  php sent : 0
+2013.52.17 09:52:40  java sent : 2013.52.17 09:52:40 
+2013.52.17 09:52:45  php sent : 0
+2013.52.17 09:52:45  java sent : 2013.52.17 09:52:45 
+2013.52.17 09:52:50  php sent : 0
+2013.52.17 09:52:50  java sent : 2013.52.17 09:52:50 
+2013.52.17 09:52:55  php sent : 0
+2013.52.17 09:52:55  java sent : 2013.52.17 09:52:55 
+2013.53.17 09:53:00  php sent : 0
+2013.53.17 09:53:00  java sent : 2013.53.17 09:53:00 
+2013.53.17 09:53:05  php sent : 0
+2013.53.17 09:53:05  java sent : 2013.53.17 09:53:05 
+2013.53.17 09:53:10  php sent : 0
+2013.53.17 09:53:10  java sent : 2013.53.17 09:53:10 
+2013.53.17 09:53:15  php sent : 0
+2013.53.17 09:53:15  java sent : 2013.53.17 09:53:15 
+2013.53.17 09:53:20  php sent : 0
+2013.53.17 09:53:20  java sent : 2013.53.17 09:53:20 
+2013.53.17 09:53:25  php sent : 0
+2013.53.17 09:53:25  java sent : 2013.53.17 09:53:25 
+2013.53.17 09:53:30  php sent : 0
+2013.53.17 09:53:30  java sent : 2013.53.17 09:53:30 
+2013.53.17 09:53:35  php sent : 0
+2013.53.17 09:53:35  java sent : 2013.53.17 09:53:35 
+2013.53.17 09:53:40  php sent : 0
+2013.53.17 09:53:40  java sent : 2013.53.17 09:53:40 
+2013.53.17 09:53:45  php sent : 0
+2013.53.17 09:53:45  java sent : 2013.53.17 09:53:45 
+2013.53.17 09:53:50  php sent : 0
+2013.53.17 09:53:50  java sent : 2013.53.17 09:53:50 
+2013.53.17 09:53:55  php sent : 0
+2013.53.17 09:53:55  java sent : 2013.53.17 09:53:55 
+2013.54.17 09:54:00  php sent : 0
+2013.54.17 09:54:00  java sent : 2013.54.17 09:54:00 
+2013.54.17 09:54:05  php sent : 0
+2013.54.17 09:54:05  java sent : 2013.54.17 09:54:05 
+2013.54.17 09:54:10  php sent : 0
+2013.54.17 09:54:10  java sent : 2013.54.17 09:54:10 
+2013.54.17 09:54:15  php sent : 0
+2013.54.17 09:54:15  java sent : 2013.54.17 09:54:15 
+2013.54.17 09:54:20  php sent : 0
+2013.54.17 09:54:20  java sent : 2013.54.17 09:54:20 
+2013.54.17 09:54:25  php sent : 0
+2013.54.17 09:54:25  java sent : 2013.54.17 09:54:25 
+2013.54.17 09:54:30  php sent : 0
+2013.54.17 09:54:30  java sent : 2013.54.17 09:54:30 
+2013.54.17 09:54:35  php sent : 0
+2013.54.17 09:54:35  java sent : 2013.54.17 09:54:35 
+2013.54.17 09:54:40  php sent : 0
+2013.54.17 09:54:40  java sent : 2013.54.17 09:54:40 
+2013.54.17 09:54:45  php sent : 0
+2013.54.17 09:54:45  java sent : 2013.54.17 09:54:45 
+2013.54.17 09:54:51  php sent : 0
+2013.54.17 09:54:51  java sent : 2013.54.17 09:54:51 
+2013.54.17 09:54:55  php sent : 0
+2013.54.17 09:54:55  java sent : 2013.54.17 09:54:55 
+2013.55.17 09:55:00  php sent : 0
+2013.55.17 09:55:00  java sent : 2013.55.17 09:55:00 
+2013.55.17 09:55:05  php sent : 0
+2013.55.17 09:55:05  java sent : 2013.55.17 09:55:05 
+2013.55.17 09:55:10  php sent : 0
+2013.55.17 09:55:10  java sent : 2013.55.17 09:55:10 
+2013.55.17 09:55:15  php sent : 0
+2013.55.17 09:55:15  java sent : 2013.55.17 09:55:15 
+2013.55.17 09:55:20  php sent : 0
+2013.55.17 09:55:20  java sent : 2013.55.17 09:55:20 
+2013.55.17 09:55:25  php sent : 0
+2013.55.17 09:55:25  java sent : 2013.55.17 09:55:25 
+2013.55.17 09:55:30  php sent : 0
+2013.55.17 09:55:30  java sent : 2013.55.17 09:55:30 
+2013.55.17 09:55:35  php sent : 0
+2013.55.17 09:55:35  java sent : 2013.55.17 09:55:35 
+2013.55.17 09:55:40  php sent : 0
+2013.55.17 09:55:40  java sent : 2013.55.17 09:55:40 
+2013.55.17 09:55:45  php sent : 0
+2013.55.17 09:55:45  java sent : 2013.55.17 09:55:45 
+2013.55.17 09:55:50  php sent : 0
+2013.55.17 09:55:50  java sent : 2013.55.17 09:55:50 
+2013.55.17 09:55:55  php sent : 0
+2013.55.17 09:55:55  java sent : 2013.55.17 09:55:55 
+2013.56.17 09:56:00  php sent : 0
+2013.56.17 09:56:00  java sent : 2013.56.17 09:56:00 
+2013.56.17 09:56:05  php sent : 0
+2013.56.17 09:56:05  java sent : 2013.56.17 09:56:05 
+2013.56.17 09:56:10  php sent : 0
+2013.56.17 09:56:10  java sent : 2013.56.17 09:56:10 
+2013.56.17 09:56:15  php sent : 0
+2013.56.17 09:56:15  java sent : 2013.56.17 09:56:15 
+2013.56.17 09:56:20  php sent : 0
+2013.56.17 09:56:20  java sent : 2013.56.17 09:56:20 
+2013.56.17 09:56:25  php sent : 0
+2013.56.17 09:56:25  java sent : 2013.56.17 09:56:25 
+2013.56.17 09:56:30  php sent : 0
+2013.56.17 09:56:30  java sent : 2013.56.17 09:56:30 
+2013.56.17 09:56:35  php sent : 0
+2013.56.17 09:56:35  java sent : 2013.56.17 09:56:35 
+2013.56.17 09:56:40  php sent : 0
+2013.56.17 09:56:40  java sent : 2013.56.17 09:56:40 
+2013.56.17 09:56:45  php sent : 0
+2013.56.17 09:56:45  java sent : 2013.56.17 09:56:45 
+2013.56.17 09:56:50  php sent : 0
+2013.56.17 09:56:50  java sent : 2013.56.17 09:56:50 
+2013.56.17 09:56:55  php sent : 0
+2013.56.17 09:56:55  java sent : 2013.56.17 09:56:55 
+2013.57.17 09:57:00  php sent : 0
+2013.57.17 09:57:00  java sent : 2013.57.17 09:57:00 
+2013.57.17 09:57:05  php sent : 0
+2013.57.17 09:57:05  java sent : 2013.57.17 09:57:05 
+2013.57.17 09:57:10  php sent : 0
+2013.57.17 09:57:10  java sent : 2013.57.17 09:57:10 
+2013.57.17 09:57:15  php sent : 0
+2013.57.17 09:57:15  java sent : 2013.57.17 09:57:15 
+2013.57.17 09:57:20  php sent : 0
+2013.57.17 09:57:20  java sent : 2013.57.17 09:57:20 
+2013.57.17 09:57:25  php sent : 0
+2013.57.17 09:57:25  java sent : 2013.57.17 09:57:25 
+2013.57.17 09:57:30  php sent : 0
+2013.57.17 09:57:30  java sent : 2013.57.17 09:57:30 
+2013.57.17 09:57:35  php sent : 0
+2013.57.17 09:57:35  java sent : 2013.57.17 09:57:35 
+2013.57.17 09:57:41  php sent : 0
+2013.57.17 09:57:41  java sent : 2013.57.17 09:57:41 
+2013.57.17 09:57:45  php sent : 0
+2013.57.17 09:57:45  java sent : 2013.57.17 09:57:45 
+2013.57.17 09:57:51  php sent : 0
+2013.57.17 09:57:51  java sent : 2013.57.17 09:57:51 
+2013.57.17 09:57:55  php sent : 0
+2013.57.17 09:57:55  java sent : 2013.57.17 09:57:55 
+2013.58.17 09:58:00  php sent : 0
+2013.58.17 09:58:00  java sent : 2013.58.17 09:58:00 
+2013.58.17 09:58:05  php sent : 0
+2013.58.17 09:58:05  java sent : 2013.58.17 09:58:05 
+2013.58.17 09:58:10  php sent : 0
+2013.58.17 09:58:10  java sent : 2013.58.17 09:58:10 
+2013.58.17 09:58:15  php sent : 0
+2013.58.17 09:58:15  java sent : 2013.58.17 09:58:15 
+2013.58.17 09:58:20  php sent : 0
+2013.58.17 09:58:20  java sent : 2013.58.17 09:58:20 
+2013.58.17 09:58:25  php sent : 0
+2013.58.17 09:58:25  java sent : 2013.58.17 09:58:25 
+2013.58.17 09:58:30  php sent : 0
+2013.58.17 09:58:30  java sent : 2013.58.17 09:58:30 
+2013.58.17 09:58:35  php sent : 0
+2013.58.17 09:58:35  java sent : 2013.58.17 09:58:35 
+2013.58.17 09:58:40  php sent : 0
+2013.58.17 09:58:40  java sent : 2013.58.17 09:58:40 
+2013.58.17 09:58:45  php sent : 0
+2013.58.17 09:58:45  java sent : 2013.58.17 09:58:45 
+2013.58.17 09:58:50  php sent : 0
+2013.58.17 09:58:50  java sent : 2013.58.17 09:58:50 
+2013.58.17 09:58:55  php sent : 0
+2013.58.17 09:58:55  java sent : 2013.58.17 09:58:55 
+2013.59.17 09:59:00  php sent : 0
+2013.59.17 09:59:00  java sent : 2013.59.17 09:59:00 
+2013.59.17 09:59:06  php sent : 0
+2013.59.17 09:59:06  java sent : 2013.59.17 09:59:06 
+2013.59.17 09:59:10  php sent : 0
+2013.59.17 09:59:10  java sent : 2013.59.17 09:59:10 
+2013.59.17 09:59:15  php sent : 0
+2013.59.17 09:59:15  java sent : 2013.59.17 09:59:15 
+2013.59.17 09:59:20  php sent : 0
+2013.59.17 09:59:20  java sent : 2013.59.17 09:59:20 
+2013.59.17 09:59:25  php sent : 0
+2013.59.17 09:59:25  java sent : 2013.59.17 09:59:25 
+2013.59.17 09:59:30  php sent : 0
+2013.59.17 09:59:30  java sent : 2013.59.17 09:59:30 
+2013.59.17 09:59:35  php sent : 0
+2013.59.17 09:59:35  java sent : 2013.59.17 09:59:35 
+2013.59.17 09:59:40  php sent : 0
+2013.59.17 09:59:40  java sent : 2013.59.17 09:59:40 
+2013.59.17 09:59:45  php sent : 0
+2013.59.17 09:59:45  java sent : 2013.59.17 09:59:45 
+2013.59.17 09:59:50  php sent : 0
+2013.59.17 09:59:50  java sent : 2013.59.17 09:59:50 
+2013.59.17 09:59:55  php sent : 0
+2013.59.17 09:59:55  java sent : 2013.59.17 09:59:55 
+2013.00.17 10:00:00  php sent : 0
+2013.00.17 10:00:00  java sent : 2013.00.17 10:00:00 
+2013.00.17 10:00:06  php sent : 0
+2013.00.17 10:00:06  java sent : 2013.00.17 10:00:06 
+2013.00.17 10:00:10  php sent : 0
+2013.00.17 10:00:10  java sent : 2013.00.17 10:00:10 
+2013.00.17 10:00:15  php sent : 0
+2013.00.17 10:00:15  java sent : 2013.00.17 10:00:15 
+2013.00.17 10:00:23  php sent : 0
+2013.00.17 10:00:23  java sent : 2013.00.17 10:00:23 
+2013.00.17 10:00:25  php sent : 0
+2013.00.17 10:00:25  java sent : 2013.00.17 10:00:25 
+2013.00.17 10:00:30  php sent : 0
+2013.00.17 10:00:30  java sent : 2013.00.17 10:00:30 
+2013.00.17 10:00:35  php sent : 0
+2013.00.17 10:00:35  java sent : 2013.00.17 10:00:35 
+2013.00.17 10:00:40  php sent : 0
+2013.00.17 10:00:40  java sent : 2013.00.17 10:00:40 
+2013.00.17 10:00:45  php sent : 0
+2013.00.17 10:00:45  java sent : 2013.00.17 10:00:45 
+2013.00.17 10:00:50  php sent : 0
+2013.00.17 10:00:50  java sent : 2013.00.17 10:00:50 
+2013.00.17 10:00:55  php sent : 0
+2013.00.17 10:00:55  java sent : 2013.00.17 10:00:55 
+2013.01.17 10:01:00  php sent : 0
+2013.01.17 10:01:00  java sent : 2013.01.17 10:01:00 
+2013.01.17 10:01:05  php sent : 0
+2013.01.17 10:01:05  java sent : 2013.01.17 10:01:05 
+2013.01.17 10:01:10  php sent : 0
+2013.01.17 10:01:10  java sent : 2013.01.17 10:01:10 
+2013.01.17 10:01:15  php sent : 0
+2013.01.17 10:01:15  java sent : 2013.01.17 10:01:15 
+2013.01.17 10:01:20  php sent : 0
+2013.01.17 10:01:20  java sent : 2013.01.17 10:01:20 
+2013.01.17 10:01:25  php sent : 0
+2013.01.17 10:01:25  java sent : 2013.01.17 10:01:25 
+2013.01.17 10:01:30  php sent : 0
+2013.01.17 10:01:30  java sent : 2013.01.17 10:01:30 
+2013.01.17 10:01:35  php sent : 0
+2013.01.17 10:01:35  java sent : 2013.01.17 10:01:35 
+2013.01.17 10:01:40  php sent : 0
+2013.01.17 10:01:40  java sent : 2013.01.17 10:01:40 
+2013.01.17 10:01:45  php sent : 0
+2013.01.17 10:01:45  java sent : 2013.01.17 10:01:45 
+2013.01.17 10:01:50  php sent : 0
+2013.01.17 10:01:50  java sent : 2013.01.17 10:01:50 
+2013.01.17 10:01:55  php sent : 0
+2013.01.17 10:01:55  java sent : 2013.01.17 10:01:55 
+2013.02.17 10:02:00  php sent : 0
+2013.02.17 10:02:00  java sent : 2013.02.17 10:02:00 
+2013.02.17 10:02:05  php sent : 0
+2013.02.17 10:02:05  java sent : 2013.02.17 10:02:05 
+2013.02.17 10:02:10  php sent : 0
+2013.02.17 10:02:10  java sent : 2013.02.17 10:02:10 
+2013.02.17 10:02:15  php sent : 0
+2013.02.17 10:02:15  java sent : 2013.02.17 10:02:15 
+2013.02.17 10:02:20  php sent : 0
+2013.02.17 10:02:20  java sent : 2013.02.17 10:02:20 
+2013.02.17 10:02:26  php sent : 0
+2013.02.17 10:02:26  java sent : 2013.02.17 10:02:26 
+2013.02.17 10:02:30  php sent : 0
+2013.02.17 10:02:30  java sent : 2013.02.17 10:02:30 
+2013.02.17 10:02:35  php sent : 0
+2013.02.17 10:02:35  java sent : 2013.02.17 10:02:35 
+2013.02.17 10:02:40  php sent : 0
+2013.02.17 10:02:40  java sent : 2013.02.17 10:02:40 
+2013.02.17 10:02:45  php sent : 0
+2013.02.17 10:02:45  java sent : 2013.02.17 10:02:45 
+2013.02.17 10:02:50  php sent : 0
+2013.02.17 10:02:50  java sent : 2013.02.17 10:02:50 
+2013.02.17 10:02:55  php sent : 0
+2013.02.17 10:02:55  java sent : 2013.02.17 10:02:55 
+2013.03.17 10:03:00  php sent : 0
+2013.03.17 10:03:00  java sent : 2013.03.17 10:03:00 
+2013.03.17 10:03:05  php sent : 0
+2013.03.17 10:03:05  java sent : 2013.03.17 10:03:05 
+2013.03.17 10:03:10  php sent : 0
+2013.03.17 10:03:10  java sent : 2013.03.17 10:03:10 
+2013.03.17 10:03:15  php sent : 0
+2013.03.17 10:03:15  java sent : 2013.03.17 10:03:15 
+2013.03.17 10:03:20  php sent : 0
+2013.03.17 10:03:20  java sent : 2013.03.17 10:03:20 
+2013.03.17 10:03:25  php sent : 0
+2013.03.17 10:03:25  java sent : 2013.03.17 10:03:25 
+2013.03.17 10:03:34  php sent : 1
+2013.03.17 10:03:34  java sent : 2013.03.17 10:03:34 
+2013.03.17 10:03:34  [ID 11] 0
+2013.03.17 10:03:34   Child thread is sleeping
+2013.03.17 10:03:35  [ID 11] 1
+2013.03.17 10:03:35   Child thread is sleeping
+2013.03.17 10:03:35  [ID 11] 2
+2013.03.17 10:03:35   Child thread is sleeping
+2013.03.17 10:03:35  [ID 11] 3
+2013.03.17 10:03:35   Child thread is sleeping
+2013.03.17 10:03:35  [ID 11] 4
+2013.03.17 10:03:35   Child thread is sleeping
+2013.03.17 10:03:35  [ID 11] 5
+2013.03.17 10:03:35   Child thread is sleeping
+2013.03.17 10:03:35  [ID 11] 6
+2013.03.17 10:03:35   Child thread is sleeping
+2013.03.17 10:03:35  [ID 11] 7
+2013.03.17 10:03:35   Child thread is sleeping
+2013.03.17 10:03:35  [ID 11] 8
+2013.03.17 10:03:35   Child thread is sleeping
+2013.03.17 10:03:35  [ID 11] 9
+2013.03.17 10:03:35   Child thread is sleeping
+2013.03.17 10:03:35  [ID 11] 10
+2013.03.17 10:03:36   Child thread is sleeping
+2013.03.17 10:03:36  [ID 11] 11
+2013.03.17 10:03:36   Child thread is sleeping
+2013.03.17 10:03:36  [ID 11] 12
+2013.03.17 10:03:36   Child thread is sleeping
+2013.03.17 10:03:36  [ID 11] 13
+2013.03.17 10:03:36   Child thread is sleeping
+2013.03.17 10:03:36  [ID 11] 14
+2013.03.17 10:03:36   Child thread is sleeping
+2013.03.17 10:03:36  [ID 11] 15
+2013.03.17 10:03:36   Child thread is sleeping
+2013.03.17 10:03:36  [ID 11] 16
+2013.03.17 10:03:36   Child thread is sleeping
+2013.03.17 10:03:36  [ID 11] 17
+2013.03.17 10:03:36   Child thread is sleeping
+2013.03.17 10:03:36  [ID 11] 18
+2013.03.17 10:03:36   Child thread is sleeping
+2013.03.17 10:03:36  [ID 11] 19
+2013.03.17 10:03:36   Child thread is sleeping
+2013.03.17 10:03:37  [ID 11] 20
+2013.03.17 10:03:37   Child thread is sleeping
+2013.03.17 10:03:37  [ID 11] 21
+2013.03.17 10:03:37   Child thread is sleeping
+2013.03.17 10:03:37  [ID 11] 22
+2013.03.17 10:03:37   Child thread is sleeping
+2013.03.17 10:03:37  [ID 11] 23
+2013.03.17 10:03:37   Child thread is sleeping
+2013.03.17 10:03:37  [ID 11] 24
+2013.03.17 10:03:37   Child thread is sleeping
+2013.03.17 10:03:37  [ID 11] 25
+2013.03.17 10:03:37   Child thread is sleeping
+2013.03.17 10:03:37  [ID 11] 26
+2013.03.17 10:03:37   Child thread is sleeping
+2013.03.17 10:03:37  [ID 11] 27
+2013.03.17 10:03:37   Child thread is sleeping
+2013.03.17 10:03:37  [ID 11] 28
+2013.03.17 10:03:37   Child thread is sleeping
+2013.03.17 10:03:37  [ID 11] 29
+2013.03.17 10:03:37   Child thread is sleeping
+2013.03.17 10:03:38  [ID 11] 30
+2013.03.17 10:03:38   Child thread is sleeping
+2013.03.17 10:03:38  [ID 11] 31
+2013.03.17 10:03:38   Child thread is sleeping
+2013.03.17 10:03:38  [ID 11] 32
+2013.03.17 10:03:38   Child thread is sleeping
+2013.03.17 10:03:38  [ID 11] 33
+2013.03.17 10:03:38   Child thread is sleeping
+2013.03.17 10:03:38  [ID 11] 34
+2013.03.17 10:03:38   Child thread is sleeping
+2013.03.17 10:03:38  [ID 11] 35
+2013.03.17 10:03:38   Child thread is sleeping
+2013.03.17 10:03:38  [ID 11] 36
+2013.03.17 10:03:38   Child thread is sleeping
+2013.03.17 10:03:38  [ID 11] 37
+2013.03.17 10:03:38   Child thread is sleeping
+2013.03.17 10:03:38  [ID 11] 38
+2013.03.17 10:03:38   Child thread is sleeping
+2013.03.17 10:03:38  [ID 11] 39
+2013.03.17 10:03:38   Child thread is sleeping
+2013.03.17 10:03:39  [ID 11] 40
+2013.03.17 10:03:39   Child thread is sleeping
+2013.03.17 10:03:39  [ID 11] 41
+2013.03.17 10:03:39   Child thread is sleeping
+2013.03.17 10:03:39  [ID 11] 42
+2013.03.17 10:03:39   Child thread is sleeping
+2013.03.17 10:03:39  [ID 11] 43
+2013.03.17 10:03:39   Child thread is sleeping
+2013.03.17 10:03:39  [ID 11] 44
+2013.03.17 10:03:39   Child thread is sleeping
+2013.03.17 10:03:39  [ID 11] 45
+2013.03.17 10:03:39   Child thread is sleeping
+2013.03.17 10:03:39  [ID 11] 46
+2013.03.17 10:03:39   Child thread is sleeping
+2013.03.17 10:03:39  [ID 11] 47
+2013.03.17 10:03:39   Child thread is sleeping
+2013.03.17 10:03:39  [ID 11] 48
+2013.03.17 10:03:39   Child thread is sleeping
+2013.03.17 10:03:39  [ID 11] 49
+2013.03.17 10:03:39   Child thread is sleeping
+2013.03.17 10:03:40  [ID 11] 50
+2013.03.17 10:03:40   Child thread is sleeping
+2013.03.17 10:03:40  [ID 11] 51
+2013.03.17 10:03:40   Child thread is sleeping
+2013.03.17 10:03:40  [ID 11] 52
+2013.03.17 10:03:40   Child thread is sleeping
+2013.03.17 10:03:40  [ID 11] 53
+2013.03.17 10:03:40   Child thread is sleeping
+2013.03.17 10:03:40  [ID 11] 54
+2013.03.17 10:03:40   Child thread is sleeping
+2013.03.17 10:03:40  [ID 11] 55
+2013.03.17 10:03:40   Child thread is sleeping
+2013.03.17 10:03:40  [ID 11] 56
+2013.03.17 10:03:40   Child thread is sleeping
+2013.03.17 10:03:40  [ID 11] 57
+2013.03.17 10:03:40   Child thread is sleeping
+2013.03.17 10:03:40  [ID 11] 58
+2013.03.17 10:03:40   Child thread is sleeping
+2013.03.17 10:03:40  [ID 11] 59
+2013.03.17 10:03:40   Child thread is sleeping
+2013.03.17 10:03:41  [ID 11] 60
+2013.03.17 10:03:41   Child thread is sleeping
+2013.03.17 10:03:41  [ID 11] 61
+2013.03.17 10:03:41   Child thread is sleeping
+2013.03.17 10:03:41  [ID 11] 62
+2013.03.17 10:03:41   Child thread is sleeping
+2013.03.17 10:03:41  [ID 11] 63
+2013.03.17 10:03:41   Child thread is sleeping
+2013.03.17 10:03:41  [ID 11] 64
+2013.03.17 10:03:41   Child thread is sleeping
+2013.03.17 10:03:41  [ID 11] 65
+2013.03.17 10:03:41   Child thread is sleeping
+2013.03.17 10:03:41  php sent : 0
+2013.03.17 10:03:41  java sent : 2013.03.17 10:03:41 
+2013.03.17 10:03:41  [ID 11] 66
+2013.03.17 10:03:41   Child thread is sleeping
+2013.03.17 10:03:41  [ID 11] 67
+2013.03.17 10:03:41   Child thread is sleeping
+2013.03.17 10:03:41  [ID 11] 68
+2013.03.17 10:03:41   Child thread is sleeping
+2013.03.17 10:03:41  [ID 11] 69
+2013.03.17 10:03:41   Child thread is sleeping
+2013.03.17 10:03:42  [ID 11] 70
+2013.03.17 10:03:42   Child thread is sleeping
+2013.03.17 10:03:42  [ID 11] 71
+2013.03.17 10:03:42   Child thread is sleeping
+2013.03.17 10:03:42  [ID 11] 72
+2013.03.17 10:03:42   Child thread is sleeping
+2013.03.17 10:03:42  [ID 11] 73
+2013.03.17 10:03:42   Child thread is sleeping
+2013.03.17 10:03:42  [ID 11] 74
+2013.03.17 10:03:42   Child thread is sleeping
+2013.03.17 10:03:42  [ID 11] 75
+2013.03.17 10:03:42   Child thread is sleeping
+2013.03.17 10:03:42  [ID 11] 76
+2013.03.17 10:03:42   Child thread is sleeping
+2013.03.17 10:03:42  [ID 11] 77
+2013.03.17 10:03:42   Child thread is sleeping
+2013.03.17 10:03:42  [ID 11] 78
+2013.03.17 10:03:42   Child thread is sleeping
+2013.03.17 10:03:42  [ID 11] 79
+2013.03.17 10:03:42   Child thread is sleeping
+2013.03.17 10:03:43  [ID 11] 80
+2013.03.17 10:03:43   Child thread is sleeping
+2013.03.17 10:03:43  [ID 11] 81
+2013.03.17 10:03:43   Child thread is sleeping
+2013.03.17 10:03:43  [ID 11] 82
+2013.03.17 10:03:43   Child thread is sleeping
+2013.03.17 10:03:43  [ID 11] 83
+2013.03.17 10:03:43   Child thread is sleeping
+2013.03.17 10:03:43  [ID 11] 84
+2013.03.17 10:03:43   Child thread is sleeping
+2013.03.17 10:03:43  [ID 11] 85
+2013.03.17 10:03:43   Child thread is sleeping
+2013.03.17 10:03:43  [ID 11] 86
+2013.03.17 10:03:43   Child thread is sleeping
+2013.03.17 10:03:43  [ID 11] 87
+2013.03.17 10:03:43   Child thread is sleeping
+2013.03.17 10:03:43  [ID 11] 88
+2013.03.17 10:03:43   Child thread is sleeping
+2013.03.17 10:03:44  [ID 11] 89
+2013.03.17 10:03:44   Child thread is sleeping
+2013.03.17 10:03:44  [ID 11] 90
+2013.03.17 10:03:44   Child thread is sleeping
+2013.03.17 10:03:44  [ID 11] 91
+2013.03.17 10:03:44   Child thread is sleeping
+2013.03.17 10:03:44  [ID 11] 92
+2013.03.17 10:03:44   Child thread is sleeping
+2013.03.17 10:03:44  [ID 11] 93
+2013.03.17 10:03:44   Child thread is sleeping
+2013.03.17 10:03:44  [ID 11] 94
+2013.03.17 10:03:44   Child thread is sleeping
+2013.03.17 10:03:44  [ID 11] 95
+2013.03.17 10:03:44   Child thread is sleeping
+2013.03.17 10:03:44  [ID 11] 96
+2013.03.17 10:03:44   Child thread is sleeping
+2013.03.17 10:03:44  [ID 11] 97
+2013.03.17 10:03:44   Child thread is sleeping
+2013.03.17 10:03:44  [ID 11] 98
+2013.03.17 10:03:44   Child thread is sleeping
+2013.03.17 10:03:45  [ID 11] 99
+2013.03.17 10:03:45   Child thread is sleeping
+2013.03.17 10:03:45  [ID 11] 100
+2013.03.17 10:03:45   Child thread is sleeping
+2013.03.17 10:03:45  [ID 11] 101
+2013.03.17 10:03:45   Child thread is sleeping
+2013.03.17 10:03:45  [ID 11] 102
+2013.03.17 10:03:45   Child thread is sleeping
+2013.03.17 10:03:45  [ID 11] 103
+2013.03.17 10:03:45   Child thread is sleeping
+2013.03.17 10:03:45  [ID 11] 104
+2013.03.17 10:03:45   Child thread is sleeping
+2013.03.17 10:03:45  [ID 11] 105
+2013.03.17 10:03:45   Child thread is sleeping
+2013.03.17 10:03:45  [ID 11] 106
+2013.03.17 10:03:45   Child thread is sleeping
+2013.03.17 10:03:45  [ID 11] 107
+2013.03.17 10:03:45   Child thread is sleeping
+2013.03.17 10:03:45  [ID 11] 108
+2013.03.17 10:03:45   Child thread is sleeping
+2013.03.17 10:03:46  [ID 11] 109
+2013.03.17 10:03:46   Child thread is sleeping
+2013.03.17 10:03:46  [ID 11] 110
+2013.03.17 10:03:46   Child thread is sleeping
+2013.03.17 10:03:46  [ID 11] 111
+2013.03.17 10:03:46   Child thread is sleeping
+2013.03.17 10:03:46  [ID 11] 112
+2013.03.17 10:03:46   Child thread is sleeping
+2013.03.17 10:03:46  [ID 11] 113
+2013.03.17 10:03:46   Child thread is sleeping
+2013.03.17 10:03:46  [ID 11] 114
+2013.03.17 10:03:46   Child thread is sleeping
+2013.03.17 10:03:46  php sent : 0
+2013.03.17 10:03:46  java sent : 2013.03.17 10:03:46 
+2013.03.17 10:03:46  [ID 11] 115
+2013.03.17 10:03:46   Child thread is sleeping
+2013.03.17 10:03:46  [ID 11] 116
+2013.03.17 10:03:46   Child thread is sleeping
+2013.03.17 10:03:46  [ID 11] 117
+2013.03.17 10:03:46   Child thread is sleeping
+2013.03.17 10:03:46  [ID 11] 118
+2013.03.17 10:03:46   Child thread is sleeping
+2013.03.17 10:03:47  [ID 11] 119
+2013.03.17 10:03:47   Child thread is sleeping
+2013.03.17 10:03:47  [ID 11] 120
+2013.03.17 10:03:47   Child thread is sleeping
+2013.03.17 10:03:47  [ID 11] 121
+2013.03.17 10:03:47   Child thread is sleeping
+2013.03.17 10:03:47  [ID 11] 122
+2013.03.17 10:03:47   Child thread is sleeping
+2013.03.17 10:03:47  [ID 11] 123
+2013.03.17 10:03:47   Child thread is sleeping
+2013.03.17 10:03:47  [ID 11] 124
+2013.03.17 10:03:47   Child thread is sleeping
+2013.03.17 10:03:47  [ID 11] 125
+2013.03.17 10:03:47   Child thread is sleeping
+2013.03.17 10:03:47  [ID 11] 126
+2013.03.17 10:03:47   Child thread is sleeping
+2013.03.17 10:03:47  [ID 11] 127
+2013.03.17 10:03:47   Child thread is sleeping
+2013.03.17 10:03:47  [ID 11] 128
+2013.03.17 10:03:47   Child thread is sleeping
+2013.03.17 10:03:48  [ID 11] 129
+2013.03.17 10:03:48   Child thread is sleeping
+2013.03.17 10:03:48  [ID 11] 130
+2013.03.17 10:03:48   Child thread is sleeping
+2013.03.17 10:03:48  [ID 11] 131
+2013.03.17 10:03:48   Child thread is sleeping
+2013.03.17 10:03:48  [ID 11] 132
+2013.03.17 10:03:48   Child thread is sleeping
+2013.03.17 10:03:48  [ID 11] 133
+2013.03.17 10:03:48   Child thread is sleeping
+2013.03.17 10:03:48  [ID 11] 134
+2013.03.17 10:03:48   Child thread is sleeping
+2013.03.17 10:03:48  [ID 11] 135
+2013.03.17 10:03:48   Child thread is sleeping
+2013.03.17 10:03:48  [ID 11] 136
+2013.03.17 10:03:48   Child thread is sleeping
+2013.03.17 10:03:48  [ID 11] 137
+2013.03.17 10:03:48   Child thread is sleeping
+2013.03.17 10:03:48  [ID 11] 138
+2013.03.17 10:03:48   Child thread is sleeping
+2013.03.17 10:03:49  [ID 11] 139
+2013.03.17 10:03:49   Child thread is sleeping
+2013.03.17 10:03:49  [ID 11] 140
+2013.03.17 10:03:49   Child thread is sleeping
+2013.03.17 10:03:49  [ID 11] 141
+2013.03.17 10:03:49   Child thread is sleeping
+2013.03.17 10:03:49  [ID 11] 142
+2013.03.17 10:03:49   Child thread is sleeping
+2013.03.17 10:03:49  [ID 11] 143
+2013.03.17 10:03:49   Child thread is sleeping
+2013.03.17 10:03:49  [ID 11] 144
+2013.03.17 10:03:49   Child thread is sleeping
+2013.03.17 10:03:49  [ID 11] 145
+2013.03.17 10:03:49   Child thread is sleeping
+2013.03.17 10:03:49  [ID 11] 146
+2013.03.17 10:03:49   Child thread is sleeping
+2013.03.17 10:03:49  [ID 11] 147
+2013.03.17 10:03:49   Child thread is sleeping
+2013.03.17 10:03:49  [ID 11] 148
+2013.03.17 10:03:49   Child thread is sleeping
+2013.03.17 10:03:50  [ID 11] 149
+2013.03.17 10:03:50   Child thread is sleeping
+2013.03.17 10:03:50  [ID 11] 150
+2013.03.17 10:03:50   Child thread is sleeping
+2013.03.17 10:03:50  [ID 11] 151
+2013.03.17 10:03:50   Child thread is sleeping
+2013.03.17 10:03:50  [ID 11] 152
+2013.03.17 10:03:50   Child thread is sleeping
+2013.03.17 10:03:50  [ID 11] 153
+2013.03.17 10:03:50   Child thread is sleeping
+2013.03.17 10:03:50  [ID 11] 154
+2013.03.17 10:03:50   Child thread is sleeping
+2013.03.17 10:03:50  [ID 11] 155
+2013.03.17 10:03:50   Child thread is sleeping
+2013.03.17 10:03:50  [ID 11] 156
+2013.03.17 10:03:50   Child thread is sleeping
+2013.03.17 10:03:50  [ID 11] 157
+2013.03.17 10:03:50   Child thread is sleeping
+2013.03.17 10:03:50  [ID 11] 158
+2013.03.17 10:03:50   Child thread is sleeping
+2013.03.17 10:03:51  [ID 11] 159
+2013.03.17 10:03:51   Child thread is sleeping
+2013.03.17 10:03:51  [ID 11] 160
+2013.03.17 10:03:51   Child thread is sleeping
+2013.03.17 10:03:51  [ID 11] 161
+2013.03.17 10:03:51   Child thread is sleeping
+2013.03.17 10:03:51  [ID 11] 162
+2013.03.17 10:03:51   Child thread is sleeping
+2013.03.17 10:03:51  [ID 11] 163
+2013.03.17 10:03:51   Child thread is sleeping
+2013.03.17 10:03:51  [ID 11] 164
+2013.03.17 10:03:51   Child thread is sleeping
+2013.03.17 10:03:51  php sent : 0
+2013.03.17 10:03:51  java sent : 2013.03.17 10:03:51 
+2013.03.17 10:03:51  [ID 11] 165
+2013.03.17 10:03:51   Child thread is sleeping
+2013.03.17 10:03:51  [ID 11] 166
+2013.03.17 10:03:51   Child thread is sleeping
+2013.03.17 10:03:51  [ID 11] 167
+2013.03.17 10:03:51   Child thread is sleeping
+2013.03.17 10:03:52  [ID 11] 168
+2013.03.17 10:03:52   Child thread is sleeping
+2013.03.17 10:03:52  [ID 11] 169
+2013.03.17 10:03:52   Child thread is sleeping
+2013.03.17 10:03:52  [ID 11] 170
+2013.03.17 10:03:52   Child thread is sleeping
+2013.03.17 10:03:52  [ID 11] 171
+2013.03.17 10:03:52   Child thread is sleeping
+2013.03.17 10:03:52  [ID 11] 172
+2013.03.17 10:03:52   Child thread is sleeping
+2013.03.17 10:03:52  [ID 11] 173
+2013.03.17 10:03:52   Child thread is sleeping
+2013.03.17 10:03:52  [ID 11] 174
+2013.03.17 10:03:52   Child thread is sleeping
+2013.03.17 10:03:52  [ID 11] 175
+2013.03.17 10:03:52   Child thread is sleeping
+2013.03.17 10:03:52  [ID 11] 176
+2013.03.17 10:03:52   Child thread is sleeping
+2013.03.17 10:03:52  [ID 11] 177
+2013.03.17 10:03:52   Child thread is sleeping
+2013.03.17 10:03:53  [ID 11] 178
+2013.03.17 10:03:53   Child thread is sleeping
+2013.03.17 10:03:53  [ID 11] 179
+2013.03.17 10:03:53   Child thread is sleeping
+2013.03.17 10:03:53  [ID 11] 180
+2013.03.17 10:03:53   Child thread is sleeping
+2013.03.17 10:03:53  [ID 11] 181
+2013.03.17 10:03:53   Child thread is sleeping
+2013.03.17 10:03:53  [ID 11] 182
+2013.03.17 10:03:53   Child thread is sleeping
+2013.03.17 10:03:53  [ID 11] 183
+2013.03.17 10:03:53   Child thread is sleeping
+2013.03.17 10:03:53  [ID 11] 184
+2013.03.17 10:03:53   Child thread is sleeping
+2013.03.17 10:03:53  [ID 11] 185
+2013.03.17 10:03:53   Child thread is sleeping
+2013.03.17 10:03:53  [ID 11] 186
+2013.03.17 10:03:53   Child thread is sleeping
+2013.03.17 10:03:53  [ID 11] 187
+2013.03.17 10:03:53   Child thread is sleeping
+2013.03.17 10:03:54  [ID 11] 188
+2013.03.17 10:03:54   Child thread is sleeping
+2013.03.17 10:03:54  [ID 11] 189
+2013.03.17 10:03:54   Child thread is sleeping
+2013.03.17 10:03:54  [ID 11] 190
+2013.03.17 10:03:54   Child thread is sleeping
+2013.03.17 10:03:54  [ID 11] 191
+2013.03.17 10:03:54   Child thread is sleeping
+2013.03.17 10:03:54  [ID 11] 192
+2013.03.17 10:03:54   Child thread is sleeping
+2013.03.17 10:03:54  [ID 11] 193
+2013.03.17 10:03:54   Child thread is sleeping
+2013.03.17 10:03:54  [ID 11] 194
+2013.03.17 10:03:54   Child thread is sleeping
+2013.03.17 10:03:54  [ID 11] 195
+2013.03.17 10:03:54   Child thread is sleeping
+2013.03.17 10:03:54  [ID 11] 196
+2013.03.17 10:03:54   Child thread is sleeping
+2013.03.17 10:03:54  [ID 11] 197
+2013.03.17 10:03:54   Child thread is sleeping
+2013.03.17 10:03:55  [ID 11] 198
+2013.03.17 10:03:55   Child thread is sleeping
+2013.03.17 10:03:55  [ID 11] 199
+2013.03.17 10:03:55   Child thread is sleeping
+2013.03.17 10:03:55   Child thread terminating
+2013.03.17 10:03:55  execution time = 20.30971507 s
+2013.03.17 10:03:56  php sent : 0
+2013.03.17 10:03:56  java sent : 2013.03.17 10:03:56 
+2013.04.17 10:04:01  php sent : 0
+2013.04.17 10:04:01  java sent : 2013.04.17 10:04:01 
+2013.04.17 10:04:06  php sent : 0
+2013.04.17 10:04:06  java sent : 2013.04.17 10:04:06 
+2013.04.17 10:04:11  php sent : 0
+2013.04.17 10:04:11  java sent : 2013.04.17 10:04:11 
+2013.04.17 10:04:16  php sent : 0
+2013.04.17 10:04:16  java sent : 2013.04.17 10:04:16 
+2013.04.17 10:04:21  php sent : 0
+2013.04.17 10:04:21  java sent : 2013.04.17 10:04:21 
+2013.04.17 10:04:26  php sent : 0
+2013.04.17 10:04:26  java sent : 2013.04.17 10:04:26 
+2013.04.17 10:04:31  php sent : 0
+2013.04.17 10:04:31  java sent : 2013.04.17 10:04:31 

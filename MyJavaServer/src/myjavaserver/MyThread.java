@@ -61,15 +61,15 @@ public class MyThread extends Thread {
             System.out.println("List Ruang = " + listRuang.size());
             
 
-//            for (int i = this.startIdx; i < this.maxIdx; i += this.nThreads) {
-//                MsgLog.write("[ID " + this.getId() + "] " + i);
-//                try {
-//                    MsgLog.write(" Child thread is sleeping");
-//                    Thread.sleep(100);
-//                } catch (InterruptedException ex) {
-//                    Logger.getLogger(MyThread.class.getName()).log(Level.SEVERE, null, ex);
-//                }
-//            }
+            for (int i = 0; i < 200; i += 1) {
+                MsgLog.write("[ID " + this.getId() + "] " + i);
+                try {
+                    MsgLog.write(" Child thread is sleeping");
+                    Thread.sleep(100);
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(MyThread.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
 
             MsgLog.write(" Child thread terminating");
             

@@ -134,7 +134,7 @@ class SiteController extends Controller {
         $this->render('help', $param);
     }
 
-    public function actionSayHiToJava() {
+    public function actionDoGenerate() {
         $PORT = 20222; //the port on which we are connecting to the "remote" machine
         $HOST = "localhost"; //the ip of the remote machine (in this case it's the same machine)
 
@@ -158,8 +158,11 @@ class SiteController extends Controller {
 
             $reply = socket_read($sock, 10000, PHP_NORMAL_READ) //Reading the reply from socket
                     or die("error: failed to read from socket\n");
-
-            echo $reply;
+            
+            $data = array();
+            array_push($data,substr($reply, 0, -1));
+            
+            echo $this->renderJSON($data);
         }
     }
     
@@ -188,13 +191,22 @@ class SiteController extends Controller {
             $reply = socket_read($sock, 10000, PHP_NORMAL_READ) //Reading the reply from socket
                     or die("error: failed to read from socket\n");
 
-            echo $reply;
+            $data = array();
+            array_push($data,substr($reply, 0, -1));
+            
+            echo $this->renderJSON($data);
         }
     }
 
     public function actioncheck() {
+        
         $param = penjadwalan::check();
 
+        if(count($param)==0){
+            $param = array();
+            array_push($param,"true");
+        }
+        
         $this->renderJSON($param);
     }
 

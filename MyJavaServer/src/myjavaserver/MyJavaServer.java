@@ -71,13 +71,11 @@ public class MyJavaServer {
                         bw.write(td.isAlive() + "\n");
                     } else {
                         if (!td.isAlive()) {
-                            bw.write("Do calculation" + "\n");
-
-
+                            bw.write("true" + "\n");
                             td = new MyThread(startTime);
                             td.start();
                         } else {
-                            bw.write("Child is running");
+                            bw.write("true");
                         }
                     }
 //                    bw.write(td.isAlive()+"\n");
