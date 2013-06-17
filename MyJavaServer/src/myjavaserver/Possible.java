@@ -9,6 +9,7 @@ package myjavaserver;
  * @author erwin
  */
 public final class Possible {
+
     private int dosenId;
     private int ruangId;
     private int matakuliahId;
@@ -17,16 +18,18 @@ public final class Possible {
     private int endTime;
     private boolean flag;
     private String dapatMengajar;
+    private int praktek;
 
-    public Possible(int DosenId, int RuangId, String DapatMengajar, int DayId, int StartTime){
+    public Possible(int DosenId, int RuangId, String DapatMengajar, int DayId, int StartTime, int Praktek) {
         setDosenId(DosenId);
         setRuangId(RuangId);
         setDapatMengajar(DapatMengajar);
         setDayId(DayId);
         setStartTime(StartTime);
         setFlag(false);
+        setPraktek(Praktek);
     }
-    
+
     /**
      * @return the dosenId
      */
@@ -139,5 +142,29 @@ public final class Possible {
     public void setDapatMengajar(String dapatMengajar) {
         this.dapatMengajar = dapatMengajar;
     }
-    
+
+    public boolean bisaNgajar(int test) {
+        boolean result = false;
+        for (String retval : getDapatMengajar().split(",")) {
+            if(Integer.parseInt(retval)==test){
+                result = true;
+                break;
+            }
+        }
+        return result;
+    }
+
+    /**
+     * @return the praktek
+     */
+    public int getPraktek() {
+        return praktek;
+    }
+
+    /**
+     * @param praktek the praktek to set
+     */
+    public void setPraktek(int praktek) {
+        this.praktek = praktek;
+    }
 }

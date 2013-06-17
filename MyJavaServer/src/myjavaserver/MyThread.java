@@ -22,13 +22,10 @@ public class MyThread extends Thread {
     ArrayList<DosenTime> listDosen = new ArrayList<>();
     ArrayList<Kurikulum> listKurikulum = new ArrayList<>();
     ArrayList<RuangKelas> listRuang = new ArrayList<>();
-    
     ArrayList<Possible> listPossibles = new ArrayList<>();
-    ListIterator<Possible> iterator = listPossibles.listIterator();
+    ArrayList<Solution> finalSolutions = new ArrayList<>();
+    ListIterator<Solution> iteratorFinal = finalSolutions.listIterator();
 
-    ArrayList<Possible> finalSolutions = new ArrayList<>();
-    ListIterator<Possible> iteratorFinal = finalSolutions.listIterator();
-    
     public MyThread() {
     }
 
@@ -69,7 +66,12 @@ public class MyThread extends Thread {
 
             //generating possible solution
             generatePossibleSolution();
-            System.out.println("List Possible = "+ listPossibles.size());
+            System.out.println("List Possible = " + listPossibles.size());
+
+            //finding solutions
+            doBacktracking(0);
+
+            System.out.println("Dapat hasil = " + finalSolutions.size());
 
 //            for (int i = 0; i < 200; i += 1) {
 //                MsgLog.write("[ID " + this.getId() + "] " + i);
@@ -102,14 +104,77 @@ public class MyThread extends Thread {
                 }
 
                 for (int i = d.getTimeStart(); i < endTime; i++) {
-                    Possible baru = new Possible(d.getDosen(), r.getId(), d.getMataKuliah(), d.getHari(), i);
+                    Possible baru = new Possible(d.getDosen(), r.getId(), d.getMataKuliah(), d.getHari(), i, r.getPraktek());
                     listPossibles.add(baru);
                 }
             }
         }
     }
-    
-    private boolean doBacktracking(){
-        return true;
+
+    private boolean doBacktracking(int nKurikulum) {
+        System.out.println("doBacktracking");
+        if ((nKurikulum < listKurikulum.size())) {
+            System.out.println("sampe sini");
+            if (compareElement(nKurikulum)) {
+                boolean result = doBacktracking(nKurikulum + 1);
+                if (!result) {
+                    finalSolutions.remove(finalSolutions.size() - 1);
+                }
+                return result;
+            } else {
+                return false;
+            }
+        } else {
+            return true;
+        }
+    }
+
+    private boolean compareElement(int nKurikulum) {
+
+        for (int i = 0; i < listPossibles.size(); i++) {
+            if (bisaNga(nKurikulum, i)) {
+                Solution baru = new Solution(listPossibles.get(i).getDosenId(), listPossibles.get(i).getRuangId(), listKurikulum.get(nKurikulum).getMataKuliah(), listPossibles.get(i).getDayId(), listPossibles.get(i).getStartTime(), listPossibles.get(i).getStartTime() + listKurikulum.get(nKurikulum).getSks());
+                finalSolutions.add(baru);
+                System.out.println("sama");
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private boolean bisaNga(int nKurikulum, int i) {
+
+        boolean flag = true;
+
+        Kurikulum kurikulum = listKurikulum.get(nKurikulum);
+
+        if (i + kurikulum.getSks() - 1 < listPossibles.size()) {
+
+            for (int j = i; j < i + kurikulum.getSks() - 1; j++) {
+                Possible test = listPossibles.get(j);
+
+                // bisa ngajar ini nga
+                if (!test.bisaNgajar(kurikulum.getMataKuliah())) {
+                    flag = false;
+                }
+
+                if (!kurikulum.harusAri(test.getDayId())) {
+                    flag = false;
+                }
+
+                if (!kurikulum.harusRuang(test.getRuangId())) {
+                    flag = false;
+                }
+
+                if (kurikulum.getPraktek() != test.getPraktek()) {
+                    flag = false;
+                }
+            }
+        } else {
+            flag = false;
+        }
+
+        return flag;
     }
 }
