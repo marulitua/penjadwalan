@@ -133,13 +133,17 @@ public class MyThread extends Thread {
 
         for (int i = 0; i < listPossibles.size(); i++) {
             if (bisaNga(nKurikulum, i)) {
+
                 Solution baru = new Solution(listPossibles.get(i).getDosenId(), listPossibles.get(i).getRuangId(), listKurikulum.get(nKurikulum).getMataKuliah(), listPossibles.get(i).getDayId(), listPossibles.get(i).getStartTime(), listPossibles.get(i).getStartTime() + listKurikulum.get(nKurikulum).getSks());
-                finalSolutions.add(baru);
+
+                if (findIsNew(baru)) {
+                    finalSolutions.add(baru);
+                }
                 System.out.println("sama");
                 return true;
             }
         }
-
+        System.out.println("nga sama bro");
         return false;
     }
 
@@ -159,15 +163,17 @@ public class MyThread extends Thread {
                     flag = false;
                 }
 
-                if (!kurikulum.harusAri(test.getDayId())) {
-                    flag = false;
+                if (kurikulum.getHarusHari() != null) {
+                    if (!kurikulum.harusAri(test.getDayId())) {
+                        flag = false;
+                    }
                 }
 
-                if (!kurikulum.harusRuang(test.getRuangId())) {
-                    flag = false;
-                }
-
-                if (kurikulum.getPraktek() != test.getPraktek()) {
+                if (kurikulum.getHarusRuangKelas() != null) {
+                    if (!kurikulum.harusRuang(test.getRuangId())) {
+                        flag = false;
+                    }
+                } else if (kurikulum.getPraktek() != test.getPraktek()) {
                     flag = false;
                 }
             }
@@ -176,5 +182,17 @@ public class MyThread extends Thread {
         }
 
         return flag;
+    }
+
+    private boolean findIsNew(Solution baru) {
+
+        for (int i = 0; i < finalSolutions.size(); i++) {
+            //if(finalSolutions.get(i).getDayId() == baru.getDayId() && finalSolutions.get(i).getDosenId() == baru.getDosenId() && finalSolutions.get(i).getEndTime() == baru.getEndTime() && finalSolutions.get(i).getMatakuliahId() == baru.getMatakuliahId() && finalSolutions.get(i).getRuangId() == baru.getRuangId() && finalSolutions.get(i).getStartTime() && baru.getStartTime())
+            if (finalSolutions.get(i) == baru) {
+                return false;
+            }
+        }
+
+        return true;
     }
 }
