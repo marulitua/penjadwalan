@@ -162,12 +162,16 @@ public class MyThread extends Thread {
                 if (!test.bisaNgajar(kurikulum.getMataKuliah())) {
                     flag = false;
                 }
+//                else
+//                    System.out.println("bsa ngajar coy");
 
                 if (kurikulum.getHarusHari() != null) {
                     if (!kurikulum.harusAri(test.getDayId())) {
                         flag = false;
                     }
                 }
+//                else
+//                    System.err.println("bisa ari ini coy");
 
                 if (kurikulum.getHarusRuangKelas() != null) {
                     if (!kurikulum.harusRuang(test.getRuangId())) {
@@ -175,6 +179,10 @@ public class MyThread extends Thread {
                     }
                 } else if (kurikulum.getPraktek() != test.getPraktek()) {
                     flag = false;
+                }
+
+                if (flag) {
+                    return flag;
                 }
             }
         } else {
@@ -186,10 +194,14 @@ public class MyThread extends Thread {
 
     private boolean findIsNew(Solution baru) {
 
-        for (int i = 0; i < finalSolutions.size(); i++) {
-            //if(finalSolutions.get(i).getDayId() == baru.getDayId() && finalSolutions.get(i).getDosenId() == baru.getDosenId() && finalSolutions.get(i).getEndTime() == baru.getEndTime() && finalSolutions.get(i).getMatakuliahId() == baru.getMatakuliahId() && finalSolutions.get(i).getRuangId() == baru.getRuangId() && finalSolutions.get(i).getStartTime() && baru.getStartTime())
-            if (finalSolutions.get(i) == baru) {
-                return false;
+        if (finalSolutions.isEmpty()) {
+            return true;
+        } else {
+            for (int i = 0; i < finalSolutions.size(); i++) {
+                //if(finalSolutions.get(i).getDayId() == baru.getDayId() && finalSolutions.get(i).getDosenId() == baru.getDosenId() && finalSolutions.get(i).getEndTime() == baru.getEndTime() && finalSolutions.get(i).getMatakuliahId() == baru.getMatakuliahId() && finalSolutions.get(i).getRuangId() == baru.getRuangId() && finalSolutions.get(i).getStartTime() && baru.getStartTime())
+                if (finalSolutions.get(i) == baru) {
+                    return false;
+                }
             }
         }
 
