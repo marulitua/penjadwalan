@@ -9,7 +9,7 @@ package myjavaserver;
  * @author erwin
  */
 public final class Solution {
-    private int dosenId;
+    private int dosenId;    
     private int ruangId;
     private int matakuliahId;
     private int dayId;

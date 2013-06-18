@@ -156,13 +156,55 @@ public class DataLayer {
 
                 for (int j = dayMin; j <= dayMax; j++) {
                     for (int i = jamMulai; i <= jamEnd; i++) {
-                        RuangKelas ruang = new RuangKelas(id, praktek, i,j);
+                        RuangKelas ruang = new RuangKelas(id, praktek, i, j);
                         listRuang.add(ruang);
                     }
                 }
             }
         } catch (SQLException ex) {
             Logger.getLogger(DataLayer.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    public void clearHasil() {
+        try {
+            Statement ps = con.createStatement();
+            int rs = ps.executeUpdate("delete from jadwal_hasil");
+        } catch (SQLException ex) {
+            Logger.getLogger(DataLayer.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    public void clearGagal() {
+        try {
+            Statement ps = con.createStatement();
+            int rs = ps.executeUpdate("delete from jadwal_gagal");
+        } catch (SQLException ex) {
+            Logger.getLogger(DataLayer.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    void simpanJadwal(ArrayList<Solution> finalSolutions) {
+        for (int i = 0; i < finalSolutions.size(); i++) {
+            try {
+                Statement ps = con.createStatement();
+                int rs = ps.executeUpdate("INSERT INTO `jadwal_hasil` (`dosen_id`, `ruang_id`, `matakuliah_id`, `day_id`, `start_time`, `end_time`) VALUES (" + finalSolutions.get(i).getDosenId() + ", " + finalSolutions.get(i).getRuangId() + ", " + finalSolutions.get(i).getMatakuliahId() + ", " + finalSolutions.get(i).getDayId() + ", \'" + finalSolutions.get(i).getStartTime() + ":00:00\', \'" + finalSolutions.get(i).getEndTime() + ":00:00\');");
+//                int rs = ps.executeUpdate("insert into jadwal_hasil (dosen_id, ruang_id, matakuliah_id, day_id, start_time, end_time) values("+finalSolutions.get(i).getDosenId()+", "+finalSolutions.get(i).getRuangId()+", "+finalSolutions.get(i).getMatakuliahId()+", "+finalSolutions.get(i).getDayId()+", '0"+finalSolutions.get(i).getStartTime()+":00:00', '0"+finalSolutions.get(i).getEndTime())+":00:00'");
+            } catch (SQLException ex) {
+                Logger.getLogger(DataLayer.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }
+
+    void simpanGagal(ArrayList<Kurikulum> listGagal) {
+        for (int i = 0; i < listGagal.size(); i++) {
+            try {
+                Statement ps = con.createStatement();
+                int rs = ps.executeUpdate("INSERT INTO `jadwal_gagal` (`mata_kuliah_id`, `sks`, `praktek`) VALUES (" + listGagal.get(i).getMataKuliah()+ ", " + listGagal.get(i).getSks() + ", " + listGagal.get(i).getPraktek() + ");");
+//                int rs = ps.executeUpdate("insert into jadwal_hasil (dosen_id, ruang_id, matakuliah_id, day_id, start_time, end_time) values("+finalSolutions.get(i).getDosenId()+", "+finalSolutions.get(i).getRuangId()+", "+finalSolutions.get(i).getMatakuliahId()+", "+finalSolutions.get(i).getDayId()+", '0"+finalSolutions.get(i).getStartTime()+":00:00', '0"+finalSolutions.get(i).getEndTime())+":00:00'");
+            } catch (SQLException ex) {
+                Logger.getLogger(DataLayer.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
     }
 }

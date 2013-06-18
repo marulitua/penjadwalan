@@ -6,6 +6,7 @@ package myjavaserver;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.ListIterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -25,6 +26,7 @@ public class MyThread extends Thread {
     ArrayList<Possible> listPossibles = new ArrayList<>();
     ArrayList<Solution> finalSolutions = new ArrayList<>();
     ListIterator<Solution> iteratorFinal = finalSolutions.listIterator();
+    ArrayList<Kurikulum> listGagal = new ArrayList<>();
 
     public MyThread() {
     }
@@ -69,10 +71,20 @@ public class MyThread extends Thread {
             System.out.println("List Possible = " + listPossibles.size());
 
             //finding solutions
-            doBacktracking(0);
+            //doBacktracking(0);
 
+            algoNgeramput();
+            dao.clearGagal();
+            dao.clearHasil();
+            dao.simpanJadwal(finalSolutions);
+            dao.simpanGagal(listGagal);
+            
             System.out.println("Dapat hasil = " + finalSolutions.size());
-
+            
+            System.out.println("Gagal = "+listGagal.size());
+            
+            
+            
 //            for (int i = 0; i < 200; i += 1) {
 //                MsgLog.write("[ID " + this.getId() + "] " + i);
 //                try {
@@ -161,6 +173,7 @@ public class MyThread extends Thread {
                 // bisa ngajar ini nga
                 if (!test.bisaNgajar(kurikulum.getMataKuliah())) {
                     flag = false;
+                    return flag;
                 }
 //                else
 //                    System.out.println("bsa ngajar coy");
@@ -168,6 +181,7 @@ public class MyThread extends Thread {
                 if (kurikulum.getHarusHari() != null) {
                     if (!kurikulum.harusAri(test.getDayId())) {
                         flag = false;
+                        return flag;
                     }
                 }
 //                else
@@ -176,14 +190,17 @@ public class MyThread extends Thread {
                 if (kurikulum.getHarusRuangKelas() != null) {
                     if (!kurikulum.harusRuang(test.getRuangId())) {
                         flag = false;
+                        return flag;
                     }
-                } else if (kurikulum.getPraktek() != test.getPraktek()) {
-                    flag = false;
                 }
+//                else if (kurikulum.getPraktek() != test.getPraktek()) {
+//                    flag = false;
+//                    return flag;
+//                }
 
-                if (flag) {
-                    return flag;
-                }
+//                if (flag) {
+//                    return flag;
+//                }
             }
         } else {
             flag = false;
@@ -206,5 +223,21 @@ public class MyThread extends Thread {
         }
 
         return true;
+    }
+
+    private void algoNgeramput() {
+        for (int i = 0; i < listKurikulum.size(); i++) {
+            for (int j = 0; j < listPossibles.size(); j++) {
+                if (bisaNga(i, j)) {
+                    Solution baru = new Solution(listPossibles.get(j).getDosenId(), listPossibles.get(j).getRuangId(), listKurikulum.get(i).getMataKuliah(), listPossibles.get(j).getDayId(), listPossibles.get(j).getStartTime(), listPossibles.get(j).getStartTime() + listKurikulum.get(i).getSks());
+
+                    if (findIsNew(baru)) {
+                        finalSolutions.add(baru);
+                        break;
+                    }
+                }
+                listGagal.add(listKurikulum.get(i));
+            }
+        }
     }
 }
