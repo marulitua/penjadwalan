@@ -2,10 +2,10 @@
 /* @var $this TrxKurikulumController */
 /* @var $model TrxKurikulum */
 
-$this->breadcrumbs=array(
-	'Trx Kurikulums'=>array('index'),
-	'Manage',
-);
+//$this->breadcrumbs=array(
+//	'Trx Kurikulums'=>array('index'),
+//	'Manage',
+//);
 
 $this->menu=array(
 	array('label'=>'List TrxKurikulum', 'url'=>array('index')),
@@ -26,7 +26,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Trx Kurikulums</h1>
+<h1>Manage Kurikulum</h1>
 
 <p>
 You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>

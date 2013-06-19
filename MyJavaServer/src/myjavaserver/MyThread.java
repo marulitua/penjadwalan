@@ -20,6 +20,7 @@ public class MyThread extends Thread {
     int minTime = 8;
     int maxTime = 18;
     long startTime;
+    int anchor = 0;
     ArrayList<DosenTime> listDosen = new ArrayList<>();
     ArrayList<Kurikulum> listKurikulum = new ArrayList<>();
     ArrayList<RuangKelas> listRuang = new ArrayList<>();
@@ -72,9 +73,22 @@ public class MyThread extends Thread {
             System.out.println("List Possible = " + listPossibles.size());
 
             //finding solutions
-            doBacktracking(0);
+            //doBacktracking(0);
+
+            do {
+                doBacktracking(0);
+                System.out.println("doBacktracking ==> done");
+                if (anchor != 0) {
+                    listGagal.add(listKurikulum.get(anchor));
+                    listKurikulum.remove(listKurikulum.get(anchor));
+                    System.out.println("anchor = " + anchor);
+                    System.out.println("kurikulim tinggal = " + listKurikulum.size());
+                    doBacktracking(0);
+                }
+            } while (anchor != 0); //algoNgeramput();
             //algoNgeramput();
-            //algoNgeramput();
+            System.out.println("anchor = " + anchor);
+
             dao.clearGagal();
             dao.clearHasil();
             dao.simpanJadwal(finalSolutions);
@@ -131,11 +145,19 @@ public class MyThread extends Thread {
     }
 
     private boolean doBacktracking(int nKurikulum) {
-        System.out.println("doBacktracking");
+        anchor = nKurikulum;
         int row;
         if ((nKurikulum == listKurikulum.size())) {
             return true;
         } else {
+
+//            if (anchor > listKurikulum.size()) {
+//                //skip dis kurikulum
+//                listGagal.add(listKurikulum.get(nKurikulum));
+//                System.out.println("anchor = "+anchor);
+//                return true;
+//            }
+
             boolean successful = false;
             row = 0;
             while ((row < listPossibles.size()) && !successful) {
@@ -145,6 +167,7 @@ public class MyThread extends Thread {
                 } else {
                     // Place queen and try to place queen in next column.
                     finalSolutions.add(listPossibles.get(row));
+                    //anchor = 0;
                     successful = doBacktracking(nKurikulum + 1);
                     if (!successful) {
                         // Remove the queen placed in the column.
@@ -153,6 +176,7 @@ public class MyThread extends Thread {
                     }
                 }
             }
+            //anchor++;
             return successful;
         }
     }
@@ -190,13 +214,10 @@ public class MyThread extends Thread {
         } else if (!kurikulum.harusAri(test.getDayId())) {
             return false;
         } else if (kurikulum.getHarusRuangKelas(test.getRuangId())) {
-            System.out.println("ruang kelas tidak memenuhi");
             return false;
         } else if (finalSolutions.contains(test)) {
-            System.out.println("Sudah ada di list");
             return false;
-        }else if(!waktunyaUdaKepakeApaBlom(test)){
-            System.out.println("Waktunya nga mungkin");
+        } else if (!waktunyaUdaKepakeApaBlom(test)) {
             return false;
         }
         return true;
@@ -227,14 +248,14 @@ public class MyThread extends Thread {
     }
 
     private boolean waktunyaUdaKepakeApaBlom(Possible test) {
-        for(int i=0;i<finalSolutions.size();i++){
-            if(finalSolutions.get(i).getDayId() == test.getDayId() && finalSolutions.get(i).getStartTime()==test.getStartTime() && finalSolutions.get(i).getEndTime()==test.getEndTime())
+        for (int i = 0; i < finalSolutions.size(); i++) {
+            if (finalSolutions.get(i).getDayId() == test.getDayId() && finalSolutions.get(i).getStartTime() == test.getStartTime() && finalSolutions.get(i).getEndTime() == test.getEndTime()) {
                 return false;
-            else
-                if(finalSolutions.get(i).getDayId() == test.getDayId() && test.getStartTime() < finalSolutions.get(i).getEndTime())
-                    return false;
+            } else if (finalSolutions.get(i).getDayId() == test.getDayId() && test.getStartTime() < finalSolutions.get(i).getEndTime()) {
+                return false;
+            }
         }
-        
+
         return true;
     }
 }
