@@ -62,6 +62,11 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
                     'name' => 'ruang_kelas',
                     'value' => '$data->findRoom()',
                 ),
+                array(
+                    'name' => 'sks',
+                    'header' => 'Sks',
+                    'value' => '$data->mataKuliah->sks',
+                ),
 		'jumlah_kelas',
 //		'periode_id',
 		array(

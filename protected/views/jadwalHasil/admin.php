@@ -45,11 +45,31 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
-		'id',
-		'dosen_id',
-		'ruang_id',
-		'matakuliah_id',
-		'day_id',
+		//'id',
+		//'dosen_id',
+                array(
+                  'name' => 'dosen_id',  
+                  'header' => 'Dosen',  
+                  'value' => '$data->dosen->full_name',  
+                ),
+            	//'ruang_id',
+                array(
+                  'name' => 'ruang_id',  
+                  'header' => 'Ruang Kelas',  
+                  'value' => '$data->ruang->number',  
+                ),
+		//'matakuliah_id',
+                array(
+                  'name' => 'matakuliah_id',  
+                  'header' => 'matakuliah_id',  
+                  'value' => '$data->matakuliah->mata_kuliah',  
+                ),
+		//'day_id',
+                array(
+                  'name' => 'day_id',  
+                  'header' => 'Hari',  
+                  'value' => '$data->day->day',  
+                ),
 		'start_time',
 		'end_time',
 		array(

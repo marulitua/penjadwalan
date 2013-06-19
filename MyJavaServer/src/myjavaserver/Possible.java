@@ -18,6 +18,14 @@ public final class Possible {
     private int endTime;
     //private boolean praktek;
 
+    public Possible(int DosenId, int MatakuliahId, int DayId, int StartTime, int EndTime) {
+        setDosenId(DosenId);
+        setDayId(DayId);
+        setStartTime(StartTime);
+        setMatakuliahId(MatakuliahId);
+        setEndTime(EndTime);
+    }
+    
     public Possible(int DosenId, int RuangId, int MatakuliahId, int DayId, int StartTime, int EndTime) {
         setDosenId(DosenId);
         setRuangId(RuangId);

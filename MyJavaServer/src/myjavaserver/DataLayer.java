@@ -82,9 +82,10 @@ public class DataLayer {
                 String MataKuliah = rs.getString(4);
                 int Start = rs.getInt(5);
                 int End = rs.getInt(6);
-
-                DosenTime row = new DosenTime(Id, Dosen, Hari, MataKuliah, Start, End);
-                listDosen.add(row);
+                if (MataKuliah != null) {
+                    DosenTime row = new DosenTime(Id, Dosen, Hari, MataKuliah, Start, End);
+                    listDosen.add(row);
+                }
 //                for (int i = Start; i < End; i++) {
 //                    DosenTime row = new DosenTime(Id, Dosen, Hari, MataKuliah, i, i + 1);
 //                    listDosen.add(row);
@@ -109,8 +110,8 @@ public class DataLayer {
                 int mataKuliah = rs.getInt(1);
                 String kelas = rs.getString(2);
                 String hari = rs.getString(3);
-                int sks = rs.getInt(4);
-                int praktek = rs.getInt(5);
+                int sks = rs.getInt(5);
+                int praktek = rs.getInt(6);
 
                 ArrayList<RuangKelas> harusDiruang = null;
                 ArrayList<Hari> listHari = null;
@@ -122,14 +123,15 @@ public class DataLayer {
                         RuangKelas peer = new RuangKelas(Integer.parseInt(retval));
                         harusDiruang.add(peer);
                     }
-                } else {
-                    for (int i = 0; i < listRuang.size(); i++) {
-                        if (listRuang.get(i).getPraktek() == getPraktek(mataKuliah)) {
-                            RuangKelas peer = new RuangKelas(listRuang.get(i).getId());
-                            harusDiruang.add(peer);
-                        }
-                    }
-                }
+                } 
+//                else {
+//                    for (int i = 0; i < listRuang.size(); i++) {
+//                        if (listRuang.get(i).getPraktek() == getPraktek(mataKuliah)) {
+//                            RuangKelas peer = new RuangKelas(listRuang.get(i).getId());
+//                            harusDiruang.add(peer);
+//                        }
+//                    }
+//                }
 
                 listHari = new ArrayList<>();
                 if (hari != null) {
@@ -137,12 +139,13 @@ public class DataLayer {
                         Hari peer = new Hari(Integer.parseInt(retval));
                         listHari.add(peer);
                     }
-                } else {
-                    for (int i = 1; i < 6; i++) {
-                        Hari peer = new Hari(i);
-                        listHari.add(peer);
-                    }
                 }
+//                else {
+//                    for (int i = 1; i < 6; i++) {
+//                        Hari peer = new Hari(i);
+//                        listHari.add(peer);
+//                    }
+//                }
 
                 for (int i = 0; i < rs.getInt(4); i++) {
                     Kurikulum kurikulum = new Kurikulum(mataKuliah, listHari, harusDiruang, sks, praktek);

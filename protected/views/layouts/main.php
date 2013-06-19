@@ -87,7 +87,7 @@
                             ),
                             array(
                                 'label' => 'Jadwal Perkuliahan',
-                                'url' => Yii::app()->createUrl('/site/jadwalPerkuliahan'),
+                                'url' => Yii::app()->createUrl('/jadwalHasil/admin'),
                                 'visible' => !Yii::app()->user->isGuest,
                             ),
                             array(
