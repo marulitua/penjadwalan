@@ -4,8 +4,6 @@
  */
 package myjavaserver;
 
-import java.sql.Time;
-
 /**
  *
  * @author erwin
@@ -109,5 +107,16 @@ public final class DosenTime {
      */
     public void setTimeEnd(int timeEnd) {
         this.timeEnd = timeEnd;
+    }
+    
+    public boolean bisaNgajar(int test) {
+        boolean result = false;
+        for (String retval : getMataKuliah().split(",")) {
+            if(Integer.parseInt(retval)==test){
+                result = true;
+                break;
+            }
+        }
+        return result;
     }
 }

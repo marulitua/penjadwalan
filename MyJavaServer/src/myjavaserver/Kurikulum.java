@@ -56,8 +56,7 @@ public final class Kurikulum {
 
     public boolean harusAri(int test) {
         boolean result = false;
-
-        if (getHarusHari() == null){
+        if (getHarusHari() == null) {
             result = true;
         } else {
             for (int i = 0; i < getHarusHari().size(); i++) {
@@ -67,7 +66,7 @@ public final class Kurikulum {
                 }
             }
         }
-
+        
         return result;
     }
 
@@ -128,5 +127,15 @@ public final class Kurikulum {
      */
     public void setHarusRuangKelas(ArrayList<RuangKelas> harusRuangKelas) {
         this.harusRuangKelas = harusRuangKelas;
+    }
+
+    boolean getHarusRuangKelas(int ruangId) {
+        RuangKelas kelas = new RuangKelas(ruangId);
+        if (harusRuangKelas.contains(kelas)) {
+            return true;
+        } else {
+            return false;
+        }
+
     }
 }

@@ -83,10 +83,12 @@ public class DataLayer {
                 int Start = rs.getInt(5);
                 int End = rs.getInt(6);
 
-                for (int i = Start; i < End; i++) {
-                    DosenTime row = new DosenTime(Id, Dosen, Hari, MataKuliah, i, i + 1);
-                    listDosen.add(row);
-                }
+                DosenTime row = new DosenTime(Id, Dosen, Hari, MataKuliah, Start, End);
+                listDosen.add(row);
+//                for (int i = Start; i < End; i++) {
+//                    DosenTime row = new DosenTime(Id, Dosen, Hari, MataKuliah, i, i + 1);
+//                    listDosen.add(row);
+//                }
             }
         } catch (SQLException ex) {
             Logger.getLogger(DataLayer.class.getName()).log(Level.SEVERE, null, ex);
@@ -110,27 +112,40 @@ public class DataLayer {
                 int sks = rs.getInt(4);
                 int praktek = rs.getInt(5);
 
-                ArrayList<RuangKelas> listRuang = null;
+                ArrayList<RuangKelas> harusDiruang = null;
                 ArrayList<Hari> listHari = null;
 
+                harusDiruang = new ArrayList<>();
+
                 if (kelas != null) {
-                    listRuang = new ArrayList<>();
                     for (String retval : kelas.split(",")) {
                         RuangKelas peer = new RuangKelas(Integer.parseInt(retval));
-                        listRuang.add(peer);
+                        harusDiruang.add(peer);
+                    }
+                } else {
+                    for (int i = 0; i < listRuang.size(); i++) {
+                        if (listRuang.get(i).getPraktek() == getPraktek(mataKuliah)) {
+                            RuangKelas peer = new RuangKelas(listRuang.get(i).getId());
+                            harusDiruang.add(peer);
+                        }
                     }
                 }
 
+                listHari = new ArrayList<>();
                 if (hari != null) {
-                    listHari = new ArrayList<>();
                     for (String retval : hari.split(",")) {
                         Hari peer = new Hari(Integer.parseInt(retval));
+                        listHari.add(peer);
+                    }
+                } else {
+                    for (int i = 1; i < 6; i++) {
+                        Hari peer = new Hari(i);
                         listHari.add(peer);
                     }
                 }
 
                 for (int i = 0; i < rs.getInt(4); i++) {
-                    Kurikulum kurikulum = new Kurikulum(mataKuliah, listHari, listRuang, sks, praktek);
+                    Kurikulum kurikulum = new Kurikulum(mataKuliah, listHari, harusDiruang, sks, praktek);
                     listKurikulum.add(kurikulum);
                 }
             }
@@ -140,12 +155,6 @@ public class DataLayer {
     }
 
     public void getRuang() {
-        int jamMulai = 8;
-        int jamEnd = 20;
-
-        int dayMin = 1; //pk hari senin
-        int dayMax = 6; //pk hari sabtu
-
         try {
             Statement ps = con.createStatement();
             ResultSet rs = ps.executeQuery("SELECT id,praktek FROM ruang_kelas");
@@ -154,12 +163,13 @@ public class DataLayer {
                 int id = rs.getInt(1);
                 int praktek = rs.getInt(2);
 
-                for (int j = dayMin; j <= dayMax; j++) {
-                    for (int i = jamMulai; i <= jamEnd; i++) {
-                        RuangKelas ruang = new RuangKelas(id, praktek, i, j);
-                        listRuang.add(ruang);
-                    }
+                RuangKelas ruang;
+                if (praktek == 1) {
+                    ruang = new RuangKelas(id, true);
+                } else {
+                    ruang = new RuangKelas(id, false);
                 }
+                listRuang.add(ruang);
             }
         } catch (SQLException ex) {
             Logger.getLogger(DataLayer.class.getName()).log(Level.SEVERE, null, ex);
@@ -184,7 +194,7 @@ public class DataLayer {
         }
     }
 
-    void simpanJadwal(ArrayList<Solution> finalSolutions) {
+    void simpanJadwal(ArrayList<Possible> finalSolutions) {
         for (int i = 0; i < finalSolutions.size(); i++) {
             try {
                 Statement ps = con.createStatement();
@@ -200,11 +210,47 @@ public class DataLayer {
         for (int i = 0; i < listGagal.size(); i++) {
             try {
                 Statement ps = con.createStatement();
-                int rs = ps.executeUpdate("INSERT INTO `jadwal_gagal` (`mata_kuliah_id`, `sks`, `praktek`) VALUES (" + listGagal.get(i).getMataKuliah()+ ", " + listGagal.get(i).getSks() + ", " + listGagal.get(i).getPraktek() + ");");
+                int rs = ps.executeUpdate("INSERT INTO `jadwal_gagal` (`mata_kuliah_id`, `sks`, `praktek`) VALUES (" + listGagal.get(i).getMataKuliah() + ", " + listGagal.get(i).getSks() + ", " + listGagal.get(i).getPraktek() + ");");
 //                int rs = ps.executeUpdate("insert into jadwal_hasil (dosen_id, ruang_id, matakuliah_id, day_id, start_time, end_time) values("+finalSolutions.get(i).getDosenId()+", "+finalSolutions.get(i).getRuangId()+", "+finalSolutions.get(i).getMatakuliahId()+", "+finalSolutions.get(i).getDayId()+", '0"+finalSolutions.get(i).getStartTime()+":00:00', '0"+finalSolutions.get(i).getEndTime())+":00:00'");
             } catch (SQLException ex) {
                 Logger.getLogger(DataLayer.class.getName()).log(Level.SEVERE, null, ex);
             }
+        }
+    }
+
+    public int getSks(int param) {
+        int sks = 0;
+        try {
+            Statement ps = con.createStatement();
+            ResultSet rs = ps.executeQuery("SELECT m.sks\n"
+                    + "from mata_kuliah m\n"
+                    + "where m.id = " + param);
+            while (rs.next()) {
+                sks = rs.getInt(1);
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(DataLayer.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return sks;
+    }
+
+    public boolean getPraktek(int param) {
+        int praktek = 0;
+        try {
+            Statement ps = con.createStatement();
+            ResultSet rs = ps.executeQuery("SELECT m.praktek\n"
+                    + "from mata_kuliah m\n"
+                    + "where m.id = " + param);
+            while (rs.next()) {
+                praktek = rs.getInt(1);
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(DataLayer.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        if (praktek == 1) {
+            return true;
+        } else {
+            return false;
         }
     }
 }

@@ -15,7 +15,7 @@ public class Queens {
 
     protected int boardSize;
     protected boolean[][] board;
-
+    protected int tag = 0;
     public Queens(int boardSize) {
         this.boardSize = boardSize;
         board = new boolean[boardSize][boardSize];
@@ -34,6 +34,8 @@ public class Queens {
      *       PlaceQueens will return false.
      */
     protected boolean placeQueen(int column) {
+        tag++;
+        System.out.println("dipanggil ke "+tag);
         int row;
 
         if (column == boardSize) {

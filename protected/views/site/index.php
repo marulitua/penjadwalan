@@ -36,7 +36,7 @@
                         if(data[0] == "-1")
                             l.error("YO MAMA IS SO FAT");
                         else
-                            window.location = "<?php Yii::app()->createUrl("site/jadwalPerkuliahan") ?>";
+                            window.location = "<?php echo Yii::app()->createUrl("jadwalHasil/admin") ?>";
                             //l.error("not running...");
                          //alert("not runing...");
                 }

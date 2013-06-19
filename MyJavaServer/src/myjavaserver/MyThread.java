@@ -6,7 +6,7 @@ package myjavaserver;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Collections;
 import java.util.ListIterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -24,9 +24,9 @@ public class MyThread extends Thread {
     ArrayList<Kurikulum> listKurikulum = new ArrayList<>();
     ArrayList<RuangKelas> listRuang = new ArrayList<>();
     ArrayList<Possible> listPossibles = new ArrayList<>();
-    ArrayList<Solution> finalSolutions = new ArrayList<>();
-    ListIterator<Solution> iteratorFinal = finalSolutions.listIterator();
+    ArrayList<Possible> finalSolutions = new ArrayList<>();
     ArrayList<Kurikulum> listGagal = new ArrayList<>();
+    DataLayer dao = new DataLayer();
 
     public MyThread() {
     }
@@ -46,7 +46,7 @@ public class MyThread extends Thread {
 
             //test DataLayer
 
-            DataLayer dao = new DataLayer();
+
             dao.getActivePeriode();
             System.out.println("getActivePeriode()\n");
             System.out.println("Contents of result: " + dao.result.get(0)[1]);
@@ -68,23 +68,24 @@ public class MyThread extends Thread {
 
             //generating possible solution
             generatePossibleSolution();
+            Collections.shuffle(listPossibles);
             System.out.println("List Possible = " + listPossibles.size());
 
             //finding solutions
-            //doBacktracking(0);
-
-            algoNgeramput();
+            doBacktracking(0);
+            //algoNgeramput();
+            //algoNgeramput();
             dao.clearGagal();
             dao.clearHasil();
             dao.simpanJadwal(finalSolutions);
             dao.simpanGagal(listGagal);
-            
+
             System.out.println("Dapat hasil = " + finalSolutions.size());
-            
-            System.out.println("Gagal = "+listGagal.size());
-            
-            
-            
+
+            System.out.println("Gagal = " + listGagal.size());
+
+
+
 //            for (int i = 0; i < 200; i += 1) {
 //                MsgLog.write("[ID " + this.getId() + "] " + i);
 //                try {
@@ -114,10 +115,16 @@ public class MyThread extends Thread {
                 if (d.getTimeEnd() < endTime) {
                     endTime = d.getTimeEnd();
                 }
-
                 for (int i = d.getTimeStart(); i < endTime; i++) {
-                    Possible baru = new Possible(d.getDosen(), r.getId(), d.getMataKuliah(), d.getHari(), i, r.getPraktek());
-                    listPossibles.add(baru);
+                    for (String retval : d.getMataKuliah().split(",")) {
+                        if ((i + dao.getSks(Integer.parseInt(retval))) <= endTime) {
+                            Possible baru = new Possible(d.getDosen(), r.getId(), Integer.parseInt(retval), d.getHari(), i, (i + dao.getSks(Integer.parseInt(retval))));
+                            //Possible(int DosenId, int RuangId, int MatakuliahId, int DayId, int StartTime, int EndTime)
+                            //System.out.println("retval = "+retval+" Integer.parseInt(retval) = "+Integer.parseInt(retval));
+                            //System.out.println("yang dimasukkan DosenId ="+baru.getDosenId()+" RuangId = "+baru.getRuangId()+" MatakuliahId = "+baru.getMatakuliahId()+" hari = "+baru.getDayId()+" jam mulai = "+baru.getStartTime()+ " jam selesai = "+baru.getEndTime());
+                            listPossibles.add(baru);
+                        }
+                    }
                 }
             }
         }
@@ -125,19 +132,28 @@ public class MyThread extends Thread {
 
     private boolean doBacktracking(int nKurikulum) {
         System.out.println("doBacktracking");
-        if ((nKurikulum < listKurikulum.size())) {
-            System.out.println("sampe sini");
-            if (compareElement(nKurikulum)) {
-                boolean result = doBacktracking(nKurikulum + 1);
-                if (!result) {
-                    finalSolutions.remove(finalSolutions.size() - 1);
-                }
-                return result;
-            } else {
-                return false;
-            }
-        } else {
+        int row;
+        if ((nKurikulum == listKurikulum.size())) {
             return true;
+        } else {
+            boolean successful = false;
+            row = 0;
+            while ((row < listPossibles.size()) && !successful) {
+                if (!bisaNga(nKurikulum, row)) {
+                    //System.out.println("row++");
+                    row++;
+                } else {
+                    // Place queen and try to place queen in next column.
+                    finalSolutions.add(listPossibles.get(row));
+                    successful = doBacktracking(nKurikulum + 1);
+                    if (!successful) {
+                        // Remove the queen placed in the column.
+                        finalSolutions.remove(finalSolutions.size() - 1);
+                        row++;
+                    }
+                }
+            }
+            return successful;
         }
     }
 
@@ -146,98 +162,79 @@ public class MyThread extends Thread {
         for (int i = 0; i < listPossibles.size(); i++) {
             if (bisaNga(nKurikulum, i)) {
 
-                Solution baru = new Solution(listPossibles.get(i).getDosenId(), listPossibles.get(i).getRuangId(), listKurikulum.get(nKurikulum).getMataKuliah(), listPossibles.get(i).getDayId(), listPossibles.get(i).getStartTime(), listPossibles.get(i).getStartTime() + listKurikulum.get(nKurikulum).getSks());
+                Possible baru = listPossibles.get(i);
 
                 if (findIsNew(baru)) {
                     finalSolutions.add(baru);
                 }
-                System.out.println("sama");
+                //System.out.println("sama");
                 return true;
+            } else {
+                //System.out.println("nga sama bro");
             }
         }
-        System.out.println("nga sama bro");
         return false;
     }
 
     private boolean bisaNga(int nKurikulum, int i) {
-
-        boolean flag = true;
-
         Kurikulum kurikulum = listKurikulum.get(nKurikulum);
 
-        if (i + kurikulum.getSks() - 1 < listPossibles.size()) {
+        Possible test = listPossibles.get(i);
 
-            for (int j = i; j < i + kurikulum.getSks() - 1; j++) {
-                Possible test = listPossibles.get(j);
-
-                // bisa ngajar ini nga
-                if (!test.bisaNgajar(kurikulum.getMataKuliah())) {
-                    flag = false;
-                    return flag;
-                }
-//                else
-//                    System.out.println("bsa ngajar coy");
-
-                if (kurikulum.getHarusHari() != null) {
-                    if (!kurikulum.harusAri(test.getDayId())) {
-                        flag = false;
-                        return flag;
-                    }
-                }
-//                else
-//                    System.err.println("bisa ari ini coy");
-
-                if (kurikulum.getHarusRuangKelas() != null) {
-                    if (!kurikulum.harusRuang(test.getRuangId())) {
-                        flag = false;
-                        return flag;
-                    }
-                }
-//                else if (kurikulum.getPraktek() != test.getPraktek()) {
-//                    flag = false;
-//                    return flag;
-//                }
-
-//                if (flag) {
-//                    return flag;
-//                }
-            }
-        } else {
-            flag = false;
+        // bisa ngajar ini nga
+        if (test.getMatakuliahId() != kurikulum.getMataKuliah()) {
+            //System.out.println("matakuliah tidak memenuhi");
+//            System.out.println("Dosen matakuliah = "+test.getMatakuliahId());
+//            System.out.println("Kurikulum matakuliah = "+kurikulum.getMataKuliah());
+            return false;
+        } else if (!kurikulum.harusAri(test.getDayId())) {
+            return false;
+        } else if (kurikulum.getHarusRuangKelas(test.getRuangId())) {
+            System.out.println("ruang kelas tidak memenuhi");
+            return false;
+        } else if (finalSolutions.contains(test)) {
+            System.out.println("Sudah ada di list");
+            return false;
+        }else if(!waktunyaUdaKepakeApaBlom(test)){
+            System.out.println("Waktunya nga mungkin");
+            return false;
         }
-
-        return flag;
+        return true;
     }
 
-    private boolean findIsNew(Solution baru) {
+    private boolean findIsNew(Possible baru) {
 
         if (finalSolutions.isEmpty()) {
             return true;
         } else {
-            for (int i = 0; i < finalSolutions.size(); i++) {
-                //if(finalSolutions.get(i).getDayId() == baru.getDayId() && finalSolutions.get(i).getDosenId() == baru.getDosenId() && finalSolutions.get(i).getEndTime() == baru.getEndTime() && finalSolutions.get(i).getMatakuliahId() == baru.getMatakuliahId() && finalSolutions.get(i).getRuangId() == baru.getRuangId() && finalSolutions.get(i).getStartTime() && baru.getStartTime())
-                if (finalSolutions.get(i) == baru) {
-                    return false;
-                }
+            if (finalSolutions.contains(baru)) {
+                return true;
+            } else {
+                return false;
             }
         }
-
-        return true;
     }
 
     private void algoNgeramput() {
         for (int i = 0; i < listKurikulum.size(); i++) {
             for (int j = 0; j < listPossibles.size(); j++) {
                 if (bisaNga(i, j)) {
-                    Solution baru = new Solution(listPossibles.get(j).getDosenId(), listPossibles.get(j).getRuangId(), listKurikulum.get(i).getMataKuliah(), listPossibles.get(j).getDayId(), listPossibles.get(j).getStartTime(), listPossibles.get(j).getStartTime() + listKurikulum.get(i).getSks());
-
-                    if (findIsNew(baru)) {
-                        finalSolutions.add(baru);
-                        break;
-                    }
+                    Possible baru = listPossibles.get(j);
+                    finalSolutions.add(baru);
                 }
-                listGagal.add(listKurikulum.get(i));
             }
         }
+    }
+
+    private boolean waktunyaUdaKepakeApaBlom(Possible test) {
+        for(int i=0;i<finalSolutions.size();i++){
+            if(finalSolutions.get(i).getDayId() == test.getDayId() && finalSolutions.get(i).getStartTime()==test.getStartTime() && finalSolutions.get(i).getEndTime()==test.getEndTime())
+                return false;
+            else
+                if(finalSolutions.get(i).getDayId() == test.getDayId() && test.getStartTime() < finalSolutions.get(i).getEndTime())
+                    return false;
+        }
+        
+        return true;
     }
 }

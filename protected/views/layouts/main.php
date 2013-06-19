@@ -128,7 +128,6 @@
                                     ),
                                 ),
                             ),
-                            /*
                             array(
                                 'label' => 'Fakultas & Program Studi',
                                 'url' => 'JavaScript:void(0);',
@@ -152,8 +151,6 @@
                                 'url' => Yii::app()->createUrl('site/help'),
                                 'visible' => !Yii::app()->user->isGuest
                             ),
-                             * 
-                             */
                             array('label' => 'Logout (' . Yii::app()->user->name . ')',
                                 'url' => array('/site/logout'),
                                 'visible' => !Yii::app()->user->isGuest

@@ -16,18 +16,15 @@ public final class Possible {
     private int dayId;
     private int startTime;
     private int endTime;
-    private boolean flag;
-    private String dapatMengajar;
-    private int praktek;
+    //private boolean praktek;
 
-    public Possible(int DosenId, int RuangId, String DapatMengajar, int DayId, int StartTime, int Praktek) {
+    public Possible(int DosenId, int RuangId, int MatakuliahId, int DayId, int StartTime, int EndTime) {
         setDosenId(DosenId);
         setRuangId(RuangId);
-        setDapatMengajar(DapatMengajar);
         setDayId(DayId);
         setStartTime(StartTime);
-        setFlag(false);
-        setPraktek(Praktek);
+        setMatakuliahId(MatakuliahId);
+        setEndTime(EndTime);
     }
 
     /**
@@ -98,7 +95,6 @@ public final class Possible {
      */
     public void setStartTime(int startTime) {
         this.startTime = startTime;
-        this.setEndTime(startTime + 1);
     }
 
     /**
@@ -115,56 +111,14 @@ public final class Possible {
         this.endTime = endTime;
     }
 
-    /**
-     * @return the flag
-     */
-    public boolean isFlag() {
-        return flag;
-    }
-
-    /**
-     * @param flag the flag to set
-     */
-    public void setFlag(boolean flag) {
-        this.flag = flag;
-    }
-
-    /**
-     * @return the dapatMengajar
-     */
-    public String getDapatMengajar() {
-        return dapatMengajar;
-    }
-
-    /**
-     * @param dapatMengajar the dapatMengajar to set
-     */
-    public void setDapatMengajar(String dapatMengajar) {
-        this.dapatMengajar = dapatMengajar;
-    }
-
-    public boolean bisaNgajar(int test) {
-        boolean result = false;
-        for (String retval : getDapatMengajar().split(",")) {
-            if(Integer.parseInt(retval)==test){
-                result = true;
-                break;
-            }
-        }
-        return result;
-    }
-
-    /**
-     * @return the praktek
-     */
-    public int getPraktek() {
-        return praktek;
-    }
-
-    /**
-     * @param praktek the praktek to set
-     */
-    public void setPraktek(int praktek) {
-        this.praktek = praktek;
-    }
+//    public boolean bisaNgajar(int test) {
+//        boolean result = false;
+//        for (String retval : getDapatMengajar().split(",")) {
+//            if(Integer.parseInt(retval)==test){
+//                result = true;
+//                break;
+//            }
+//        }
+//        return result;
+//    }
 }
