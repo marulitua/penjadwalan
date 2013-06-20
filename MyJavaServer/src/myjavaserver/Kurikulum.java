@@ -56,7 +56,7 @@ public final class Kurikulum {
 
     public boolean harusAri(int test) {
         boolean result = false;
-        if (getHarusHari() == null) {
+        if (getHarusHari().isEmpty()) {
             result = true;
         } else {
             for (int i = 0; i < getHarusHari().size(); i++) {
@@ -73,7 +73,7 @@ public final class Kurikulum {
     public boolean harusRuang(int test) {
         boolean result = false;
 
-        if (getHarusRuangKelas() == null) {
+        if (getHarusRuangKelas().isEmpty()) {
             result = true;
         } else {
             for (int i = 0; i < getHarusRuangKelas().size(); i++) {
