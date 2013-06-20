@@ -153,7 +153,7 @@ public class MyThread extends Thread {
                     for (String retval : d.getMataKuliah().split(",")) {
                         if ((i + dao.getSks(Integer.parseInt(retval))) <= endTime) {
                             //Possible baru = new Possible(d.getDosen(), Integer.parseInt(retval), d.getHari(), i, (i + dao.getSks(Integer.parseInt(retval))));
-                            Possible baru = new Possible(d.getDosen(), r.getId(), Integer.parseInt(retval), d.getHari(), i, (i + dao.getSks(Integer.parseInt(retval))));
+                            Possible baru = new Possible(d.getDosen(), r.getId(), Integer.parseInt(retval), d.getHari(), i, (i + dao.getSks(Integer.parseInt(retval))), r.getPraktek());
                             //Possible(int DosenId, int RuangId, int MatakuliahId, int DayId, int StartTime, int EndTime)
                             //System.out.println("retval = "+retval+" Integer.parseInt(retval) = "+Integer.parseInt(retval));
                             //System.out.println("yang dimasukkan DosenId ="+baru.getDosenId()+" RuangId = "+baru.getRuangId()+" MatakuliahId = "+baru.getMatakuliahId()+" hari = "+baru.getDayId()+" jam mulai = "+baru.getStartTime()+ " jam selesai = "+baru.getEndTime());
@@ -217,24 +217,64 @@ public class MyThread extends Thread {
         } else if (!kurikulum.harusRuang(test.getRuangId())) {
 //            System.out.println("harus ruang");
             return false;
-        } else if (praktek != dao.getPraktek(test.getRuangId())) {
+        } else if (praktek != test.isPraktek() ) {
             return false;
-        } else if (!waktunyaUdaKepakeApaBlom(test)) {
+        } 
+        else if (udaAdaApaBlom(test)) {
             return false;
         }
+        else if (!waktunyaUdaKepakeApaBlom(test)) {
+            return false;
+        }
+        else if(!ruangUdaKepakeApaBlom(test)){
+            return false;
+        }
+
+
         return true;
     }
 
     private boolean waktunyaUdaKepakeApaBlom(Possible test) {
         for (int i = 0; i < finalSolutions.size(); i++) {
-            if (finalSolutions.get(i).getDayId() == test.getDayId() && finalSolutions.get(i).getRuangId() == test.getRuangId() && finalSolutions.get(i).getDosenId() == test.getDosenId()) {
-                if (finalSolutions.get(i).getStartTime() == test.getStartTime() && finalSolutions.get(i).getEndTime() == test.getEndTime()) {
-                    return false;
-                } else if (test.getStartTime() < finalSolutions.get(i).getEndTime()) {
-                    return false;
+            if (finalSolutions.get(i).getDayId() == test.getDayId() && finalSolutions.get(i).getDosenId() == test.getDosenId()) {
+                if (test.getEndTime() <= finalSolutions.get(i).getStartTime() || finalSolutions.get(i).getEndTime() >= test.getStartTime() ) {
+                    return true;
                 }
+                else
+                    return false;
+//                if (finalSolutions.get(i).getStartTime() == test.getStartTime() && finalSolutions.get(i).getEndTime() == test.getEndTime()) {
+//                    return false;
+//                } else if (test.getStartTime() < finalSolutions.get(i).getEndTime()) {
+//                    return false;
+//                }
             }
         }
         return true;
+    }
+
+    private boolean ruangUdaKepakeApaBlom(Possible test) {
+//        int[] jam = new int[maxTime];
+//        Arrays.fill(jam, 0);
+
+        for (int i = 0; i < finalSolutions.size(); i++) {
+            if (finalSolutions.get(i).getDayId() == test.getDayId() && finalSolutions.get(i).getRuangId() == test.getRuangId()) {
+                if (test.getEndTime() <= finalSolutions.get(i).getStartTime() || finalSolutions.get(i).getEndTime() >= test.getStartTime() ) {
+                    return true;
+                }
+                else
+                    return  false;                        
+            }
+        }
+
+        return true;
+    }
+
+    private boolean udaAdaApaBlom(Possible test) {
+//        for (int i = 0; i < finalSolutions.size(); i++) {
+////            if(finalSolutions.get(i).getDayId() == test.getDayId() && finalSolutions.get(i).getDosenId() == test.getDosenId() &&  finalSolutions.get(i).getEndTime() == test.getEndTime() && finalSolutions.get(i).getMatakuliahId() )
+//            if(fin)
+//        }
+        
+        return finalSolutions.contains(test);        
     }
 }

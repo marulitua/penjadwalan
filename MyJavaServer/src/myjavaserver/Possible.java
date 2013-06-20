@@ -16,7 +16,7 @@ public final class Possible {
     private int dayId;
     private int startTime;
     private int endTime;
-    //private boolean praktek;
+    private boolean praktek;
 
     public Possible(int DosenId, int MatakuliahId, int DayId, int StartTime, int EndTime) {
         setDosenId(DosenId);
@@ -24,15 +24,17 @@ public final class Possible {
         setStartTime(StartTime);
         setMatakuliahId(MatakuliahId);
         setEndTime(EndTime);
+        
     }
     
-    public Possible(int DosenId, int RuangId, int MatakuliahId, int DayId, int StartTime, int EndTime) {
+    public Possible(int DosenId, int RuangId, int MatakuliahId, int DayId, int StartTime, int EndTime, boolean Praktek) {
         setDosenId(DosenId);
         setRuangId(RuangId);
         setDayId(DayId);
         setStartTime(StartTime);
         setMatakuliahId(MatakuliahId);
         setEndTime(EndTime);
+        setPraktek(Praktek);
     }
 
     /**
@@ -129,4 +131,18 @@ public final class Possible {
 //        }
 //        return result;
 //    }
+
+    /**
+     * @return the praktek
+     */
+    public boolean isPraktek() {
+        return praktek;
+    }
+
+    /**
+     * @param praktek the praktek to set
+     */
+    public void setPraktek(boolean praktek) {
+        this.praktek = praktek;
+    }
 }
