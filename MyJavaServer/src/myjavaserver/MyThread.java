@@ -217,56 +217,92 @@ public class MyThread extends Thread {
         } else if (!kurikulum.harusRuang(test.getRuangId())) {
 //            System.out.println("harus ruang");
             return false;
-        } else if (praktek != test.isPraktek() ) {
+        } else if (praktek != test.isPraktek()) {
             return false;
-        } 
-        else if (udaAdaApaBlom(test)) {
+        } else if (udaAdaApaBlom(test)) {
             return false;
-        }
-        else if (!waktunyaUdaKepakeApaBlom(test)) {
+        } else if (!waktunyaUdaKepakeApaBlom(test)) {
             return false;
         }
-        else if(!ruangUdaKepakeApaBlom(test)){
-            return false;
-        }
+//        else if(!ruangUdaKepakeApaBlom(test)){
+//            return false;
+//        }
 
 
         return true;
     }
 
     private boolean waktunyaUdaKepakeApaBlom(Possible test) {
+
+        int[] jam = new int[maxTime];
+        Arrays.fill(jam, 0);
+        boolean result = true;
         for (int i = 0; i < finalSolutions.size(); i++) {
+            //coloring
             if (finalSolutions.get(i).getDayId() == test.getDayId() && finalSolutions.get(i).getDosenId() == test.getDosenId()) {
-                if (test.getEndTime() <= finalSolutions.get(i).getStartTime() || finalSolutions.get(i).getEndTime() >= test.getStartTime() ) {
-                    return true;
+                for (int j = finalSolutions.get(i).getStartTime(); j < finalSolutions.get(i).getEndTime(); j++) {
+                    jam[j] = 1;
                 }
-                else
-                    return false;
-//                if (finalSolutions.get(i).getStartTime() == test.getStartTime() && finalSolutions.get(i).getEndTime() == test.getEndTime()) {
-//                    return false;
-//                } else if (test.getStartTime() < finalSolutions.get(i).getEndTime()) {
-//                    return false;
-//                }
+            }
+
+            /*
+             if (finalSolutions.get(i).getDayId() == test.getDayId() && finalSolutions.get(i).getDosenId() == test.getDosenId()) {
+             if (test.getEndTime() <= finalSolutions.get(i).getStartTime() || finalSolutions.get(i).getEndTime() >= test.getStartTime() ) {
+             return true;
+             }
+             else
+             return false;
+             //                if (finalSolutions.get(i).getStartTime() == test.getStartTime() && finalSolutions.get(i).getEndTime() == test.getEndTime()) {
+             //                    return false;
+             //                } else if (test.getStartTime() < finalSolutions.get(i).getEndTime()) {
+             //                    return false;
+             //                }
+             }*/
+        }
+
+        for (int j = test.getStartTime(); j < test.getEndTime(); j++) {
+            if (jam[j] == 1) {
+                result = false;
             }
         }
-        return true;
+
+        return result;
     }
 
     private boolean ruangUdaKepakeApaBlom(Possible test) {
-//        int[] jam = new int[maxTime];
-//        Arrays.fill(jam, 0);
-
+        int[] jam = new int[maxTime];
+        Arrays.fill(jam, 0);
+        boolean result = true;
         for (int i = 0; i < finalSolutions.size(); i++) {
-            if (finalSolutions.get(i).getDayId() == test.getDayId() && finalSolutions.get(i).getRuangId() == test.getRuangId()) {
-                if (test.getEndTime() <= finalSolutions.get(i).getStartTime() || finalSolutions.get(i).getEndTime() >= test.getStartTime() ) {
-                    return true;
+            //coloring
+            if (finalSolutions.get(i).getDayId() == test.getDayId() && finalSolutions.get(i).getRuangId()== test.getRuangId()) {
+                for (int j = finalSolutions.get(i).getStartTime(); j < finalSolutions.get(i).getEndTime(); j++) {
+                    jam[j] = 1;
                 }
-                else
-                    return  false;                        
+            }
+
+            /*
+             if (finalSolutions.get(i).getDayId() == test.getDayId() && finalSolutions.get(i).getDosenId() == test.getDosenId()) {
+             if (test.getEndTime() <= finalSolutions.get(i).getStartTime() || finalSolutions.get(i).getEndTime() >= test.getStartTime() ) {
+             return true;
+             }
+             else
+             return false;
+             //                if (finalSolutions.get(i).getStartTime() == test.getStartTime() && finalSolutions.get(i).getEndTime() == test.getEndTime()) {
+             //                    return false;
+             //                } else if (test.getStartTime() < finalSolutions.get(i).getEndTime()) {
+             //                    return false;
+             //                }
+             }*/
+        }
+
+        for (int j = test.getStartTime(); j < test.getEndTime(); j++) {
+            if (jam[j] == 1) {
+                result = false;
             }
         }
 
-        return true;
+        return result;
     }
 
     private boolean udaAdaApaBlom(Possible test) {
@@ -274,7 +310,7 @@ public class MyThread extends Thread {
 ////            if(finalSolutions.get(i).getDayId() == test.getDayId() && finalSolutions.get(i).getDosenId() == test.getDosenId() &&  finalSolutions.get(i).getEndTime() == test.getEndTime() && finalSolutions.get(i).getMatakuliahId() )
 //            if(fin)
 //        }
-        
-        return finalSolutions.contains(test);        
+
+        return finalSolutions.contains(test);
     }
 }
